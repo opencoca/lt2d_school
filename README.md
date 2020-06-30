@@ -1,2 +1,2 @@
 # Latitude
-Meet freely.
+Created with CodeSandbox
