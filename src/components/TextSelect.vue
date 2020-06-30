@@ -1,6 +1,6 @@
 <template>
   <div :class="rootClass">
-    <ul :id="id" :class="`${rootClass}__wrapper`">
+    <ul :class="`${rootClass}__wrapper`">
       <li v-for="(dataText, index) in dataTextsLocal" :key="index" :class="`${rootClass}__item`">
         <div
           :class="classTextBock(singleSelected.id, dataText.id, dataText.disabled)"
