@@ -68,21 +68,22 @@ export default {
         },
         {
           id: 4,
-          alt: "Drama at its finest.",
+          alt:
+            "“What is drama but life with the dull bits cut out.” - Hitchcock",
           href:
             "?count=2&amp;meet=Preville2020-Theater&amp;app=archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up",
           title: "Theater"
         },
         {
           id: 5,
-          alt: "Always write things down.",
+          alt: "“Chess is the gymnasium of the mind.” – Blaise Pascal",
           href:
             "?count=1&amp;meet=Preville2020-Chess&amp;app=fritz.chessbase.com",
           title: "Chess"
         },
         {
           id: 6,
-          alt: "Always write things down.",
+          alt: "“Without music, life would be a mistake.” – Nietzsche",
           href:
             "?count=1&amp;meet=Preville2020-Music&amp;app=apps.musedlab.org/aqwertyon/",
 
@@ -90,7 +91,7 @@ export default {
         },
         {
           id: 7,
-          alt: "We're hear to help.",
+          alt: "“Prior planning prevents poor performance.” - Somma",
           href: "?count=0&amp;meet=Preville2020-TechSupport",
           title: "Tech Support"
         }
