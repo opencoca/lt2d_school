@@ -1,4 +1,4 @@
-<template>
+`<template>
   <div id="app">
     <img width="25%" src="/assets/Bear-And-Cub-Logo.svg">
     <nav role="navigation">
@@ -10,8 +10,7 @@
         <input type="checkbox">
 
         <!--
-    Some spans to act as a hamburger.
-    
+    Some spans to act as a hamburger. 
     They are acting like a real hamburger,
     not that McDonalds stuff.
         -->
@@ -251,8 +250,8 @@ body {
   font-size: 22px;
 }
 /*
-	 * And let's slide it in from the left
-	 */
+   * And let's slide it in from the left
+   */
 
 #menuToggle input:checked ~ #menu {
   transform: none;
