@@ -156,3 +156,6 @@ if (countParam != null) {
 }
 openWindowSide();
 </script>
+
+<style>
+</style>
