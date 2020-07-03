@@ -40,7 +40,7 @@ export default {
         {
           id: 1,
           alt: "Love things and love your self!",
-          route: "meet",
+          route: "lobby",
           params: {
             meet: "Preville2020-MainHall",
             app: "www.thinglink.com/mediacard/1327781891578789889",
