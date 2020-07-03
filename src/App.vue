@@ -1,24 +1,7 @@
-`<template>
+<template>
   <div id="app">
-    <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-    hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-        -->
-        <input type="checkbox">
+    <RoomMenu :dataTexts="dataTexts"></RoomMenu>
 
-        <!--
-    Some spans to act as a hamburger. 
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-        <TextSelect :dataTexts="dataTexts" @onselecttext="onSelectText" rootClass="menu" id="menu"></TextSelect>
-      </div>
-    </nav>
     <div class="mb-4" v-if="ready">
       <router-view :meet="meet" :count="count" :app="app" :message="message"/>
     </div>
@@ -27,11 +10,13 @@
 
 <script>
 import TextSelect from "./components/TextSelect.vue";
+import RoomMenu from "./components/RoomMenu.vue";
 
 export default {
   name: "App",
   components: {
-    TextSelect
+    TextSelect,
+    RoomMenu
   },
   data: function() {
     return {
@@ -55,54 +40,75 @@ export default {
         {
           id: 1,
           alt: "Love things and love your self!",
-          meet: "Preville2020-MainHall",
-          app: "www.thinglink.com/mediacard/1327781891578789889",
-          href:
-            "amp;app=www.thinglink.com/mediacard/1327781891578789889",
+          route: "meet",
+          params: {
+            meet: "Preville2020-MainHall",
+            app: "www.thinglink.com/mediacard/1327781891578789889",
+            href: "amp;app=www.thinglink.com/mediacard/1327781891578789889"
+          },
           title: "Preville Lobby"
         },
         {
           id: 2,
-          alt: "Keep bullet journaling!",
-          href:
-            "?count=2&amp;meet=Preville2020-Art&amp;app=wbo.ophir.dev/boards/LT2D-2001",
-          title: "Art"
+          title: "Art",
+          route: "meet",
+          params: {
+            alt: "Keep bullet journaling!",
+            href:
+              "?count=2&amp;meet=Preville2020-Art&amp;app=wbo.ophir.dev/boards/LT2D-2001"
+          }
         },
         {
           id: 3,
-          alt: "Take it easy ❦",
-          href:
-            "?count=1&amp;meet=Preville2020-Robot-In-A-Can&amp;app=app.robotinacan.com/ai/snap/detective.html",
-          title: "Robot In A Can"
+          title: "Robot In A Can",
+
+          route: "meet",
+          params: {
+            alt: "Take it easy ❦",
+            href:
+              "?count=1&amp;meet=Preville2020-Robot-In-A-Can&amp;app=app.robotinacan.com/ai/snap/detective.html"
+          }
         },
         {
           id: 4,
-          alt:
-            "“What is drama but life with the dull bits cut out.” - Hitchcock",
-          href:
-            "?count=2&amp;meet=Preville2020-Theater&amp;app=archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up",
-          title: "Theater"
+          title: "Theater",
+
+          route: "meet",
+          params: {
+            alt:
+              "“What is drama but life with the dull bits cut out.” - Hitchcock",
+            href:
+              "?count=2&amp;meet=Preville2020-Theater&amp;app=archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up"
+          }
         },
         {
           id: 5,
-          alt: "“Chess is the gymnasium of the mind.” – Blaise Pascal",
-          href:
-            "?count=1&amp;meet=Preville2020-Chess&amp;app=fritz.chessbase.com",
-          title: "Chess"
+          title: "Chess",
+          route: "meet",
+          params: {
+            alt: "“Chess is the gymnasium of the mind.” – Blaise Pascal",
+            href:
+              "?count=1&amp;meet=Preville2020-Chess&amp;app=fritz.chessbase.com"
+          }
         },
         {
           id: 6,
-          alt: "“Without music, life would be a mistake.” – Nietzsche",
-          href:
-            "?count=1&amp;meet=Preville2020-Music&amp;app=apps.musedlab.org/aqwertyon/",
-
-          title: "Music"
+          title: "Music",
+          route: "meet",
+          params: {
+            alt: "“Without music, life would be a mistake.” – Nietzsche",
+            href:
+              "?count=1&amp;meet=Preville2020-Music&amp;app=apps.musedlab.org/aqwertyon/"
+          }
         },
         {
           id: 7,
-          alt: "“Prior planning prevents poor performance.” - Somma",
-          href: "?count=0&amp;meet=Preville2020-TechSupport",
-          title: "Tech Support"
+          title: "Tech Support",
+          route: "meet",
+          params: {
+            alt: "“Prior planning prevents poor performance.” - Somma",
+            href: "?count=0&amp;meet=Preville2020-TechSupport"
+          }
         }
       ]
     };
