@@ -55,8 +55,10 @@ export default {
         {
           id: 1,
           alt: "Love things and love your self!",
+          meet: "Preville2020-MainHall",
+          app: "www.thinglink.com/mediacard/1327781891578789889",
           href:
-            "?count=0&amp;meet=Preville2020-MainHall&amp;app=www.thinglink.com/mediacard/1327781891578789889",
+            "amp;app=www.thinglink.com/mediacard/1327781891578789889",
           title: "Preville Lobby"
         },
         {
