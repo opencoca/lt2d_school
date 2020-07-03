@@ -106,7 +106,7 @@ function openWindowSide() {
   count += 1;
 }
 
-function getJsonFromUrl(url) {
+/*function getJsonFromUrl(url) {
   if (!url) url = location.search;
   var query = url.substr(1);
   var result = {};
@@ -115,7 +115,7 @@ function getJsonFromUrl(url) {
     result[item[0]] = decodeURIComponent(item[1]);
   });
   return result;
-}
+}*/
 
 //Parse window params
 const urlParams = new URLSearchParams(window.location.search);
@@ -132,7 +132,7 @@ if (appParam != null) {
 //Choose Meeting
 const meetParam = urlParams.get("meet");
 if (meetParam != null) {
-  var a = document.createElement("a");
+  //var a = document.createElement("a");
   a.href = "https://meet.jit.si/" + meetParam;
   a.target = "meeting_iframe";
   a.click();
