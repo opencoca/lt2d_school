@@ -41,6 +41,11 @@ export default {
       meet: "",
       app: "",
       ready: true,
+      // Props Pass Data to Child Components
+      props: {
+        meet: String,
+        subject: String
+      },
       logo: [
         {
           id: 1,
