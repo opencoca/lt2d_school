@@ -1,6 +1,5 @@
 `<template>
   <div id="app">
-    <img width="25%" src="/assets/Bear-And-Cub-Logo.svg">
     <nav role="navigation">
       <div id="menuToggle">
         <!--
@@ -20,22 +19,28 @@
         <TextSelect :dataTexts="dataTexts" @onselecttext="onSelectText" rootClass="menu" id="menu"></TextSelect>
       </div>
     </nav>
-    <HelloWorld :msg="message"/>
+    <div class="mb-4" v-if="ready">
+      <router-view :meet="meet" :count="count" :app="app" :message="message"/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
 import TextSelect from "./components/TextSelect.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     TextSelect
   },
   data: function() {
     return {
+      email: "",
+      subject: "",
+      count: "",
+      meet: "",
+      app: "",
+      ready: true,
       logo: [
         {
           id: 1,
