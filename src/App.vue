@@ -35,16 +35,15 @@ export default {
   },
   data: function() {
     return {
-      email: "",
-      subject: "",
+      message: "Hello! This should allow text based selection!",
       count: "",
       meet: "",
       app: "",
       ready: true,
-      // Props Pass Data to Child Components
+      // Props Pass Data to Child Components and Routes
       props: {
         meet: String,
-        subject: String
+        message: String
       },
       logo: [
         {
@@ -52,7 +51,6 @@ export default {
           src: "/assets/robot.gif"
         }
       ],
-      message: "Hello! This should allow text based selection!",
       dataTexts: [
         {
           id: 1,
