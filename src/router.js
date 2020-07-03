@@ -11,7 +11,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "page-meet" */ "./pages/lobby")
   },
   {
-    path: "/meet",
+    path: "/meet/:meet",
     name: "meet",
     props: true,
     component: () =>

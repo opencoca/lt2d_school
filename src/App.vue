@@ -54,6 +54,7 @@ export default {
           route: "meet",
           params: {
             alt: "Keep bullet journaling!",
+            meet: "Preville2020-Art",
             href:
               "?count=2&amp;meet=Preville2020-Art&amp;app=wbo.ophir.dev/boards/LT2D-2001"
           }
@@ -61,10 +62,10 @@ export default {
         {
           id: 3,
           title: "Robot In A Can",
-
           route: "meet",
           params: {
             alt: "Take it easy ❦",
+            meet: "Preville2020-Robot-In-A-Can",
             href:
               "?count=1&amp;meet=Preville2020-Robot-In-A-Can&amp;app=app.robotinacan.com/ai/snap/detective.html"
           }
@@ -75,10 +76,11 @@ export default {
 
           route: "meet",
           params: {
+            meet: "Preville2020-Theater",
             alt:
               "“What is drama but life with the dull bits cut out.” - Hitchcock",
             href:
-              "?count=2&amp;meet=Preville2020-Theater&amp;app=archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up"
+              "?count=2&amp;meet=&amp;app=archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up"
           }
         },
         {
@@ -86,9 +88,9 @@ export default {
           title: "Chess",
           route: "meet",
           params: {
+            meet: "Preville2020-Chess",
             alt: "“Chess is the gymnasium of the mind.” – Blaise Pascal",
-            href:
-              "?count=1&amp;meet=Preville2020-Chess&amp;app=fritz.chessbase.com"
+            href: "?count=1&amp;meet=&amp;app=fritz.chessbase.com"
           }
         },
         {
@@ -96,6 +98,7 @@ export default {
           title: "Music",
           route: "meet",
           params: {
+            meet: "Preville2020-Music",
             alt: "“Without music, life would be a mistake.” – Nietzsche",
             href:
               "?count=1&amp;meet=Preville2020-Music&amp;app=apps.musedlab.org/aqwertyon/"
@@ -106,8 +109,10 @@ export default {
           title: "Tech Support",
           route: "meet",
           params: {
+            meet: "Preville2020-TechSupport",
+            checked: true,
             alt: "“Prior planning prevents poor performance.” - Somma",
-            href: "?count=0&amp;meet=Preville2020-TechSupport"
+            href: "?count=0&amp;meet="
           }
         }
       ]
