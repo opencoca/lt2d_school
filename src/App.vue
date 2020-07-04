@@ -100,6 +100,7 @@ export default {
           params: {
             meet: "Preville2020-Music",
             alt: "“Without music, life would be a mistake.” – Nietzsche",
+            frameposition: 1, // this was the count before
             href:
               "?count=1&amp;meet=Preville2020-Music&amp;app=apps.musedlab.org/aqwertyon/"
           }
@@ -112,7 +113,7 @@ export default {
             meet: "Preville2020-TechSupport",
             checked: true,
             alt: "“Prior planning prevents poor performance.” - Somma",
-            href: "?count=0&amp;meet="
+            frameposition: 0
           }
         }
       ]
