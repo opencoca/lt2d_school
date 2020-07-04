@@ -3,7 +3,7 @@
     <RoomMenu :dataTexts="dataTexts"></RoomMenu>
 
     <div class="mb-4" v-if="ready">
-      <router-view :meet="meet" :count="count" :app="app" :message="message"/>
+      <router-view/>
     </div>
   </div>
 </template>
