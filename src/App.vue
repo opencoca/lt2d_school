@@ -11,7 +11,7 @@
 <script>
 import TextSelect from "./components/TextSelect.vue";
 import RoomMenu from "./components/RoomMenu.vue";
-import data from './classRooms.json';
+import data from "./classRooms.json";
 
 const classRooms = data.classRooms;
 
@@ -39,7 +39,7 @@ export default {
           src: "/assets/robot.gif"
         }
       ],
-      dataTexts: classRooms,
+      dataTexts: classRooms
     };
   },
   methods: {
@@ -70,50 +70,5 @@ body {
   margin: none;
   padding: none;
   overflow: hidden;
-}
-
-#snap {
-  border: none;
-  margin: none;
-  padding: none;
-  position: absolute;
-  top: 50px;
-  left: 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-
-#jitsi {
-  border: none;
-  margin: none;
-  padding: none;
-  position: fixed;
-  top: 50px;
-  left: 100vw;
-  min-width: 526px;
-  background-color: #333;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-
-#open {
-  position: fixed;
-  top: 5px;
-  right: 1vw;
-  width: 200px;
-  z-index: 99999;
-}
-
-.dot {
-  height: 28px;
-  width: 28px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 10px;
-}
-
-#content {
-  min-width: 945px; /* Suppose you want minimum width of 1000px */
-  width: auto !important; /* Firefox will set width as auto */
 }
 </style>
