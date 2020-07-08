@@ -43,6 +43,7 @@ export default {
           route: "lobby",
           params: {
             meet: "Preville2020-MainHall",
+            room: 1,
             app: "www.thinglink.com/mediacard/1327781891578789889",
             href: "amp;app=www.thinglink.com/mediacard/1327781891578789889"
           },
@@ -55,6 +56,7 @@ export default {
           params: {
             alt: "Keep bullet journaling!",
             meet: "Preville2020-Art",
+            room: 1,
             href:
               "?count=2&amp;meet=Preville2020-Art&amp;app=wbo.ophir.dev/boards/LT2D-2001"
           }
@@ -66,6 +68,7 @@ export default {
           params: {
             alt: "Take it easy ❦",
             meet: "Preville2020-Robot-In-A-Can",
+            room: 1,
             href:
               "?count=1&amp;meet=Preville2020-Robot-In-A-Can&amp;app=app.robotinacan.com/ai/snap/detective.html"
           }
@@ -77,6 +80,7 @@ export default {
           route: "meet",
           params: {
             meet: "Preville2020-Theater",
+            room: 1,
             alt:
               "“What is drama but life with the dull bits cut out.” - Hitchcock",
             href:
@@ -89,6 +93,7 @@ export default {
           route: "meet",
           params: {
             meet: "Preville2020-Chess",
+            room: 1,
             alt: "“Chess is the gymnasium of the mind.” – Blaise Pascal",
             href: "?count=1&amp;meet=&amp;app=fritz.chessbase.com"
           }
@@ -99,6 +104,7 @@ export default {
           route: "meet",
           params: {
             meet: "Preville2020-Music",
+            room: 1,
             alt: "“Without music, life would be a mistake.” – Nietzsche",
             frameposition: 1, // this was the count before
             href:
@@ -111,6 +117,7 @@ export default {
           route: "meet",
           params: {
             meet: "Preville2020-TechSupport",
+            room: 1,
             checked: true,
             alt: "“Prior planning prevents poor performance.” - Somma",
             frameposition: 0
@@ -192,90 +199,5 @@ body {
 #content {
   min-width: 945px; /* Suppose you want minimum width of 1000px */
   width: auto !important; /* Firefox will set width as auto */
-}
-
-#menuToggle {
-  display: block;
-  position: fixed;
-  top: 14px;
-  left: 10px;
-  z-index: 199999;
-  user-select: none;
-}
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none;
-}
-
-/*
-* hamburger
-*/
-
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #cdcdcd;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-}
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-#menu {
-  position: absolute;
-  width: 23vw;
-  height: 100vh;
-  margin: -100px 0 0 -50px;
-  padding: 80px;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* stop flickering of text in safari */
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-}
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-/*
-   * And let's slide it in from the left
-   */
-
-#menuToggle input:checked ~ #menu {
-  transform: none;
 }
 </style>
