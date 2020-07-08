@@ -11,6 +11,9 @@
 <script>
 import TextSelect from "./components/TextSelect.vue";
 import RoomMenu from "./components/RoomMenu.vue";
+import data from './classRooms.json';
+
+const classRooms = data.classRooms;
 
 export default {
   name: "App",
@@ -36,94 +39,7 @@ export default {
           src: "/assets/robot.gif"
         }
       ],
-      dataTexts: [
-        {
-          id: 1,
-          alt: "Love things and love your self!",
-          route: "lobby",
-          params: {
-            meet: "Preville2020-MainHall",
-            room: 1,
-            app: "www.thinglink.com/mediacard/1327781891578789889",
-            href: "amp;app=www.thinglink.com/mediacard/1327781891578789889"
-          },
-          title: "Preville Lobby"
-        },
-        {
-          id: 2,
-          title: "Art",
-          route: "meet",
-          params: {
-            alt: "Keep bullet journaling!",
-            meet: "Preville2020-Art",
-            room: 1,
-            href:
-              "?count=2&amp;meet=Preville2020-Art&amp;app=wbo.ophir.dev/boards/LT2D-2001"
-          }
-        },
-        {
-          id: 3,
-          title: "Robot In A Can",
-          route: "meet",
-          params: {
-            alt: "Take it easy ❦",
-            meet: "Preville2020-Robot-In-A-Can",
-            room: 1,
-            href:
-              "?count=1&amp;meet=Preville2020-Robot-In-A-Can&amp;app=app.robotinacan.com/ai/snap/detective.html"
-          }
-        },
-        {
-          id: 4,
-          title: "Theater",
-
-          route: "meet",
-          params: {
-            meet: "Preville2020-Theater",
-            room: 1,
-            alt:
-              "“What is drama but life with the dull bits cut out.” - Hitchcock",
-            href:
-              "?count=2&amp;meet=&amp;app=archive.org/stream/TheUltimatePaperPlaneBook?ui=embed#page/n5/mode/2up"
-          }
-        },
-        {
-          id: 5,
-          title: "Chess",
-          route: "meet",
-          params: {
-            meet: "Preville2020-Chess",
-            room: 1,
-            alt: "“Chess is the gymnasium of the mind.” – Blaise Pascal",
-            href: "?count=1&amp;meet=&amp;app=fritz.chessbase.com"
-          }
-        },
-        {
-          id: 6,
-          title: "Music",
-          route: "meet",
-          params: {
-            meet: "Preville2020-Music",
-            room: 1,
-            alt: "“Without music, life would be a mistake.” – Nietzsche",
-            frameposition: 1, // this was the count before
-            href:
-              "?count=1&amp;meet=Preville2020-Music&amp;app=apps.musedlab.org/aqwertyon/"
-          }
-        },
-        {
-          id: 7,
-          title: "Tech Support",
-          route: "meet",
-          params: {
-            meet: "Preville2020-TechSupport",
-            room: 1,
-            checked: true,
-            alt: "“Prior planning prevents poor performance.” - Somma",
-            frameposition: 0
-          }
-        }
-      ]
+      dataTexts: classRooms,
     };
   },
   methods: {
