@@ -44,7 +44,6 @@
         <a>
           <img onclick="openWindowSide()" src="/assets/tv.png" style="height:40px;">
         </a>
-        
         <a
           :href="'https://meet.jit.si/'+ $route.params.meet "
           target="meeting_iframe"
@@ -76,11 +75,10 @@
           id="snap"
           name="app_iframe"
         ></iframe>
-        
         <iframe
           allow="microphone; camera"
           style="min-width: 526px; width: 100%; height: calc(100% - 50px); left: 0%;"
-          :src="'https://meet.jit.si/' + $route.params.meet + '-' + $route.params.room + '#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true'"
+          :src="'https://meet.jit.si/' + $route.params.meet + '#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true'"
           id="jitsi"
           name="meeting_iframe"
         >

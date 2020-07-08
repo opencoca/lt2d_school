@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import TextSelect from "./components/TextSelect.vue";
+//import TextSelect from "./components/TextSelect.vue";
 import RoomMenu from "./components/RoomMenu.vue";
 import data from "./classRooms.json";
 
@@ -23,7 +23,7 @@ const classRooms = data.classRooms;
 export default {
   name: "App",
   components: {
-    TextSelect,
+    //TextSelect,
     RoomMenu
   },
   data: function() {
