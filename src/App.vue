@@ -72,7 +72,6 @@ export default {
 
 body {
   border: none;
-  margin: none;
   padding: none;
   overflow: hidden;
 }
@@ -88,4 +87,13 @@ body {
 .fade-leave-active {
   opacity: 0
 }
+
+/*CSS filters */
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.81); }
+.blur { filter: blur(3px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
 </style>

@@ -14,7 +14,7 @@
         <div id="instructionsClick">
           <div id="logo">
             <img
-              src="assets/logo.svg"
+              src="assets/pfaclogo.png"
               alt="LATI2UDE logo"
               style="height: 37px; padding: 6px 6px 6px 6px; margin-left: 60px;"
               id="logoImg"
@@ -42,7 +42,7 @@
 
       <div id="open" style="right: 1%;">
         <a>
-          <img onclick="openWindowSide()" src="/assets/tv.png" style="height:40px;">
+          <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:40px;">
         </a>
         <a
           :href="'https://meet.jit.si/'+ $route.params.meet "

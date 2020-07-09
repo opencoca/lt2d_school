@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="lobby">
     <img width="25%" src="/assets/Bear-And-Cub-Logo.svg">
     <HelloWorld :msg="$attrs.message"/>
   </div>
@@ -15,3 +15,10 @@ export default {
   makeSureJSONWorks: ""
 };
 </script>
+
+<style>
+#lobby{
+  height:100vh;
+  width:100vw;
+}
+</style>
