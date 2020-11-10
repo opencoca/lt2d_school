@@ -18,7 +18,9 @@
 import RoomMenu from "./components/RoomMenu.vue";
 import data from "./classRooms.json";
 
-const classRooms = data.classRooms;
+// const classRooms = data.classRooms;
+
+ var classRooms = data.classRooms;
 
 export default {
   name: "App",

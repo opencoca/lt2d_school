@@ -304,27 +304,27 @@ h1 {
 }
 
 .jitsiOpen {
-  -webkit-animation-name: jitsiopenAnimation;
-  -webkit-animation-duration:0.5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
+  animation-name: jitsiopenAnimation;
+  animation-duration:0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .jitsiClose {
-  -webkit-animation-name: jitsicloseAnimation;
-  -webkit-animation-duration:0.6s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
+  animation-name: jitsicloseAnimation;
+  animation-duration:0.6s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .jitsiHalf {
-  -webkit-animation-name: jitsihalfAnimation;
-  -webkit-animation-duration:0.5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
+  animation-name: jitsihalfAnimation;
+  animation-duration:0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 @keyframes jitsiopenAnimation {
@@ -363,28 +363,28 @@ h1 {
 }
 
 .snapOpen {
-  -webkit-animation-name: snapopenAnimation;
-  -webkit-animation-duration:0.5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
+  animation-name: snapopenAnimation;
+  animation-duration:0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
   
 }
 
 .snapClose {
-  -webkit-animation-name: snapcloseAnimation;
-  -webkit-animation-duration:1s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
+  animation-name: snapcloseAnimation;
+  animation-duration:1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .snapHalf {
-  -webkit-animation-name: snaphalfAnimation;
-  -webkit-animation-duration:1s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
+  animation-name: snaphalfAnimation;
+  animation-duration:1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 @keyframes snapcloseAnimation {
