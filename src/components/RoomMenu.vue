@@ -37,6 +37,7 @@ export default {
 </script>
 
 <style>
+
 #menuToggle {
   display: block;
   position: fixed;
@@ -97,12 +98,14 @@ export default {
 }
 #menu {
   position: absolute;
-  width: 23vw;
-  height: 100vh;
+  width: 25vw;
+  height: 95vh;
+  overflow: scroll;
   margin: -100px 0 0 -50px;
-  padding: 80px;
-  padding-top: 125px;
-  background: #ededed;
+  padding: 88px;
+  padding-top: 80px;
+  padding-bottom: 125px;
+  background: rgba(237,237,237,0.92);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* stop flickering of text in safari */
@@ -111,8 +114,8 @@ export default {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 8px 0;
+  font-size: 1.2em;
 }
 /*
    * And let's slide it in from the left

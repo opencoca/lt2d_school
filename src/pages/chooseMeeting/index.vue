@@ -11,16 +11,17 @@
         </button>-->
         <div id="save"></div>
 
-        <div id="instructionsClick">
-          <div id="logo">
-            <img
-              src="assets/pfaclogo.png"
-              alt="LATI2UDE logo"
-              style="height: 37px; padding: 6px 6px 6px 6px; margin-left: 60px;"
-              id="logoImg"
-            >
-          </div>
+
+        <div id="logo">
+          <img
+            src="assets/pfaclogo.png"
+            alt="LATI2UDE logo"
+            style="height: 37px; padding: 6px 6px 6px 6px; margin-left: 60px;"
+            id="logoImg"
+          >
         </div>
+        <h1>{{ $route.params.title }}</h1>
+
 
         <div class="modal-container">
           <input id="modal-toggle" type="checkbox" v-model="$route.params.checked">
@@ -42,27 +43,27 @@
 
       <div id="open" style="right: 1%;">
         <a>
-          <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:40px;">
+          <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:35px;">
         </a>
         <a
           :href="'https://meet.jit.si/'+ $route.params.meet "
           target="meeting_iframe"
           class="dot"
-          style="background-color: #FF0000;"
+          style="background-color: #FF5555;"
           id="dot1"
         ></a>
         <a
           :href="'https://meet.jit.si/'+ $route.params.meet + '-2'"
           target="meeting_iframe"
           class="dot"
-          style="background-color: #00FF00"
+          style="background-color: #55FF55"
           id="dot2"
         ></a>
         <a
           :href="'https://meet.jit.si/'+ $route.params.meet +'-3'"
           target="meeting_iframe"
           class="dot"
-          style="background-color: #0000FF;"
+          style="background-color: #5555FF;"
           id="dot3"
         ></a>
       </div>
@@ -71,7 +72,7 @@
         <iframe
           allow="microphone; camera"
           style="width: 0%; height: calc(100% - 50px); border: none;"
-          src="https://www.thinglink.com/mediacard/1327781891578789889"
+          :src="'https://'+ $route.params.app"
           id="snap"
           name="app_iframe"
         ></iframe>
@@ -103,6 +104,45 @@ export default {
 </script>
 
 <style>
+
+a {
+  color:#444499;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#333;
+}
+
+#header{
+  position:fixed;
+  top:0;
+  left:0px;
+  height: 50px;
+  width:100%;
+  min-width: 945px;
+  background:#212533;
+  padding:0;
+  z-index: 10000;
+}
+
+#header img{
+  max-width:80%;
+}
+
+#logo {
+  display:inline;
+  position: absolute;
+  left: 0px;
+}
+
+h1 {
+  margin-top: 5px;
+  padding-top: 5px;
+  color:#f1f1f1;
+  font-size: 1.6em;
+}
+
 .modal-container {
   margin: 0 auto;
   padding-top: 10px;
@@ -250,7 +290,6 @@ export default {
   position: absolute;
   top: 50px;
   left: 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 #jitsi {
@@ -262,15 +301,134 @@ export default {
   left: 100vw;
   min-width: 526px;
   background-color: #333;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
+
+.jitsiOpen {
+  -webkit-animation-name: jitsiopenAnimation;
+  -webkit-animation-duration:0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.jitsiClose {
+  -webkit-animation-name: jitsicloseAnimation;
+  -webkit-animation-duration:0.6s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.jitsiHalf {
+  -webkit-animation-name: jitsihalfAnimation;
+  -webkit-animation-duration:0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes jitsiopenAnimation {
+  from {
+    left: 100%;
+    width: 0%;
+  }
+  to {
+    left: 0%;
+    width: 100%;
+  }  
+}
+
+@keyframes jitsihalfAnimation {
+  from {
+    left: 0%;
+    width: 100%;
+    
+  }
+  to {
+    left: 50%;
+    width: 50%;
+  }  
+}
+
+@keyframes jitsicloseAnimation {
+  from {
+    left: 50%;
+    width: 50%;
+    
+  }
+  to {
+    left: 100%;
+    width: 100%;
+  }  
+}
+
+.snapOpen {
+  -webkit-animation-name: snapopenAnimation;
+  -webkit-animation-duration:0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  
+}
+
+.snapClose {
+  -webkit-animation-name: snapcloseAnimation;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.snapHalf {
+  -webkit-animation-name: snaphalfAnimation;
+  -webkit-animation-duration:1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes snapcloseAnimation {
+  from {
+    left: 0%;
+    width: 100%;
+    
+  }
+  to {
+    left: 0%;
+    width: 0%;
+  }  
+}
+
+@keyframes snaphalfAnimation {
+  from {
+    left: 0%;
+    width: 100%;
+    
+  }
+  to {
+    left: 0%;
+    width: 50%;
+  }  
+}
+
+@keyframes snapopenAnimation {
+  from {
+    left: 0%;
+    width: 50%;
+  }
+  to {
+    left: 0%;
+    width: 100%;
+  }  
+}
+
+
 
 #open {
   position: fixed;
   top: 5px;
   right: 1vw;
-  width: 200px;
+  width: 250px;
   z-index: 99999;
 }
 
@@ -280,7 +438,12 @@ export default {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 25px;
+  border: 3px solid #F1F1F1;
+}
+
+.dot:hover {
+  background-color: #bbb;
 }
 
 #content {

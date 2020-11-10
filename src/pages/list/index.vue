@@ -79,7 +79,7 @@
         <iframe
           allow="microphone; camera"
           style="min-width: 526px; width: 100%; height: calc(100% - 50px); left: 0%;"
-          src="https://meet.jit.si/Preville2020-MainHall#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true'"
+          src="/class_list.html" 
           id="jitsi"
           name="meeting_iframe"
         >

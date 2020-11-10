@@ -65,7 +65,7 @@
       <iframe
         allow="microphone; camera"
         style="width: 0%; height: calc(100% - 50px); border: none;"
-        src="https://www.thinglink.com/mediacard/1327781891578789889"
+        src="https://www.centrepreville.org"
         id="snap"
         name="app_iframe"
       ></iframe>
@@ -84,75 +84,5 @@
 </template>
 
 
-<script type="text/javascript">
-var count = 0;
-function openWindowSide() {
-  if (count % 3 == 0) {
-    document.getElementById("jitsi").style.left = "0%";
-    document.getElementById("jitsi").style.width = "100%";
-    document.getElementById("snap").style.width = "0%";
-    document.getElementById("open").style.right = "1%";
-  } else if (count % 3 == 1) {
-    document.getElementById("jitsi").style.left = "50%";
-    document.getElementById("jitsi").style.width = "50%";
-    document.getElementById("snap").style.width = "50%";
-    document.getElementById("open").style.right = "1%";
-  } else if (count % 3 == 2) {
-    document.getElementById("jitsi").style.left = "100%";
-    document.getElementById("snap").style.width = "100%";
-    document.getElementById("open").style.right = "1%";
-  }
-  window.dispatchEvent(new Event("resize"));
-  count += 1;
-}
 
-function getJsonFromUrl(url) {
-  if (!url) url = location.search;
-  var query = url.substr(1);
-  var result = {};
-  query.split("&").forEach(function(part) {
-    var item = part.split("=");
-    result[item[0]] = decodeURIComponent(item[1]);
-  });
-  return result;
-}
 
-//Parse window params
-const urlParams = new URLSearchParams(window.location.search);
-
-//Choose App
-const appParam = urlParams.get("app");
-if (appParam != null) {
-  var a = document.createElement("a");
-  a.href = "https://" + appParam;
-  a.target = "app_iframe";
-  a.click();
-}
-
-//Choose Meeting
-const meetParam = urlParams.get("meet");
-if (meetParam != null) {
-  var a = document.createElement("a");
-  a.href = "https://meet.jit.si/" + meetParam;
-  a.target = "meeting_iframe";
-  a.click();
-  document.getElementById("dot1").href = "https://meet.jit.si/" + meetParam;
-  document.getElementById("dot2").href =
-    "https://meet.jit.si/" + meetParam + "-green";
-  document.getElementById("dot3").href =
-    "https://meet.jit.si/" + meetParam + "-blue";
-}
-
-//Choose Logo
-const logoParam = urlParams.get("logo");
-if (logoParam != null) {
-  document.getElementById("logoImg").src = logoParam;
-}
-
-//Choose Load Opening State
-const countParam = urlParams.get("count");
-if (countParam != null) {
-  count = countParam;
-}
-openWindowSide();
-</script>
