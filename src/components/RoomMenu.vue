@@ -118,8 +118,8 @@ export default {
   font-size: 1.2em;
 }
 /*
-   * And let's slide it in from the left
-   */
+ * And let's slide it in from the left
+ */
 
 #menuToggle input:checked ~ #menu {
   transform: none;

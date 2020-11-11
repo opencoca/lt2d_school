@@ -20,7 +20,7 @@
             id="logoImg"
           >
         </div>
-        <h1>Preville Lobby - Foyer de Preville</h1>
+        <h1>Preville</h1>
 
 
         <div class="modal-container">
@@ -41,31 +41,10 @@
         </div>
       </div>
 
-      <div id="open" style="right: 1%;">
+      <div id="open" style="right: 1%; text-align: right;">
         <a>
           <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:35px;">
         </a>
-        <a
-          href="https://meet.jit.si/Preville2020-MainHall"
-          target="meeting_iframe"
-          class="dot"
-          style="background-color: #FF5555;"
-          id="dot1"
-        ></a>
-        <a
-          href="https://meet.jit.si/Preville2020-MainHall-2"
-          target="meeting_iframe"
-          class="dot"
-          style="background-color: #55FF55"
-          id="dot2"
-        ></a>
-        <a
-          href="https://meet.jit.si/Preville2020-MainHall-3"
-          target="meeting_iframe"
-          class="dot"
-          style="background-color: #5555FF;"
-          id="dot3"
-        ></a>
       </div>
 
       <div class="window">
