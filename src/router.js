@@ -15,13 +15,7 @@ const routes = [
     name: "meet",
     props: true,
     component: () =>
-      import(/* webpackChunkName: "page-meet" */ "./pages/chooseMeeting")
-  },
-  {
-    path: "/space",
-    name: "space",
-    component: () =>
-      import(/* webpackChunkName: "page-space" */ "./pages/space")
+      import(/* webpackChunkName: "page-meet" */ "./pages/meeting")
   },
   {
     path: "/about",

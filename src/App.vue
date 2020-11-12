@@ -16,11 +16,9 @@
 <script>
 //import TextSelect from "./components/TextSelect.vue";
 import RoomMenu from "./components/RoomMenu.vue";
-import data from "./classRooms.json";
+//import data from "./classRooms.json";
 
-// const classRooms = data.classRooms;
-
- var classRooms = data.classRooms;
+var classRooms = [];
 
 export default {
   name: "App",
@@ -30,7 +28,7 @@ export default {
   },
   data: function() {
     return {
-      message: "Hello! This should allow text based selection!",
+      message: "",
       count: "",
       meet: "",
       app: "",
@@ -46,8 +44,17 @@ export default {
           src: "/assets/robot.gif"
         }
       ],
-      dataTexts: classRooms
-    };
+      dataTexts: []
+    }
+  },
+  created() {
+    // Simple GET request using fetch
+    fetch("https://classadmin.test.openco.ca/classrooms/")
+      .then(response => response.json())
+      .then(data => {
+        this.dataTexts = data.results;
+        console.log(this.dataTexts);
+      });
   },
   methods: {
     onSelectText: function(text) {

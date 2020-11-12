@@ -16,8 +16,8 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <li v-for="item in dataTexts" v-bind:key="item.id" v-bind:title="item.title">
-          <router-link :to="{ name: item.route, params: item.params }">{{ item.title }}</router-link>
+        <li v-for="item in dataTexts" v-bind:key="item.id" v-bind:name="item.name">
+          <router-link :to="{ name: item.route, params: item.classroom }">{{ item.name }}</router-link>
         </li>
       </ul>
     </div>
