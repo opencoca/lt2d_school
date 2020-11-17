@@ -24,14 +24,14 @@
 
     function openWindowSide() {
       if (count % 3 == 0) {
-        document.getElementById("jitsi").className = 'jitsiOpen';
-        document.getElementById("snap").className = 'snapClose';
+        document.getElementById("jitsi").className = 'Open';
+        document.getElementById("apps").className = 'Close';
       } else if (count % 3 == 1) {
-        document.getElementById("jitsi").className = 'jitsiHalf';
-        document.getElementById("snap").className = 'snapHalf';
+        document.getElementById("jitsi").className = 'Half';
+        document.getElementById("apps").className = 'Half';
       } else if (count % 3 == 2) {
-        document.getElementById("jitsi").className = 'jitsiClose';
-        document.getElementById("snap").className = 'snapOpen';
+        document.getElementById("jitsi").className = 'Close';
+        document.getElementById("apps").className = 'Open';
       }
       window.dispatchEvent(new Event("resize"));
       count += 1;

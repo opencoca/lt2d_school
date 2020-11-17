@@ -20,7 +20,7 @@
             id="logoImg"
           >
         </div>
-        <h1>{{ $route.params.title }}</h1>
+        <h1>{{ $route.params.name }}</h1>
 
 
         <div class="modal-container">
@@ -71,17 +71,15 @@
       <div class="window">
         <iframe
           allow="microphone; camera"
-          style="width: 0%; height: calc(100% - 50px); border: none;"
-          :src="'https://'+ $route.params.app"
-          id="snap"
-          name="app_iframe"
+          :src="$route.params.app_set[0].iframe"
+          id="apps"
+          name="app_iframe" class="Close"
         ></iframe>
         <iframe
           allow="microphone; camera"
-          style="min-width: 526px; width: 100%; height: calc(100% - 50px); left: 0%;"
           :src="'https://meet.jit.si/' + $route.params.meet + '#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true'"
           id="jitsi"
-          name="meeting_iframe"
+          name="meeting_iframe" class="Open"
         >
           <p>Your browser does not support iframes.</p>
         </iframe>
@@ -93,7 +91,7 @@
 <script>
 export default {
   name: "meet",
-  title: "LT2D Meeting",
+  title: " Class",
   data: function() {
     return {
       app: ""
@@ -277,151 +275,32 @@ h1 {
 
 .modal-container
   #modal-toggle:checked
-  ~ .modal-backdrop
+  .modal-backdrop
   .modal-content
   .modal-close:hover {
   color: #333;
 }
 
-#snap {
+.window{
+  width:100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: rgba(32,42,54,1);
+  }
+
+#apps, #jitsi{
+  height: calc(100vh - 45px); 
   border: none;
   margin: none;
   padding: none;
-  position: absolute;
   top: 50px;
   left: 0px;
 }
 
-#jitsi {
-  border: none;
-  margin: none;
-  padding: none;
-  position: fixed;
-  top: 50px;
-  left: 100vw;
-  min-width: 526px;
-  background-color: #333;
-}
-
-.jitsiOpen {
-  animation-name: jitsiopenAnimation;
-  animation-duration:0.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-.jitsiClose {
-  animation-name: jitsicloseAnimation;
-  animation-duration:0.6s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-.jitsiHalf {
-  animation-name: jitsihalfAnimation;
-  animation-duration:0.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-@keyframes jitsiopenAnimation {
-  from {
-    left: 100%;
-    width: 0%;
-  }
-  to {
-    left: 0%;
-    width: 100%;
-  }  
-}
-
-@keyframes jitsihalfAnimation {
-  from {
-    left: 0%;
-    width: 100%;
-    
-  }
-  to {
-    left: 50%;
-    width: 50%;
-  }  
-}
-
-@keyframes jitsicloseAnimation {
-  from {
-    left: 50%;
-    width: 50%;
-    
-  }
-  to {
-    left: 100%;
-    width: 100%;
-  }  
-}
-
-.snapOpen {
-  animation-name: snapopenAnimation;
-  animation-duration:0.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  
-}
-
-.snapClose {
-  animation-name: snapcloseAnimation;
-  animation-duration:1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-.snapHalf {
-  animation-name: snaphalfAnimation;
-  animation-duration:1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-@keyframes snapcloseAnimation {
-  from {
-    left: 0%;
-    width: 100%;
-    
-  }
-  to {
-    left: 0%;
-    width: 0%;
-  }  
-}
-
-@keyframes snaphalfAnimation {
-  from {
-    left: 0%;
-    width: 100%;
-    
-  }
-  to {
-    left: 0%;
-    width: 50%;
-  }  
-}
-
-@keyframes snapopenAnimation {
-  from {
-    left: 0%;
-    width: 50%;
-  }
-  to {
-    left: 0%;
-    width: 100%;
-  }  
-}
-
+.Open{width:100vw}
+.Half{width: 50vw;}
+.Close{width: 0vw;}
 
 
 #open {
