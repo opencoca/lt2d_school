@@ -16,9 +16,10 @@
 <script>
 //import TextSelect from "./components/TextSelect.vue";
 import RoomMenu from "./components/RoomMenu.vue";
-//import data from "./classRooms.json";
 
-//var classRooms = [];
+//if(process.env.VUE_APP_ROOMS === undefined) {
+//  this.$alert("Room Admin API endpoint not set. Unable to list rooms")
+//}
 
 export default {
   name: "App",
