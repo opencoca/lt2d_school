@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <RoomMenu :dataTexts="dataTexts"></RoomMenu>
-
     <div class="mb-4" v-if="ready">
       <transition
         name="fade"
-        mode="out-in"
-      >
+        mode="out-in">
         <router-view/>
       </transition>
     </div>
@@ -24,7 +22,6 @@ import RoomMenu from "./components/RoomMenu.vue";
 export default {
   name: "App",
   components: {
-    //TextSelect,
     RoomMenu
   },
   data: function() {
@@ -64,7 +61,6 @@ export default {
   }
 };
 </script>
-
 
 <style>
 #app {

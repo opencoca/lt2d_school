@@ -14,8 +14,8 @@
 
         <div id="logo">
           <img
-            src="assets/pfaclogo.png"
-            alt="LATI2UDE logo"
+            src="assets/Preville-Logo-white.svg"
+            alt="Preville"
             style="height: 37px; padding: 6px 6px 6px 6px; margin-left: 60px;"
             id="logoImg"
           >
