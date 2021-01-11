@@ -17,7 +17,11 @@
       <span></span>
       <ul id="menu">
         <li v-for="item in dataTexts" v-bind:key="item.id" v-bind:name="item.name">
-          <router-link :to="{ name: item.route, params: item.classroom }">{{ item.name }}</router-link>
+          <div v-if="item.classroom">
+            <div v-if=" item.name === item.name.toUpperCase() " class="program"> {{ item.name }} </div>
+            <div v-else><router-link :to="{ name: item.route, params: item.classroom }">{{ item.name }}</router-link>
+          </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -98,13 +102,12 @@ export default {
 }
 #menu {
   position: absolute;
-  width: 25vw;
+  width: 50vw;
   height: 95vh;
   overflow: scroll;
   margin: -100px 0 0 -50px;
-  padding: 88px;
-  padding-top: 80px;
-  padding-bottom: 125px;
+  padding: 110px 50px 125px 85px;
+  text-align: left;
   background: rgba(237,237,237,0.92);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -115,8 +118,17 @@ export default {
 }
 #menu li {
   padding: 8px 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
+
+#menu li .program{
+    font-size: 1.4em;
+    background: white;
+    text-align: center;
+    padding: 1.2em;
+    margin: 0 -3em;
+}
+
 /*
  * And let's slide it in from the left
  */
