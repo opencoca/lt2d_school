@@ -103,7 +103,7 @@ export default {
 #menu {
   position: absolute;
   width: 50vw;
-  height: 95vh;
+  height: 88vh;
   overflow: scroll;
   margin: -100px 0 0 -50px;
   padding: 110px 50px 125px 85px;
