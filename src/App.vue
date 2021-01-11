@@ -50,7 +50,7 @@ export default {
   },
   created() {
     // Simple GET request using fetch
-    fetch("https://classadmin.test.openco.ca/classrooms/")
+    fetch("https://api.centrepreville.org/classrooms/")
       .then(response => response.json())
       .then(data => {
         this.dataTexts = data.results;
