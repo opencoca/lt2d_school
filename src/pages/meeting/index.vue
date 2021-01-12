@@ -15,7 +15,7 @@
         <div id="logo">
           <img
             src="assets/Preville-Logo-white.svg"
-            alt="Preville"
+            alt="Preville Logo"
             style="height: 37px; padding: 6px 6px 6px 6px; margin-left: 60px;"
             id="logoImg"
           >
@@ -91,7 +91,23 @@
 <script>
 export default {
   name: "meet",
-  title: " Class",
+  title: "Préville - Preville",
+  created: function() {
+    if (!this.$route.params.meet) {
+      this.params = {
+          meet: "Foyer de Préville - Preville Lobby",
+          app : "https://centrepreville.org/camp-f-a-q-troubleshooting/",
+          alt : "Foyer de Préville - Preville Lobby",
+          name: "Foyer de Préville - Preville Lobby",
+          title : "Hall",
+          frameposition : 0
+      }
+    }
+    else {
+      this.params = this.$route.params
+      }
+      console.log(this.params.meet)
+    },
   data: function() {
     return {
       app: ""
