@@ -46,16 +46,18 @@
           <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:35px;">
         </a>
 		<a
-          :href="'https://meet.jit.si/'+ $route.params.meet "
-          target="meeting_iframe"
-          class="dot"
-          style="background-color: #FF5555;"
-          id="dot1"
+			:href="'https://meet.jit.si/'+ $route.params.meet "
+			target="meeting_iframe"
+			class="dot"
+			style="background-color: #FF5555;"
+			onclick="breakout(this)"
         > <img src="assets/home.svg"> </a>
 		<a v-for="n in $route.params.breakout_rooms" 
 		v-bind:key="n"
 			class="dot"
-			:href="'https://meet.jit.si/'+ $route.params.meet + '-' + (n+1)"
+			target="meeting_iframe"
+			onclick="breakout(this)"
+			:href=" 'https://meet.jit.si/' + $route.params.meet + '-' + (n+1) + '#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true'"
 		>
 			<span>{{n}}</span>
 			</a>
@@ -95,8 +97,8 @@
     </div>
   </div>
 </template>
-
 <script>
+
 export default {
   name: "meet",
   title: " Class",
@@ -109,18 +111,7 @@ export default {
 };
 </script>
 // so this code works! I just can't get it to load
-<script>
-console.log("boop")
-var coll = document.getElementsByClassName("dot");
-for (i = 0; i < coll.length; i++) {
-	coll[i].addEventListener("click", function() {
-		console.log("Clicked!")
-		var coll = document.getElementsByClassName("dot");
-		Array.from(coll).forEach(e => e.classList.remove("active"));
-		this.classList.add("active");
-	});
-}
-</script>
+
 <style>
 
 a {

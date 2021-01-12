@@ -20,6 +20,19 @@
   </body>
 
   <script type="text/javascript">
+  function breakout(t, link){
+      console.log("Clicked!")
+      var coll = document.getElementsByClassName("dot");
+      console.log(coll);
+      Array.from(coll).forEach(e => e.classList.remove("active"));
+      // for (let i = 0; i < coll.length; i++) {
+      //   console.log('Removing active tag');
+      //   console.log("Current Tags: "+  coll[i].classList);
+      //   coll[i].classList.remove('active');
+      // }
+      t.classList.add("active");
+      return false;
+    }
     var count = 1;
 
     function openWindowSide() {
@@ -37,7 +50,8 @@
       count += 1;
     }
 
-    openWindowSide();
+	  openWindowSide();
+    
   </script>
 
 </html>
