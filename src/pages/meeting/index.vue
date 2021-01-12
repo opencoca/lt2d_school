@@ -45,27 +45,35 @@
         <a>
           <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:35px;">
         </a>
-        <a
+		<a
           :href="'https://meet.jit.si/'+ $route.params.meet "
           target="meeting_iframe"
           class="dot"
           style="background-color: #FF5555;"
           id="dot1"
-        ></a>
+        > <img src="assets/home.svg"> </a>
+		<a v-for="n in $route.params.breakout_rooms" 
+		v-bind:key="n"
+			class="dot"
+			href="#"
+		>
+			<span>{{n}}</span>
+			</a>
+        <!-- 
         <a
           :href="'https://meet.jit.si/'+ $route.params.meet + '-2'"
           target="meeting_iframe"
           class="dot"
           style="background-color: #55FF55"
           id="dot2"
-        ></a>
+        >1</a>
         <a
           :href="'https://meet.jit.si/'+ $route.params.meet +'-3'"
           target="meeting_iframe"
           class="dot"
           style="background-color: #5555FF;"
           id="dot3"
-        ></a>
+        ></a> -->
       </div>
 
       <div class="window">
@@ -100,7 +108,19 @@ export default {
   makeSureJSONWorks: ""
 };
 </script>
-
+// so this code works! I just can't get it to load
+<script>
+console.log("boop")
+var coll = document.getElementsByClassName("dot");
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function() {
+		console.log("Clicked!")
+		var coll = document.getElementsByClassName("dot");
+		Array.from(coll).forEach(e => e.classList.remove("active"));
+		this.classList.add("active");
+	});
+}
+</script>
 <style>
 
 a {
@@ -304,25 +324,44 @@ h1 {
 
 
 #open {
-  position: fixed;
+  /* position: fixed; */
   top: 5px;
   right: 1vw;
-  width: 250px;
+  /* width: 250px; */
   z-index: 99999;
+  display:flex;
+
 }
 
 .dot {
   height: 28px;
-  width: 28px;
-  background-color: #bbb;
+  min-width: 28px;
+  font-weight:600;
+  /* background-color: #bbb; */
   border-radius: 50%;
-  display: inline-block;
-  margin-left: 25px;
+  /* display: inline-block; */
+  /* margin-left: 25px; */
   border: 3px solid #F1F1F1;
+  text-align: center;
+  color:white;
+  background-color: transparent;
 }
-
+.dot.active {
+	background-color: lime;
+}
 .dot:hover {
   background-color: #bbb;
+}
+.dot > * {
+	/* vertical-align: bottom; */
+	line-height: 28px;
+	font-size: larger;
+	font-weight: inherit;
+}
+.dot > img {
+	height: 18px;
+	/* vertical-align:baseline; */
+	margin-top: 3px;
 }
 
 #content {
