@@ -11,20 +11,22 @@
         </button>-->
         <div id="save"></div>
 
-
         <div id="logo">
           <img
             src="assets/Preville-Logo-white.svg"
-            alt="Preville"
-            style="height: 37px; padding: 6px 6px 6px 6px; margin-left: 60px;"
+            alt="Preville Logo"
+            style="height: 37px; padding: 6px 6px 6px 6px; margin-left: 60px"
             id="logoImg"
-          >
+          />
         </div>
         <h1>{{ $route.params.name }}</h1>
 
-
         <div class="modal-container">
-          <input id="modal-toggle" type="checkbox" v-model="$route.params.checked">
+          <input
+            id="modal-toggle"
+            type="checkbox"
+            v-model="$route.params.checked"
+          />
           <button>Onload Info</button>
           <div class="modal-backdrop">
             <div class="modal-content">
@@ -39,57 +41,59 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="open" style="right: 1%;">
-        <a>
-          <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:35px;">
-        </a>
-		<a
-			:href="'https://meet.jit.si/'+ $route.params.meet "
-			target="meeting_iframe"
-			class="dot"
-			style="background-color: #FF5555;"
+        <div id="open" style="right: 1%; position: fixed">
+          <a>
+            <img
+              class="brightness"
+              onclick="openWindowSide()"
+              src="/assets/tv.png"
+              style="height: 36px"
+            />
+          </a>
+          <a
+            :href="'https://meet.jit.si/' + $route.params.meet"
+            target="meeting_iframe"
+            class="dot"
+            style="background-color: #ff5555"
+            id="dot1"
 			onclick="breakout(this)"
-        > <img src="assets/home.svg"> </a>
-		<a v-for="n in $route.params.breakout_rooms" 
-		v-bind:key="n"
-			class="dot"
-			target="meeting_iframe"
+          >
+            <img src="assets/home.svg" />
+          </a>
+          <a
+            v-for="n in $route.params.breakout_rooms"
+            v-bind:key="n"
+            :href="
+              'https://meet.jit.si/' +
+              $route.params.meet +
+              '-breakout-room-' +
+              n +
+              config.meetingSettings
+            "
+            class="dot"
+            target="meeting_iframe"
 			onclick="breakout(this)"
-			:href=" 'https://meet.jit.si/' + $route.params.meet + '-' + (n+1) + '#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true'"
-		>
-			<span>{{n}}</span>
-			</a>
-        <!-- 
-        <a
-          :href="'https://meet.jit.si/'+ $route.params.meet + '-2'"
-          target="meeting_iframe"
-          class="dot"
-          style="background-color: #55FF55"
-          id="dot2"
-        >1</a>
-        <a
-          :href="'https://meet.jit.si/'+ $route.params.meet +'-3'"
-          target="meeting_iframe"
-          class="dot"
-          style="background-color: #5555FF;"
-          id="dot3"
-        ></a> -->
+          >
+            <span>{{ n }}</span>
+          </a>
+        </div>
       </div>
 
       <div class="window">
         <iframe
           allow="microphone; camera"
-          :src="$route.params.app_set[0].iframe"
+          :src="app_set[0].iframe"
           id="apps"
-          name="app_iframe" class="Close"
+          name="app_iframe"
+          class="Close"
         ></iframe>
         <iframe
           allow="microphone; camera"
-          :src="'https://meet.jit.si/' + $route.params.meet + '#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true'"
+          :src="'https://meet.jit.si/' + params.meet + config.meetingSettings"
           id="jitsi"
-          name="meeting_iframe" class="Open"
+          name="meeting_iframe"
+          class="Open"
         >
           <p>Your browser does not support iframes.</p>
         </iframe>
@@ -101,46 +105,86 @@
 
 export default {
   name: "meet",
-  title: " Class",
-  data: function() {
+  title: "Préville - Preville",
+  created: function () {
+    //Populate empty meeting
+  },
+  data: function () {
     return {
-      app: ""
+      app: "",
+      config: {
+        meetingSettings:
+          "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true",
+      },
     };
   },
-  makeSureJSONWorks: ""
+  computed: {
+    reversedRoomName: function () {
+      return this.$route.params.name.split('').reverse().join('')
+    },
+    meetingRooms: function () {
+      for (var i = 0; i < this.$route.params.breakout_rooms; i++){
+        console.log(i+1)
+        console.log("beep")
+      }
+      return null
+    },
+    params: function() {
+      if (!this.$route.params.meet) {
+        return {
+          meet: "Foyer de Préville - Preville Lobby",
+          alt: "Foyer de Préville - Preville Lobby",
+          name: "Foyer de Préville - Preville Lobby",
+          title: "Hall",
+          frameposition: 0,
+          };
+        } else {
+          return this.$route.params;
+          }
+    },
+    app_set: function() {
+      if (!this.$route.params.app_set){
+        return [{
+          "name": "FAQ",
+          "logo": "https://centrepreville.org/wp-content/uploads/2020/12/Pre%CC%81villeLogoNEW-300x153.png",
+          "iframe": "https://centrepreville.org/camp-f-a-q-troubleshooting/"
+          }]
+      } else {
+        return this.$route.params.app_set
+      }
+    }
+
+  }
 };
 </script>
-// so this code works! I just can't get it to load
-
 <style>
-
 a {
-  color:#444499;
-  text-decoration:none;
+  color: #444499;
+  text-decoration: none;
 }
 
 a:hover {
-  color:#333;
+  color: #333;
 }
 
-#header{
-  position:fixed;
-  top:0;
-  left:0px;
+#header {
+  position: fixed;
+  top: 0;
+  left: 0px;
   height: 50px;
-  width:100%;
+  width: 100%;
   min-width: 945px;
-  background:#212533;
-  padding:0;
+  background: #212533;
+  padding: 0;
   z-index: 10000;
 }
 
-#header img{
-  max-width:80%;
+#header img {
+  max-width: 80%;
 }
 
 #logo {
-  display:inline;
+  display: inline;
   position: absolute;
   left: 0px;
 }
@@ -148,7 +192,7 @@ a:hover {
 h1 {
   margin-top: 5px;
   padding-top: 5px;
-  color:#f1f1f1;
+  color: #f1f1f1;
   font-size: 1.6em;
 }
 
@@ -166,7 +210,7 @@ h1 {
   width: 160px;
   height: 50px;
   line-height: 50px;
-  background: #446CB3;
+  background: #446cb3;
   font-size: 22px;
   border: 0;
   border-radius: 3px;
@@ -194,7 +238,7 @@ h1 {
 }
 
 .modal-container #modal-toggle:hover ~ button {
-  background: #1E824C;
+  background: #1e824c;
 }
 
 .modal-container #modal-toggle:checked {
@@ -267,7 +311,7 @@ h1 {
   top: initial;
   bottom: 20px;
   right: 20px;
-  background: #4CAF50;
+  background: #4caf50;
   color: #fff;
   width: 50px;
   border-radius: 2px;
@@ -281,7 +325,7 @@ h1 {
   .modal-content
   .modal-close.button:hover {
   color: #fff;
-  background: #1E824C;
+  background: #1e824c;
 }
 
 .modal-container
@@ -292,16 +336,17 @@ h1 {
   color: #333;
 }
 
-.window{
-  width:100vw;
+.window {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background: rgba(32,42,54,1);
-  }
+  background: rgba(32, 42, 54, 1);
+}
 
-#apps, #jitsi{
-  height: calc(100vh - 45px); 
+#apps,
+#jitsi {
+  height: calc(100vh - 45px);
   border: none;
   margin: none;
   padding: none;
@@ -309,10 +354,15 @@ h1 {
   left: 0px;
 }
 
-.Open{width:100vw}
-.Half{width: 50vw;}
-.Close{width: 0vw;}
-
+.Open {
+  width: 100vw;
+}
+.Half {
+  width: 50vw;
+}
+.Close {
+  width: 0vw;
+}
 
 #open {
   /* position: fixed; */
@@ -320,39 +370,38 @@ h1 {
   right: 1vw;
   /* width: 250px; */
   z-index: 99999;
-  display:flex;
-
+  display: flex;
 }
 
 .dot {
   height: 28px;
   min-width: 28px;
-  font-weight:600;
+  font-weight: 600;
   /* background-color: #bbb; */
   border-radius: 50%;
   /* display: inline-block; */
-  /* margin-left: 25px; */
-  border: 3px solid #F1F1F1;
+  margin-left: 25px;
+  border: 3px solid #f1f1f1;
   text-align: center;
-  color:white;
+  color: white;
   background-color: transparent;
 }
 .dot.active {
-	background-color: lime;
+  background-color: lime !important;
 }
 .dot:hover {
-  background-color: #bbb;
+  background-color: #bbb !important;
 }
 .dot > * {
-	/* vertical-align: bottom; */
-	line-height: 28px;
-	font-size: larger;
-	font-weight: inherit;
+  /* vertical-align: bottom; */
+  line-height: 28px;
+  font-size: larger;
+  font-weight: inherit;
 }
 .dot > img {
-	height: 18px;
-	/* vertical-align:baseline; */
-	margin-top: 3px;
+  height: 18px;
+  /* vertical-align:baseline; */
+  margin-top: 3px;
 }
 
 #content {
