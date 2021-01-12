@@ -55,7 +55,7 @@
 		<a v-for="n in $route.params.breakout_rooms" 
 		v-bind:key="n"
 			class="dot"
-			href="#"
+			:href="'https://meet.jit.si/'+ $route.params.meet + '-' + (n+1)"
 		>
 			<span>{{n}}</span>
 			</a>
