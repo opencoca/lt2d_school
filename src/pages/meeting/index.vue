@@ -112,7 +112,7 @@ export default {
       app: "",
       config: {
         meetingSettings:
-          "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true",
+          "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true",
       },
     };
   },
@@ -171,7 +171,6 @@ a:hover {
   left: 0px;
   height: 50px;
   width: 100%;
-  min-width: 945px;
   background: #212533;
   padding: 0;
   z-index: 10000;
@@ -366,7 +365,6 @@ h1 {
   /* position: fixed; */
   top: 5px;
   right: 1vw;
-  /* width: 250px; */
   z-index: 99999;
   display: flex;
 }
@@ -402,8 +400,4 @@ h1 {
   margin-top: 3px;
 }
 
-#content {
-  min-width: 945px; /* Suppose you want minimum width of 1000px */
-  width: auto !important; /* Firefox will set width as auto */
-}
 </style>
