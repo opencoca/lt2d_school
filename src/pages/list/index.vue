@@ -52,14 +52,14 @@
           allow="microphone; camera"
           style="width: 0%; height: calc(100% - 50px); border: none;"
           src="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
-          id="snap"
+          id="list_snap"
           name="app_iframe"
         ></iframe>
         <iframe
           allow="microphone; camera"
           style="min-width: 526px; width: 100%; height: calc(100% - 50px); left: 0%;"
           src="/class_list.html" 
-          id="jitsi"
+          id="list_jitsi"
           name="meeting_iframe"
         >
           <p>Your browser does not support iframes.</p>
@@ -261,7 +261,7 @@ a {
     color: #333;
   }
   
-  #snap {
+  #list_snap {
     border: none;
     margin: none;
     padding: none;
@@ -270,7 +270,7 @@ a {
     left: 0px;
   }
   
-  #jitsi {
+  #list_jitsi {
     border: none;
     margin: none;
     padding: none;
