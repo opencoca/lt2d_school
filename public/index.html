@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="icon" href="/favicon.ico" />
-    <title>Latitude</title>
-  </head>
-  <body>
-    <noscript>
-      <strong
-        >We're sorry but LT2D doesn't work properly without JavaScript
-        enabled. Please enable it to continue.</strong
-      >
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<link rel="icon" href="/favicon.ico" />
+		<title>Latitude</title>
+	</head>
+	<body>
+		<noscript>
+			<strong
+				>We're sorry but LT2D doesn't work properly without JavaScript
+				enabled. Please enable it to continue.</strong
+			>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
 
-  <script type="text/javascript">
-  function breakout(t, link){
-      console.log("Clicked!")
-      var coll = document.getElementsByClassName("dot");
-      console.log(coll);
-      Array.from(coll).forEach(e => e.classList.remove("active"));
-      // for (let i = 0; i < coll.length; i++) {
-      //   console.log('Removing active tag');
-      //   console.log("Current Tags: "+  coll[i].classList);
-      //   coll[i].classList.remove('active');
-      // }
-      t.classList.add("active");
-      return false;
-    }
-    var count = 1;
+	<script type="text/javascript">
+	function breakout(t, link){
+			console.log("Clicked!")
+			var coll = document.getElementsByClassName("dot");
+			console.log(coll);
+			Array.from(coll).forEach(e => e.classList.remove("active"));
+			t.classList.add("active");
+			return false;
+		}
+		var count = 1;
 
-    function openWindowSide() {
-      if (count % 3 == 0) {
-        document.getElementById("jitsi").className = 'Open';
-        document.getElementById("apps").className = 'Close';
-      } else if (count % 3 == 1) {
-        document.getElementById("jitsi").className = 'Half';
-        document.getElementById("apps").className = 'Half';
-      } else if (count % 3 == 2) {
-        document.getElementById("jitsi").className = 'Close';
-        document.getElementById("apps").className = 'Open';
-      }
-      window.dispatchEvent(new Event("resize"));
-      count += 1;
-    }
+		function openWindowSide() {
+			var j = document.getElementById("jitsi");
+			var a = document.getElementById("apps");
+			var i = document.getElementById("app_opener");
+			[count, i.src] = cycle();
+			if (count % 3 == 0) {
+				j.className = 'Open';
+				a.className = 'Close';
+			} else if (count % 3 == 1) {
+				j.className = 'Half';
+				a.className = 'Half';
+			} else if (count % 3 == 2) {
+				j.className = 'Close';
+				a.className = 'Open';
+			}
+			window.dispatchEvent(new Event("resize"));
+		}
+		function cycle(){
+			const Radios = document.getElementsByName("app_state");
+			for(i = 0; i < Radios.length; i++){
+				if (Radios[i].checked) {
+					var out = (i+1)%Radios.length;
+					Radios[out].checked = true;
+					return [out, Radios[out].value];
+				}
+			}
+		}
 
-	  openWindowSide();
-    
-  </script>
+	openWindowSide();
+		
+	</script>
 
 </html>
