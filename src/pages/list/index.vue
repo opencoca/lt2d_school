@@ -43,7 +43,7 @@
 
       <div id="open" style="right: 1%; text-align: right;">
         <a>
-          <img class="brightness"  onclick="openWindowSide()" src="/assets/tv.png" style="height:35px;">
+          <img class="brightness"  onclick="openWindowSide()" src="/assets/show-window.svg" style="height:35px;">
         </a>
       </div>
 
