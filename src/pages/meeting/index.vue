@@ -41,14 +41,17 @@
             </div>
           </div>
         </div>
-
+          <input type="radio" name="app_state" value="assets/show-window.svg" checked="checked" />
+          <input type="radio" name="app_state" value="assets/fullscreen.svg" />
+          <input type="radio" name="app_state" value="assets/close-window.svg" />
         <div id="open" style="right: 1%; position: fixed">
           <a>
             <img
               class="brightness"
               onclick="openWindowSide()"
-              src="/assets/tv.png"
+              src="/assets/show-window.svg"
               style="height: 36px"
+        id="app_opener"
             />
           </a>
           <a
@@ -57,6 +60,7 @@
             class="dot"
             style="background-color: #ff5555"
             id="dot1"
+      onclick="breakout(this)"
           >
             <img src="assets/home.svg" />
           </a>
@@ -72,6 +76,7 @@
             "
             class="dot"
             target="meeting_iframe"
+      onclick="breakout(this)"
           >
             <span>{{ n }}</span>
           </a>
@@ -99,8 +104,8 @@
     </div>
   </div>
 </template>
-
 <script>
+
 export default {
   name: "meet",
   title: "Préville - Preville",
