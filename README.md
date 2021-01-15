@@ -4,7 +4,7 @@
 
 LT2D School provides students and teachers with virtual classrooms. It is an online learning environment where students and teachers interact via audio, video, and sharing apps. Educational institutions use our software to host classes remotely while maintaining the functionality available in a traditional classroom environment. 
 
-[![Run on Repl.it](https://repl.it/badge/github/opencoca/Latitude)](https://repl.it/github/opencoca/Latitude) [![Run on https://codesandbox.io/](https://rawcdn.githack.com/opencoca/lt2d_school/acb65df441a1f73e00b29e0d78ccb6dd5fbce514/public/assets/codesandbox.svg)](https://codesandbox.io/s/github/opencoca/Latitude)
+[![Run on Repl.it](https://repl.it/badge/github/opencoca/lt2d_school)](https://repl.it/github/opencoca/lt2d_school) [![Run on https://codesandbox.io/](https://rawcdn.githack.com/opencoca/lt2d_school/acb65df441a1f73e00b29e0d78ccb6dd5fbce514/public/assets/codesandbox.svg)](https://codesandbox.io/s/github/opencoca/lt2d_school)
 
 Features include: 
 
