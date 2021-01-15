@@ -31,7 +31,7 @@
           <div class="modal-backdrop">
             <div class="modal-content">
               <label class="modal-close" for="modal-toggle">x</label>
-              <h1>This is a meeting!!!</h1>
+              <h1>{{ $route.params.name }}</h1>
               <div>
                 <h2>{{ $route.params.alt }}</h2>
                 <h2>{{ $route.params.meet }}</h2>
@@ -41,9 +41,11 @@
             </div>
           </div>
         </div>
+        <div style="display:none">
           <input type="radio" name="app_state" value="assets/show-window.svg" checked="checked" />
           <input type="radio" name="app_state" value="assets/fullscreen.svg" />
           <input type="radio" name="app_state" value="assets/close-window.svg" />
+        </div>
         <div id="open" style="right: 1%; position: fixed">
           <a>
             <img
@@ -160,7 +162,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 a {
   color: #444499;
   text-decoration: none;
