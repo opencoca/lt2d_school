@@ -42,7 +42,7 @@
       </div>
 
       <div id="open" style="right: 1%; text-align: right;">
-        <a>
+        <a style="display:none">
           <img class="brightness"  onclick="openWindowSide()" src="/assets/show-window.svg" style="height:35px;">
         </a>
       </div>

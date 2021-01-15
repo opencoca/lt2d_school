@@ -6,9 +6,9 @@ Vue.use(Router);
 const routes = [
   {
     path: "/",
-    name: "list",
+    name: "Lobby",
     props: true,
-    component: () => import(/* webpackChunkName: "page-meet" */ "./pages/list")
+    component: () => import(/* webpackChunkName: "page-meet" */ "./pages/FirstLoadLobby")
   },
   {
     path: "/meet/:meet",
