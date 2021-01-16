@@ -42,11 +42,8 @@
       </div>
 
       <div id="open" style="right: 1%; text-align: right;">
-        <a>
-			<input type="radio" name="app_state" value="assets/show-window.svg" checked="checked" hidden/>
-          <input type="radio" name="app_state" value="assets/fullscreen.svg" hidden/>
-          <input type="radio" name="app_state" value="assets/close-window.svg" hidden />
-          <img class="brightness"  onclick="openWindowSide()" id="app_opener" src="/assets/show-window.svg" style="height:35px;">
+        <a style="display:none">
+          <img class="brightness"  onclick="openWindowSide()" src="/assets/show-window.svg" style="height:35px;">
         </a>
       </div>
 
@@ -85,7 +82,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 a {
     color:#444499;
