@@ -31,8 +31,19 @@
 		var count = 1;
 
 		function openWindowSide() {
-			var j = document.getElementById("jitsi");
-			var a = document.getElementById("apps");
+			var j;
+			var a;
+			try {
+				j = document.getElementById("jitsi");
+				a = document.getElementById("apps");
+				if (j === null || a === null){
+					throw "j or a == Null"
+				}
+			} catch (error) {
+				j = document.getElementById("list_jitsi");
+				a = document.getElementById("list_snap");
+			}
+			
 			var i = document.getElementById("app_opener");
 			[count, i.src] = cycle();
 			if (count % 3 == 0) {

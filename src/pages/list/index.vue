@@ -43,7 +43,10 @@
 
       <div id="open" style="right: 1%; text-align: right;">
         <a>
-          <img class="brightness"  onclick="openWindowSide()" src="/assets/show-window.svg" style="height:35px;">
+			<input type="radio" name="app_state" value="assets/show-window.svg" checked="checked" hidden/>
+          <input type="radio" name="app_state" value="assets/fullscreen.svg" hidden/>
+          <input type="radio" name="app_state" value="assets/close-window.svg" hidden />
+          <img class="brightness"  onclick="openWindowSide()" id="app_opener" src="/assets/show-window.svg" style="height:35px;">
         </a>
       </div>
 

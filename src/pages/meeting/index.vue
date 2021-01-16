@@ -41,9 +41,9 @@
             </div>
           </div>
         </div>
-          <input type="radio" name="app_state" value="assets/show-window.svg" checked="checked" />
-          <input type="radio" name="app_state" value="assets/fullscreen.svg" />
-          <input type="radio" name="app_state" value="assets/close-window.svg" />
+          <input type="radio" name="app_state" value="assets/show-window.svg" checked="checked" hidden/>
+          <input type="radio" name="app_state" value="assets/fullscreen.svg" hidden/>
+          <input type="radio" name="app_state" value="assets/close-window.svg" hidden/>
         <div id="open" style="right: 1%; position: fixed">
           <a>
             <img
