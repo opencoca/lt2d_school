@@ -86,13 +86,24 @@
       </div>
 
       <div class="window">
-        <iframe
-          allow="microphone; camera"
-          :src="app_set[0].iframe"
-          id="apps"
-          name="app_iframe"
-          class="Close"
-        ></iframe>
+        <template v-if="app_set[0].name == 'Shared Whiteboard'">
+            <iframe
+              allow="microphone; camera"
+              :src="app_set[0].iframe + $route.params.name.split('/')[0]"
+              id="apps"
+              name="app_iframe"
+              class="Close"
+            ></iframe>
+        </template>
+        <template v-else>
+          <iframe
+              allow="microphone; camera"
+              :src="app_set[0].iframe"
+              id="apps"
+              name="app_iframe"
+              class="Close"
+            ></iframe>
+        </template>
         <iframe
           allow="microphone; camera"
           :src="'https://meet.jit.si/' + params.meet + config.meetingSettings"
@@ -185,6 +196,10 @@ a:hover {
 
 #header img {
   max-width: 80%;
+}
+
+#apps {
+  background-color: white;
 }
 
 #logo {
