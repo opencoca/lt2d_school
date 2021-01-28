@@ -42,6 +42,12 @@
       </div>
 
       <div id="open" style="right: 1%; text-align: right;">
+         <a
+            class="dot"
+            target="_blank"
+            onclick=""
+            href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
+          ><span>?</span></a>
         <a style="display:none">
           <img class="brightness"  onclick="openWindowSide()" src="/assets/show-window.svg" style="height:35px;">
         </a>
