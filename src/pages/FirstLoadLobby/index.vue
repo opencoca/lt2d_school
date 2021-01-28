@@ -113,7 +113,26 @@ a {
   #header img{
     max-width:80%;
   }
-  
+  .dot {
+  height: 28px;
+  min-width: 28px;
+  font-weight: 600;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  /* display: inline-block; */
+  margin-left: 25px;
+  border: 3px solid #f1f1f1;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+.dot.active {
+  background-color: lime !important;
+}
+.dot:hover {
+  background-color: #bbb !important;
+}
+
   #logo {
     display:inline;
     position: absolute;
