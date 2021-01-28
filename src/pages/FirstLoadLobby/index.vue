@@ -132,7 +132,17 @@ a {
 .dot:hover {
   background-color: #bbb !important;
 }
-
+.dot > * {
+  /* vertical-align: bottom; */
+  line-height: 28px;
+  font-size: larger;
+  font-weight: inherit;
+}
+.dot > img {
+  height: 18px;
+  /* vertical-align:baseline; */
+  margin-top: 3px;
+}
   #logo {
     display:inline;
     position: absolute;
