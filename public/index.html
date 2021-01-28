@@ -20,6 +20,7 @@
 	</body>
 
 	<script type="text/javascript">
+	var faq = false;
 	function breakout(t, link){
 			console.log("Clicked!")
 			var coll = document.getElementsByClassName("dot");
@@ -67,6 +68,25 @@
 					return [out, Radios[out].value];
 				}
 			}
+		}
+		function faq(){
+			var j;
+			var a;
+			try {
+				j = document.getElementById("jitsi");
+				a = document.getElementById("apps");
+				if (j === null || a === null){
+					throw "j or a == Null"
+				}
+			} catch (error) {
+				j = document.getElementById("list_jitsi");
+				a = document.getElementById("list_snap");
+			}
+			var f = document.getElementById('faq');
+			j.className = 'Close';
+			a.className = 'Close';
+			f.className = 'Half';
+			f = true;
 		}
 
 	openWindowSide();

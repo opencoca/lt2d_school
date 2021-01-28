@@ -42,6 +42,12 @@
       </div>
 
       <div id="open" style="right: 1%; text-align: right;">
+         <a
+            class="dot"
+            target="_blank"
+            onclick=""
+            href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
+          ><span>?</span></a>
         <a style="display:none">
           <img class="brightness"  onclick="openWindowSide()" src="/assets/show-window.svg" style="height:35px;">
         </a>
@@ -107,7 +113,36 @@ a {
   #header img{
     max-width:80%;
   }
-  
+  .dot {
+  height: 28px;
+  min-width: 28px;
+  font-weight: 600;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  /* display: inline-block; */
+  margin-left: 25px;
+  border: 3px solid #f1f1f1;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+.dot.active {
+  background-color: lime !important;
+}
+.dot:hover {
+  background-color: #bbb !important;
+}
+.dot > * {
+  /* vertical-align: bottom; */
+  line-height: 28px;
+  font-size: larger;
+  font-weight: inherit;
+}
+.dot > img {
+  height: 18px;
+  /* vertical-align:baseline; */
+  margin-top: 3px;
+}
   #logo {
     display:inline;
     position: absolute;

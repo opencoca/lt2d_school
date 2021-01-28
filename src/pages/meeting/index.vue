@@ -47,6 +47,14 @@
           <input type="radio" name="app_state" value="assets/close-window.svg" />
         </div>
         <div id="open" style="right: 1%; position: fixed">
+          <a
+            class="dot"
+            target="_blank"
+            onclick=""
+            href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
+          >
+            <span>?</span>
+          </a>
           <a>
             <img
               class="brightness"
@@ -86,6 +94,13 @@
       </div>
 
       <div class="window">
+        <iframe
+          allow="microphone; camera"
+          style="width: 0%; height: calc(100% - 50px); border: none;"
+          src="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
+          id="faq"
+          name="faq_iframe"
+        ></iframe>
         <template v-if="app_set[0].name == 'Shared Whiteboard'">
             <iframe
               allow="microphone; camera"
