@@ -18,22 +18,22 @@
             id="logoImg"
           />
         </div>
-        <h1>{{ thisRooms.name }}</h1>
+        <h1>{{ params.name }}</h1>
 
         <div class="modal-container">
           <input
             id="modal-toggle"
             type="checkbox"
-            v-model="thisRooms.checked"
+            v-model="$route.params.checked"
           />
           <button>Onload Info</button>
           <div class="modal-backdrop">
             <div class="modal-content">
               <label class="modal-close" for="modal-toggle">x</label>
-              <h1>{{ thisRooms.name }}</h1>
+              <h1>{{ params.name }}</h1>
               <div>
-                <h2>{{ thisRooms.alt }}</h2>
-                <h2>{{ thisRooms.meet }}</h2>
+                <h2>{{ params.alt }}</h2>
+                <h2>{{ params.meet }}</h2>
                 <!--<h3>{{ $route.params }}</h3>-->
               </div>
               <label class="modal-close button" for="modal-toggle">Close</label>
@@ -46,14 +46,6 @@
           <input type="radio" name="app_state" value="assets/close-window.svg" />
         </div>
         <div id="open" style="right: 1%; position: fixed">
-          <a
-            class="dot"
-            target="_blank"
-            onclick=""
-            href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
-          >
-            <span>?</span>
-          </a>
           <a>
             <img
               class="brightness"
@@ -64,7 +56,7 @@
             />
           </a>
           <a
-            :href="'https://meet.jit.si/' + thisRooms.meet"
+            :href="'https://meet.jit.si/' + params.meet"
             target="meeting_iframe"
             class="dot"
             style="background-color: #ff5555"
@@ -74,11 +66,11 @@
             <img src="assets/home.svg" />
           </a>
           <a
-            v-for="n in thisRooms.classroom.breakout_rooms"
+            v-for="n in $route.params.breakout_rooms"
             v-bind:key="n"
             :href="
               'https://meet.jit.si/' +
-              thisRooms.meet +
+              $route.params.meet +
               '-breakout-room-' +
               n +
               config.meetingSettings
@@ -89,7 +81,8 @@
           >
             <span>{{ n }}</span>
           </a>
-          <a class="dot support"
+          <a
+            class="dot"
             target="_blank"
             onclick=""
             href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
@@ -107,7 +100,7 @@
           id="faq"
           name="faq_iframe"
         ></iframe>
-        <template v-if="thisRooms.classroom.app_set[0].name == 'Shared Whiteboard'">
+        <template v-if="app_set[0].name == 'Shared Whiteboard'">
             <iframe
               allow="microphone; camera"
               :src="app_set[0].iframe + params.name.split('/')[0]"
@@ -119,7 +112,7 @@
         <template v-else>
           <iframe
               allow="microphone; camera"
-              :src="thisRooms.classroom.app_set[0].iframe"
+              :src="app_set[0].iframe"
               id="apps"
               name="app_iframe"
               class="Close"
@@ -127,7 +120,7 @@
         </template>
         <iframe
           allow="microphone; camera"
-          :src="'https://meet.jit.si/' + thisRooms.meet + config.meetingSettings"
+          :src="'https://meet.jit.si/' + params.meet + config.meetingSettings"
           id="jitsi"
           name="meeting_iframe"
           class="Open"
@@ -150,7 +143,7 @@
         app: "",
         config: {
           meetingSettings:
-            "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+            "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true",
         },
       };
     },
@@ -180,11 +173,14 @@
           return this.$route.params.app_set
         }
       },
-      meetingRooms: function () {
-        return parseInt(this.params.breakout_rooms)
+      reversedRoomName: function () {
+        return this.$route.params.name.split('').reverse().join('')
       },
-      thisRooms: function() {
-        return this.$parent.rooms.find(room => room.meet == this.$route.params.meet)
+      meetingRooms: function () {
+        for (var i = 0; i < this.params.breakout_rooms; i++){
+          console.log(i+1)
+        }
+        return null
       }
     }
   };
