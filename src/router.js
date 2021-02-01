@@ -8,11 +8,11 @@ const routes = [
     path: "/",
     name: "Lobby",
     props: true,
-    redirect: "/meet/Preville-Online-Lobby/breakout_rooms/1"
+    redirect: "/meet/Preville-Online-Lobby/"
 //    component: () => import(/* webpackChunkName: "page-meet" */ "./pages/meeting")
   },
   {
-    path: "/meet/:meet/breakout_rooms/:breakout_rooms",
+    path: "/meet/:meet/",
     name: "meet",
     props: true,
     component: () =>

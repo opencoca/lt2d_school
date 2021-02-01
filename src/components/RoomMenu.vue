@@ -16,7 +16,7 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <li v-for="item in dataTexts" v-bind:key="item.id" v-bind:name="item.name">
+        <li v-for="item in rooms" v-bind:key="item.id" v-bind:name="item.name">
           <div v-if="item.classroom" onclick="document.querySelector('#menuToggle > input[type=checkbox]').checked = false">
             <div v-if=" item.name === item.name.toUpperCase() " class="program"> {{ item.name }} </div>
             <div v-else><router-link :to="{ name: item.route, params: item.classroom }">{{ item.name }}</router-link>
@@ -32,7 +32,7 @@
 export default {
   name: "MenuItems",
   props: {
-    dataTexts: {
+    rooms: {
       type: Array,
       default: () => []
     }

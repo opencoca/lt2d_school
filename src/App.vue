@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <RoomMenu :dataTexts="dataTexts"></RoomMenu>
+    <RoomMenu :rooms="rooms"></RoomMenu>
     <div class="mb-4" v-if="ready">
       <transition
         name="fade"
@@ -42,7 +42,7 @@ export default {
           src: "/assets/robot.gif"
         }
       ],
-      dataTexts: []
+      rooms: []
     }
   },
   created() {
@@ -50,8 +50,8 @@ export default {
     fetch("https://api.centrepreville.org/classrooms/")
       .then(response => response.json())
       .then(data => {
-        this.dataTexts = data.results;
-        console.log(this.dataTexts);
+        this.rooms = data.results;
+        console.log(this.rooms);
       });
   },
   methods: {
