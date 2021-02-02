@@ -102,7 +102,7 @@
         <template v-if="thisRooms.classroom.app_set[0].name == 'Shared Whiteboard'">
             <iframe
               allow="microphone; camera"
-              :src="app_set[0].iframe + params.name.split('/')[0]"
+              :src="thisRooms.classroom.app_set[0].iframe + thisRooms.name.split('/')[0]"
               id="apps"
               name="app_iframe"
               class="Close"
