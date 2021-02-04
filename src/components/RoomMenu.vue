@@ -16,7 +16,12 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <li v-for="item in rooms" v-bind:key="item.id" v-bind:name="item.name">
+        <li>
+          <div>
+          <input type="text" v-model="search" v-on:keyup="room_filter" placeholder="Search title.."/>
+          </div>
+        </li>
+        <li v-for="item in filtered_rooms" v-bind:key="item.id" v-bind:name="item.name" class="room">
           <div v-if="item.classroom" onclick="document.querySelector('#menuToggle > input[type=checkbox]').checked = false">
             <div v-if=" item.name === item.name.toUpperCase() " class="program"> {{ item.name }} </div>
             <div v-else><router-link :to="{ name: item.route, params: item.classroom }">{{ item.name }}</router-link>
@@ -35,12 +40,50 @@ export default {
     rooms: {
       type: Array,
       default: () => []
+    },
+    filtered_rooms: {
+      type: Array,
+      default: () => []
     }
+  },
+  // data: () => ({
+  //   filtered_rooms: this.rooms
+  // }),
+  methods: {
+    room_filter() {
+      if (this.search != ""){
+        // console.log(this.rooms)
+        this.filtered_rooms = this.rooms.filter(i => i.name.toLowerCase().includes(this.search.toLowerCase()));
+      } else {
+        this.filtered_rooms = this.rooms;
+      }
+    }
+  },
+  mounted() {
+    console.log(this.rooms)
+    this.filtered_rooms = this.rooms;
+    console.log(this.filtered_rooms)
   }
 };
+
 </script>
 
+
 <style>
+#menu input{
+  display: initial;
+  /* width: 40px;
+  height: 32px; */
+  position: initial;
+  /* top: -7px;
+  left: -5px; */
+  cursor: pointer;
+  opacity: 1;
+  /* opacity: 0; */
+  /* hide this */
+  z-index: 3;
+}
+
 
 #menuToggle {
   display: block;
@@ -50,7 +93,7 @@ export default {
   z-index: 199999;
   user-select: none;
 }
-#menuToggle input {
+#menuToggle > input {
   display: block;
   width: 40px;
   height: 32px;
