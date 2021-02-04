@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <RoomMenu :rooms="rooms"></RoomMenu>
+    <RoomMenu :rooms="rooms" :filtered_rooms="rooms"></RoomMenu>
     <div class="mb-4" v-if="ready">
       <transition
         name="fade"
@@ -42,7 +42,8 @@ export default {
           src: "/assets/robot.gif"
         }
       ],
-      rooms: []
+      rooms: [],
+      filtered_rooms: []
     }
   },
   created() {
@@ -51,6 +52,7 @@ export default {
       .then(response => response.json())
       .then(data => {
         this.rooms = data.results;
+        this.filtered_rooms = data.results;
         console.log(this.rooms);
       });
   },

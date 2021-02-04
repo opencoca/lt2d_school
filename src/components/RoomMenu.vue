@@ -53,17 +53,12 @@ export default {
     room_filter() {
       if (this.search != ""){
         // console.log(this.rooms)
-        this.filtered_rooms = this.rooms.filter(i => i.name.toLowerCase().includes(this.search.toLowerCase()));
+        this.filtered_rooms = this.rooms.filter(i => i.name.toLowerCase().includes(this.search.toLowerCase()) && i.name.toUpperCase() != i.name);
       } else {
         this.filtered_rooms = this.rooms;
       }
     }
   },
-  mounted() {
-    console.log(this.rooms)
-    this.filtered_rooms = this.rooms;
-    console.log(this.filtered_rooms)
-  }
 };
 
 </script>
