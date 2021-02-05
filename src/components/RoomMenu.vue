@@ -16,9 +16,9 @@
       <span></span>
       <span></span>
       <ul id="menu">
-        <li>
+        <li class="room">
           <div>
-          <input type="text" v-model="search" v-on:keyup="room_filter" placeholder="Search title.."/>
+          <input type="text" v-model="search" v-on:keyup="room_filter" placeholder="Search title.." size="48"/>
           </div>
         </li>
         <li v-for="item in filtered_rooms" v-bind:key="item.id" v-bind:name="item.name" class="room">
@@ -144,7 +144,7 @@ export default {
   height: 88vh;
   overflow: scroll;
   margin: -100px 0 0 -50px;
-  padding: 110px 50px 125px 85px;
+  padding: 60px 50px 125px 85px;
   text-align: left;
   background: rgba(237,237,237,0.92);
   list-style-type: none;
