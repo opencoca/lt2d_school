@@ -18,23 +18,23 @@
             id="logoImg"
           />
         </div>
-        <h1>{{ params.name }}</h1>
+        <h1>{{ thisRooms.name }}</h1>
 
         <div class="modal-container">
           <input
             id="modal-toggle"
             type="checkbox"
-            v-model="$route.params.checked"
+            v-model="thisRooms.checked"
           />
           <button>Onload Info</button>
           <div class="modal-backdrop">
             <div class="modal-content">
               <label class="modal-close" for="modal-toggle">x</label>
-              <h1>{{ params.name }}</h1>
+              <h1>{{ thisRooms.name }}</h1>
               <div>
-                <h2>{{ params.alt }}</h2>
-                <h2>{{ params.meet }}</h2>
-                <!--<h3>{{ $route.params }}</h3>-->
+                <h2>{{ thisRooms.alt }}</h2>
+                <h2>{{ thisRooms.meet }}</h2>
+                <!--<h3>{{ $route.thisRooms }}</h3>-->
               </div>
               <label class="modal-close button" for="modal-toggle">Close</label>
             </div>
@@ -56,7 +56,7 @@
             />
           </a>
           <a
-            :href="'https://meet.jit.si/' + params.meet"
+            :href="'https://meet.jit.si/' + thisRooms.meet"
             target="meeting_iframe"
             class="dot"
             style="background-color: #ff5555"
@@ -66,11 +66,11 @@
             <img src="assets/home.svg" />
           </a>
           <a
-            v-for="n in $route.params.breakout_rooms"
+            v-for="n in thisRooms.classroom.breakout_rooms"
             v-bind:key="n"
             :href="
               'https://meet.jit.si/' +
-              $route.params.meet +
+              thisRooms.meet +
               '-breakout-room-' +
               n +
               config.meetingSettings
@@ -127,7 +127,7 @@
         </template>
         <iframe
           allow="microphone; camera"
-          :src="'https://meet.jit.si/' + params.meet + config.meetingSettings"
+          :src="'https://meet.jit.si/' + thisRooms.meet + config.meetingSettings"
           id="jitsi"
           name="meeting_iframe"
           class="Open"
@@ -188,6 +188,9 @@
           console.log(i+1)
         }
         return null
+      },
+      thisRooms: function() {
+        return this.$parent.rooms.find(room => room.meet == this.$route.params.meet)
       }
     }
   };
