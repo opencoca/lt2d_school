@@ -34,7 +34,7 @@
               <div>
                 <h2>{{ thisRooms.alt }}</h2>
                 <h2>{{ thisRooms.meet }}</h2>
-                <!--<h3>{{ $route.thisRooms }}</h3>-->
+                <!--<h3>{{ $route.params }}</h3>-->
               </div>
               <label class="modal-close button" for="modal-toggle">Close</label>
             </div>
@@ -81,8 +81,7 @@
           >
             <span>{{ n }}</span>
           </a>
-          <a
-            class="dot"
+          <a class="dot support"
             target="_blank"
             onclick=""
             href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
@@ -107,7 +106,7 @@
           id="faq"
           name="faq_iframe"
         ></iframe>
-        <template v-if="app_set[0].name == 'Shared Whiteboard'">
+        <template v-if="thisRooms.classroom.app_set[0].name == 'Shared Whiteboard'">
             <iframe
               allow="microphone; camera"
               :src="thisRooms.classroom.app_set[0].iframe + thisRooms.name.split('/')[0]"
@@ -119,7 +118,7 @@
         <template v-else>
           <iframe
               allow="microphone; camera"
-              :src="app_set[0].iframe"
+              :src="thisRooms.classroom.app_set[0].iframe"
               id="apps"
               name="app_iframe"
               class="Close"
@@ -150,7 +149,7 @@
         app: "",
         config: {
           meetingSettings:
-            "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true",
+            "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
         },
       };
     },
@@ -180,14 +179,8 @@
           return this.$route.params.app_set
         }
       },
-      reversedRoomName: function () {
-        return this.$route.params.name.split('').reverse().join('')
-      },
       meetingRooms: function () {
-        for (var i = 0; i < this.params.breakout_rooms; i++){
-          console.log(i+1)
-        }
-        return null
+        return parseInt(this.params.breakout_rooms)
       },
       thisRooms: function() {
         return this.$parent.rooms.find(room => room.meet == this.$route.params.meet)
