@@ -18,7 +18,7 @@
       <ul id="menu">
         <li class="room">
           <div>
-          <input type="text" v-model="search" v-on:keyup="room_filter" placeholder="Search title.." size="48"/>
+            <input type="text" v-model="search" v-on:keyup="room_filter" placeholder="🔎        Classes        🔍" size="28"/>
           </div>
         </li>
         <li v-for="item in filtered_rooms" v-bind:key="item.id" v-bind:name="item.name" class="room">
@@ -67,15 +67,12 @@ export default {
 <style>
 #menu input{
   display: initial;
-  /* width: 40px;
-  height: 32px; */
+  text-align: center;
+  width: 100%;
+  font-size: larger;
   position: initial;
-  /* top: -7px;
-  left: -5px; */
   cursor: pointer;
   opacity: 1;
-  /* opacity: 0; */
-  /* hide this */
   z-index: 3;
 }
 
@@ -142,7 +139,8 @@ export default {
   position: absolute;
   width: 50vw;
   height: 88vh;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin: -100px 0 0 -50px;
   padding: 60px 50px 125px 85px;
   text-align: left;

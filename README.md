@@ -16,7 +16,7 @@ Features include:
 
 
 • Collaborative Work: The class is always working together towards a common goal. Everyone has access to all the same resources, including lesson plans, videos, and other materials.
- 
+
 
 Our platform is extensible and we are releasing frequent updates to improve the user experience.
 
@@ -24,3 +24,11 @@ Our platform is extensible and we are releasing frequent updates to improve the 
 
 yarn
 yarn install
+
+## Dev server
+
+yarn serve
+
+## Build a release for distribution
+
+yarn build

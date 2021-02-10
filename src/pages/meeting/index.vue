@@ -94,7 +94,9 @@
 
       <!-- Modal content -->
       <div class="modal-content">
-        <p class="rotate">Please rotate your device.</p>
+        <p>Faites tourner votre portable. </p>
+        <img src="/assets/rotate-phone.svg">
+        <p>Please rotate your device.</p>
       </div>
 
       </div>
@@ -230,6 +232,13 @@
     font-size: 1.6em;
   }
 
+ @media (max-width: 991px) { 
+   h1{
+     padding-top:10px;
+     font-size: 1em;
+ }
+}
+
   .modal-container {
     margin: 0 auto;
     padding-top: 10px;
@@ -307,7 +316,7 @@
     left: calc(50% - 200px);
     top: 12%;
     border-radius: 4px;
-    z-index: 999;
+    z-index: 99999;
     pointer-events: auto;
     cursor: auto;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
@@ -419,6 +428,16 @@
     color: white;
     background-color: transparent;
   }
+
+
+ @media (max-width: 991px) { 
+   .dot{
+     height: 27px;
+     min-width: 25px;
+     margin-left: 5px;
+ }
+}
+
   .dot.active {
     background-color: lime !important;
   }
@@ -440,16 +459,16 @@
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    padding-bottom: 100px; /* Location of the box */
+    z-index: 999999; /* Sit on top */
+    padding-top: 2vh; /* Location of the box */
+    padding-bottom: 2vh; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
 
   /* Modal Content */
@@ -459,9 +478,14 @@
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    height: 80%;
+    height: 88%;
     font-size: 3rem;
   }
+
+    .modal-content > img{
+     height: fit-content;
+     padding: 2em;
+    }
   .rotate {
     transform: rotate(-90deg) translate(-100%, 0%);
   }
