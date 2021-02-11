@@ -4,6 +4,12 @@ import Router from "vue-router";
 Vue.use(Router);
 
 const routes = [
+	// {
+  //   path: "/about",
+  //   name: "about",
+  //   component: () =>
+  //     import(/* webpackChunkName: "page-about" */ "./pages/about")
+  // },
   {
     path: "/meet/:meet/app",
     props: true,
@@ -32,13 +38,13 @@ const routes = [
     redirect: "/meet/Preville-Online-Lobby/"
 //    component: () => import(/* webpackChunkName: "page-meet" */ "./pages/meeting")
   },
+	// 404
+	{
+		path: "*",
+		redirect: "/meet/Preville-Online-Lobby/"
+	}
   
-  {
-    path: "/about",
-    name: "about",
-    component: () =>
-      import(/* webpackChunkName: "page-about" */ "./pages/about")
-  }
+  
 ];
 
 export default new Router({
