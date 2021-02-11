@@ -56,7 +56,9 @@
             />
           </a>
           <a
-            :href="'https://meet.jit.si/' + thisRooms.meet"
+            :href="thisRooms.classroom.platform.domain + 
+            thisRooms.meet 
+            + thisRooms.classroom.platform.paramiters"
             target="meeting_iframe"
             class="dot"
             style="background-color: #ff5555"
@@ -69,11 +71,11 @@
             v-for="n in thisRooms.classroom.breakout_rooms"
             v-bind:key="n"
             :href="
-              'https://meet.jit.si/' +
+              thisRooms.classroom.platform.domain +
               thisRooms.meet +
               '-breakout-room-' +
               n +
-              config.meetingSettings
+              thisRooms.classroom.platform.paramiters
             "
             class="dot"
             target="meeting_iframe"
@@ -102,7 +104,6 @@
       </div>
       <div class="window">
         <iframe
-          allow="microphone; camera"
           style="width: 0%; height: calc(100% - 50px); border: none;"
           src="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
           id="faq"
@@ -128,7 +129,7 @@
         </template>
         <iframe
           allow="microphone; camera"
-          :src="'https://meet.jit.si/' + thisRooms.meet + config.meetingSettings"
+          :src="thisRooms.classroom.platform.domain + thisRooms.meet + thisRooms.classroom.platform.paramiters"
           id="jitsi"
           name="meeting_iframe"
           class="Open"
@@ -150,8 +151,6 @@
       return {
         app: "",
         config: {
-          meetingSettings:
-            "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
         },
       };
     },
