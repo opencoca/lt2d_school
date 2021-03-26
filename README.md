@@ -32,3 +32,8 @@ yarn serve
 ## Build a release for distribution
 
 yarn build
+
+# License
+Copyright 2019–2021 12787326 Canada Inc.
+
+Licensed under the AGPLv3: https://opensource.org/licenses/agpl-3.0
