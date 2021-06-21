@@ -485,7 +485,8 @@
      height: fit-content;
      padding: 2em;
     }
-  .rotate {
+  
+.rotate {
     transform: rotate(-90deg) translate(-100%, 0%);
   }
   @media screen and (orientation:portrait) {
