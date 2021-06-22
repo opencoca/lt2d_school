@@ -3,8 +3,10 @@ import PageTitle from "vue-page-title";
 import App from "./App.vue";
 import router from "./router";
 import VueSimpleAlert from "vue-simple-alert";
+import VueSvgInlinePlugin from "vue-svg-inline-plugin";
 
 Vue.use(VueSimpleAlert);
+Vue.use(VueSvgInlinePlugin);
 
 Vue.config.productionTip = false;
 

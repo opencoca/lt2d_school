@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <g id="House">
+    <circle cx="18" cy="18" r="16" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    <path d="M11.62,25.31,19.09,18c1.88-1.82,2.8-2.88,2.8-4.81a3.36,3.36,0,0,0-3.61-3.36A3.67,3.67,0,0,0,14.53,13L12,12.8c.53-3.25,3-5,6.22-5s6,1.85,6,5.38c0,3.16-1.87,4.92-3.86,6.8l-6.1,5.74v.06h10.1V28H11.62Z" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
+  </g>
+</svg>
