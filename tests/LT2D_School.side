@@ -1,0 +1,69 @@
+{
+  "id": "ed6213d6-6476-46ad-886f-741c3b3e612e",
+  "version": "2.0",
+  "name": "LT2D_School",
+  "url": "https://arts.centrepreville.org",
+  "tests": [{
+    "id": "de50ba70-f727-4d15-942f-3b7e90971eb1",
+    "name": "Log into LT2D Preville Instance",
+    "commands": [{
+      "id": "25d6be9f-2988-4fc3-996f-4e6bfff386b1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e00b5e9-bbc7-4c98-ab46-39506595a9bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "2048x1055",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9dc0293-1b55-406e-ae42-eff65212e072",
+      "comment": "",
+      "command": "click",
+      "target": "css=.staticrypt-body",
+      "targets": [
+        ["css=.staticrypt-body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b2604c4-5a82-4af5-8929-7cd7874fd536",
+      "comment": "",
+      "command": "click",
+      "target": "css=.staticrypt-decrypt-button",
+      "targets": [
+        ["css=.staticrypt-decrypt-button", "css:finder"],
+        ["xpath=//input[@value='DECRYPT']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30c2bead-5647-4951-97b5-19db54c697ab",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Foyer de Préville - Preville Lobby')]", "xpath:innerText"]
+      ],
+      "value": "Foyer de Préville - Preville Lobby"
+    }]
+  }],
+  "suites": [{
+    "id": "67d5f73f-594a-4da1-b83c-143afe9fe09a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["de50ba70-f727-4d15-942f-3b7e90971eb1"]
+  }],
+  "urls": ["https://arts.centrepreville.org/"],
+  "plugins": []
+}
