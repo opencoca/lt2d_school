@@ -1,0 +1,3914 @@
+{
+  "id": "b6d7a741-5992-41e6-9ac1-0e5de1912d48",
+  "version": "2.0",
+  "name": "Check_Right_Room",
+  "url": "https://arts.centrepreville.org/",
+  "tests": [{
+    "id": "55ff70bd-5afe-4207-855e-f9d917813a03",
+    "name": "Check_Right_Room",
+    "commands": [{
+      "id": "4a98e78f-7cf4-4008-b674-eeefc5163e8c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f1b4a92-5f15-4aa8-a551-fd8d3296b023",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75879a87-af5b-4e31-9c4c-f8474e145ab7",
+      "comment": "",
+      "command": "type",
+      "target": "id=staticrypt-password",
+      "targets": [
+        ["id=staticrypt-password", "id"],
+        ["name=password", "name"],
+        ["css=#staticrypt-password", "css:finder"],
+        ["xpath=//input[@id='staticrypt-password']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "springonline2021"
+    }, {
+      "id": "9ae75cca-16b2-4ccf-9a6a-d42af68a56c6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=staticrypt-password",
+      "targets": [
+        ["id=staticrypt-password", "id"],
+        ["name=password", "name"],
+        ["css=#staticrypt-password", "css:finder"],
+        ["xpath=//input[@id='staticrypt-password']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7b75a7ef-169c-439c-9e52-a43efd4d4cfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed307138-e24a-48ee-92d4-a6c7bb2ac8da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de réunion - Meeting Room",
+      "targets": [
+        ["linkText=Salle de réunion - Meeting Room", "linkText"],
+        ["css=.room:nth-child(7) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de réunion - Meeting Room')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[7]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Meeting-Room')]", "xpath:href"],
+        ["xpath=//li[7]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de réunion - Meeting Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d517a1b9-e785-4c3a-b195-7ccd9bf6de4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de réunion - Meeting Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a31d4baf-0107-40bc-8694-6b0e5103ba8c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de réunion - Meeting Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2563ece2-1f77-48b3-847f-38dffda94c5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc08d79-1f13-4de2-8539-a069b19b8dcd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bibliothèque - Library",
+      "targets": [
+        ["linkText=Bibliothèque - Library", "linkText"],
+        ["css=.room:nth-child(8) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Bibliothèque - Library')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[8]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Library')]", "xpath:href"],
+        ["xpath=//li[8]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bibliothèque - Library')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f5e0be1-71eb-4351-9027-b4cb63ec680b",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Bibliothèque - Library')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ff9a952-d38c-4b8a-873b-07d517b83aed",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Bibliothèque - Library')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ca5a890-fac2-4dfc-84d6-a12b971ab1bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9481be4-6d92-4cf7-a9f4-36ff24d0b007",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de jeux - Games Room",
+      "targets": [
+        ["linkText=Salle de jeux - Games Room", "linkText"],
+        ["css=.room:nth-child(9) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de jeux - Games Room')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[9]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Games-Room')]", "xpath:href"],
+        ["xpath=//li[9]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de jeux - Games Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c515710-122d-4050-91ff-f5bc9591e1c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de jeux - Games Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dddc4797-c601-493e-a35a-73cda5f1b51f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de jeux - Games Room')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e84b18b-9c0a-4e8a-81bb-40dd58624ea7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e132f64c-46af-4665-a033-d3549999b16d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Maison Internationale Rive Sud",
+      "targets": [
+        ["linkText=Maison Internationale Rive Sud", "linkText"],
+        ["css=.room:nth-child(11) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Maison Internationale Rive Sud')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[11]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-MIRS')]", "xpath:href"],
+        ["xpath=//li[11]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Maison Internationale Rive Sud')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32f1b126-19ac-49a9-808c-1a71ca441c1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Maison Internationale Rive Sud')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c3505e8-9538-4327-9a3d-81ba5f103e60",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Maison Internationale Rive Sud')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e87ab2ff-5760-4dd5-97b1-85e14ba8e450",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "742a4084-0516-4a24-9af5-67ebdcad9a55",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,279"
+    }, {
+      "id": "c4b781f0-98f1-4cab-8a1b-71a5e6bdd910",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,279"
+    }, {
+      "id": "a3f895d1-ee98-42a5-9543-324fb55afbf9",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,279"
+    }, {
+      "id": "c4f7a474-55ff-4ad8-b106-3335cf1f4ff3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Studio de danse - Broadway - Michael Dauer",
+      "targets": [
+        ["linkText=Studio de danse - Broadway - Michael Dauer", "linkText"],
+        ["css=.room:nth-child(13) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Studio de danse - Broadway - Michael Dauer')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[13]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Dance-Michael-Dauer')]", "xpath:href"],
+        ["xpath=//li[13]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Studio de danse - Broadway - Michael Dauer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74e45c00-fea6-4e63-8bdc-7bcaeb2f811b",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a91f88d1-80e9-40dd-b3b6-578f832753c4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Studio de danse - Broadway - Michael Dauer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "810e55ba-506c-4a43-9104-f26af4c9e3a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80c7a129-3a96-40a5-b526-f5460277e3ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dance for Young Adults with Special Needs",
+      "targets": [
+        ["linkText=Dance for Young Adults with Special Needs", "linkText"],
+        ["css=.room:nth-child(14) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dance for Young Adults with Special Needs')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[14]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Dance-Special-Needs-Jamie-Malysh')]", "xpath:href"],
+        ["xpath=//li[14]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dance for Young Adults with Special Needs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c20916d-7056-42a4-8785-66e309e0b58c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "4808fc13-5402-4d12-ae52-f1bd5ebd77ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div[@id='lobby-screen']/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c194f790-1613-4d0a-b22b-a5625deb9112",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "7163f8bd-dc3b-4341-a19b-45f2f8856a20",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dance for Young Adults with Special Needs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b8fc8bb-7cbd-4c36-b65f-7b76426ca6bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dance for Young Adults with Special Needs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18b02ff8-05d0-41a5-bdd8-93aa1bb22b6e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Dance for Young Adults with Special Needs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6227916f-1e2a-4c8c-856f-2c14e7f5b7b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13e59037-305a-427d-8c8f-bfb82d5905c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Explorations de la voix - Voice Explor - Alison",
+      "targets": [
+        ["linkText=Explorations de la voix - Voice Explor - Alison", "linkText"],
+        ["css=.room:nth-child(15) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Explorations de la voix - Voice Explor - Alison')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[15]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Voice-Explorations-Alison-Notkin')]", "xpath:href"],
+        ["xpath=//li[15]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Explorations de la voix - Voice Explor - Alison')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f697eb8c-930b-416b-a294-c35bd08880fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Explorations de la voix - Voice Explor - Alison')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b97196b8-53c4-4ef1-bbb9-49c22db48254",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Explorations de la voix - Voice Explor - Alison')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e98953df-54b5-4255-bbeb-77f3d129a6c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2409f088-f78b-491f-bbe2-3fd91029f739",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Petits Artistes",
+      "targets": [
+        ["linkText=Petits Artistes", "linkText"],
+        ["css=.room:nth-child(17) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Petits Artistes')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[17]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Petits-Artistes')]", "xpath:href"],
+        ["xpath=//li[17]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Petits Artistes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5303a766-ff6f-4589-9be7-70e05c8f5080",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Petits Artistes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbc88510-538c-450c-bfe8-cd5942db6c8d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Petits Artistes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "451c4722-1705-4f16-a85e-856df542e6d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3403ca7-f0a6-476a-a727-2d07108af748",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,292"
+    }, {
+      "id": "9b1985eb-ece5-4fc6-9316-91653fbfea44",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,292"
+    }, {
+      "id": "d478f4cd-6d4b-4b94-9692-30c4ce1709ee",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,292"
+    }, {
+      "id": "975f096a-dc3c-42a8-8dde-d0e1499fffe2",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,258"
+    }, {
+      "id": "76eb4826-a8a2-48c6-96c4-753bdff5b247",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,258"
+    }, {
+      "id": "17a51402-fe27-44cc-be2a-15a8fe0ff734",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,258"
+    }, {
+      "id": "34f98c02-a1e4-441d-b544-4b5a7fe81fef",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,234"
+    }, {
+      "id": "6ec2f4f5-d8e6-45dc-82b6-7f5884e15135",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,234"
+    }, {
+      "id": "8151a771-9cf6-4c1c-90b7-6db570beba78",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,234"
+    }, {
+      "id": "a1428242-150e-46cd-b79e-b47437bdd946",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "770,196"
+    }, {
+      "id": "fe4d5014-ee9c-4034-b062-7655587d40d5",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "770,196"
+    }, {
+      "id": "cbcbe74c-601f-4bf4-8402-ff69745ade93",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "770,196"
+    }, {
+      "id": "db16127a-917c-4094-a836-6e853cde1f3c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "762,198"
+    }, {
+      "id": "7844b846-14a1-4372-95ac-9c66ebada51e",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "762,198"
+    }, {
+      "id": "82c1726d-9f15-4613-83b5-6af703680643",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "762,198"
+    }, {
+      "id": "a65b8857-311f-4b34-82a7-41f680b9a2e0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Little Artists",
+      "targets": [
+        ["linkText=Little Artists", "linkText"],
+        ["css=.room:nth-child(18) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Little Artists')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[18]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Little-Artists')]", "xpath:href"],
+        ["xpath=//li[18]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19662f28-d500-4290-9fc0-1a250dc05838",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1486545e-0471-4ced-b7c2-0882ca4da252",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6f3940a-8b15-4b29-95e5-6532cfb63f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e9fd015-61e5-41e4-86dd-495297f773c7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "937ce69d-258e-4990-b6cc-0d4dc5bfba21",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e7bbad9-440e-4ba0-8921-560a3215abd2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Little Artists",
+      "targets": [
+        ["linkText=Little Artists", "linkText"],
+        ["css=.room:nth-child(18) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Little Artists')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[18]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Little-Artists')]", "xpath:href"],
+        ["xpath=//li[18]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77218a2a-fdb1-4bc7-9358-33a6eef7bcab",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26b28aea-b26a-49b7-a0e6-24e4462d29da",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Little Artists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "611057c1-26c1-407e-8f4e-bd7a8522afe8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94e1b46f-403f-4eb3-b0ba-f618b87f8bde",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mixart Studios: production musicale - Boris P",
+      "targets": [
+        ["linkText=Mixart Studios: production musicale - Boris P", "linkText"],
+        ["css=.room:nth-child(19) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mixart Studios: production musicale - Boris P')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[19]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Mixart-Studios-Boris-Petrowsk1i')]", "xpath:href"],
+        ["xpath=//li[19]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mixart Studios: production musicale - Boris P')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90ee0bab-9516-486e-82ba-8b7ee15e60ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Mixart Studios: production musicale - Boris P')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f05a819-6c38-46a5-bc9d-24d67c3c4041",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Mixart Studios: production musicale - Boris P')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19dcad36-8b7d-4082-8ae6-73e4653c2240",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Mixart Studios: production musicale - Boris P')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b51deb8e-9793-4b6d-9a70-b134dab05776",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Mixart Studios: production musicale - Boris P')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d6d6a0-6b55-406a-98ff-698dfe344dc7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Mixart Studios: production musicale - Boris P')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18b4d273-270b-4043-aa0e-24718a5f5ec0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1db17f9d-5494-414f-b60b-fc78d92bbafe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Groupe de Violoneux - Fiddle Group - Solon McDade",
+      "targets": [
+        ["linkText=Groupe de Violoneux - Fiddle Group - Solon McDade", "linkText"],
+        ["css=.room:nth-child(20) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Groupe de Violoneux - Fiddle Group - Solon McDade')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[20]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Fiddle-Group-Solon-McDade')]", "xpath:href"],
+        ["xpath=//li[20]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Groupe de Violoneux - Fiddle Group - Solon McDade')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff73ba05-6785-4807-adf6-31d806ef023c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0db85f8-5274-47f6-b57e-927b9d58999c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1800f168-cbeb-4a16-96df-63c44e1e0647",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rencontres Musicales - Musical Meet Up - Solon McD",
+      "targets": [
+        ["linkText=Rencontres Musicales - Musical Meet Up - Solon McD", "linkText"],
+        ["css=.room:nth-child(21) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rencontres Musicales - Musical Meet Up - Solon McD')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[21]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Musical-Meetup-Solon')]", "xpath:href"],
+        ["xpath=//li[21]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rencontres Musicales - Musical Meet Up - Solon McD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5565505-beaa-4f43-9bff-edf98cdbed8e",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7e7f665-5df4-4d0b-8e97-73b823b629c7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Rencontres Musicales - Musical Meet Up - Solon McD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d73896c-ae1d-4d1b-aec4-bc6eac5914b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd43b182-1055-443f-9cef-ee48b6469707",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Art - Stéphany Hernandez",
+      "targets": [
+        ["linkText=Art - Stéphany Hernandez", "linkText"],
+        ["css=.room:nth-child(22) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Art - Stéphany Hernandez')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[22]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Art-Stephany-Hernandez')]", "xpath:href"],
+        ["xpath=//li[22]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Art - Stéphany Hernandez')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57cbbcc7-0622-4ed0-b297-ec26b8f4388a",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Stéphany Hernandez')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "714cbc78-9bff-43d0-bc01-bbd927cf3c82",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Stéphany Hernandez')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2dcd715-6ed6-483d-a4e8-73c730958c32",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Stéphany Hernandez')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ef8343e-44c4-4402-ac5b-cc7d34670d4e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Stéphany Hernandez')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33d876b9-634a-41be-ae79-7957313e272c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd35322f-52ae-4d92-baeb-9631dfa50ecc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Art - Sarah Fefer",
+      "targets": [
+        ["linkText=Art - Sarah Fefer", "linkText"],
+        ["css=.room:nth-child(23) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Art - Sarah Fefer')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[23]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Art-Sarah-Fefer')]", "xpath:href"],
+        ["xpath=//li[23]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Art - Sarah Fefer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ad66750-aa60-46b5-a644-c3910274b853",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Sarah Fefer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "872dbb70-90e1-4477-9c71-417b3637e442",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Sarah Fefer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f22c1d59-4b98-425b-8b52-6180ac6941b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10d95bc6-c001-4019-a5d4-21d3d30e2746",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Art - Beverly Landry",
+      "targets": [
+        ["linkText=Art - Beverly Landry", "linkText"],
+        ["css=.room:nth-child(24) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Art - Beverly Landry')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[24]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Art-Beverly-Landry')]", "xpath:href"],
+        ["xpath=//li[24]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Art - Beverly Landry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0765d402-20ee-4dfb-81d8-ea4ef825ee8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Beverly Landry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "851577bf-04ba-441d-bdf2-62cb1964cdf8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Beverly Landry')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffa029a4-23f4-42d6-8f38-89125cbe13bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27ecf6fa-7309-4268-a07b-17068cd14cb4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Art - Beadweaving - Craig Commanda",
+      "targets": [
+        ["linkText=Art - Beadweaving - Craig Commanda", "linkText"],
+        ["css=.room:nth-child(25) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Art - Beadweaving - Craig Commanda')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[25]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Art-Craig-Commanda')]", "xpath:href"],
+        ["xpath=//li[25]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Art - Beadweaving - Craig Commanda')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c13e283e-a41a-4500-a953-be5b75a2b8cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9feb0893-2554-4777-9d4b-defdab4b9fdd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Art - Beadweaving - Craig Commanda')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f6c2557-19aa-4e1b-bed4-5c465aeb09aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40709408-fce7-4c5a-805d-fb496e0b664f",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "768,253"
+    }, {
+      "id": "251e5db3-d6a0-4d6c-bf08-eb1c2357a7c8",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "768,253"
+    }, {
+      "id": "1371ef0f-1c81-483f-a868-6c48420a79b7",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "768,253"
+    }, {
+      "id": "ad78a6f4-b4fc-40c4-953c-6e51cc29e88a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Robotique et Codage - Robotics and Code",
+      "targets": [
+        ["linkText=Robotique et Codage - Robotics and Code", "linkText"],
+        ["css=.room:nth-child(26) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Robotique et Codage - Robotics and Code')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[26]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Robotics')]", "xpath:href"],
+        ["xpath=//li[26]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Robotique et Codage - Robotics and Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "775a0995-588a-4cb0-a594-5ae828d99a44",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Robotique et Codage - Robotics and Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1b7f7fd-5dbc-4d2f-b7f2-2d2cd90e647c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Robotique et Codage - Robotics and Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40973ade-1723-4842-9c1d-f1385cf8ad99",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Robotique et Codage - Robotics and Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18aed9b0-09fd-46fb-ba45-9feda447f765",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "134584ad-2b95-40d3-9c97-92e0f33325b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Couture - Sewing - Sandra Poirier",
+      "targets": [
+        ["linkText=Couture - Sewing - Sandra Poirier", "linkText"],
+        ["css=.room:nth-child(27) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Couture - Sewing - Sandra Poirier')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[27]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Sewing-Sandra-Poirier')]", "xpath:href"],
+        ["xpath=//li[27]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Couture - Sewing - Sandra Poirier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56eb6654-4c23-49cd-86ec-8e743fd3b8ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Couture - Sewing - Sandra Poirier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b10a571c-daad-44ae-a29b-a6ac9aa285d1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Couture - Sewing - Sandra Poirier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76c87049-3ed8-41f3-9c23-7b3b8c197961",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9150966f-8d78-4f27-9ef5-7a5f14fb5ee4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Essentrics - Dawn Mellish",
+      "targets": [
+        ["linkText=Essentrics - Dawn Mellish", "linkText"],
+        ["css=.room:nth-child(28) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Essentrics - Dawn Mellish')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[28]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Essentrics-Dawn-Melish')]", "xpath:href"],
+        ["xpath=//li[28]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Essentrics - Dawn Mellish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71ca92a1-5f9b-4432-9073-23db7ad037fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Essentrics - Dawn Mellish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14c99831-fb87-41a8-8c4d-415d2b2c7b48",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Essentrics - Dawn Mellish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d27c797-cfd7-46e7-ba73-e1b72f5ddaf0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d8d10a1-0860-4dde-8b3d-9fa7fae33912",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Yoga - Zoubida Maghrabi",
+      "targets": [
+        ["linkText=Yoga - Zoubida Maghrabi", "linkText"],
+        ["css=.room:nth-child(29) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Yoga - Zoubida Maghrabi')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[29]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Yoga-Zoubida-Maghrabi')]", "xpath:href"],
+        ["xpath=//li[29]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Yoga - Zoubida Maghrabi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b38f6b1d-bc6a-4cf2-bb5f-25d8e298814b",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59b12fb6-8b98-49c5-b6f8-9196423ee4ba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Yoga - Zoubida Maghrabi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b0d82f4-8504-4792-b162-ae15c071ad38",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efc3bf8d-6d6d-4049-8ad3-56d690f67bf3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Aventures culinaires - Cooking Jeff Pidgeon",
+      "targets": [
+        ["linkText=Aventures culinaires - Cooking Jeff Pidgeon", "linkText"],
+        ["css=.room:nth-child(30) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Aventures culinaires - Cooking Jeff Pidgeon')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[30]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Cooking-Jeff-Pidgeon')]", "xpath:href"],
+        ["xpath=//li[30]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Aventures culinaires - Cooking Jeff Pidgeon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94e7b749-91c0-4a4e-88fc-162e6c13e559",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Aventures culinaires - Cooking Jeff Pidgeon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30e656c3-ce15-4700-9f86-8367157242ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Aventures culinaires - Cooking Jeff Pidgeon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b08976c0-adb6-46ff-899f-a5c8cd481372",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Aventures culinaires - Cooking Jeff Pidgeon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5278475-72c2-44ce-9d10-4474c1531820",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Aventures culinaires - Cooking Jeff Pidgeon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "626265a8-bc77-47db-8bb0-d7db737a036c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Aventures culinaires - Cooking Jeff Pidgeon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40908cc9-c9bb-4d8e-966f-dede31e44ef1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "010c7413-f66b-47e6-9ea4-1d5a81060822",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Living Out Loud (LOL) - Karen Natho",
+      "targets": [
+        ["linkText=Living Out Loud (LOL) - Karen Natho", "linkText"],
+        ["css=.room:nth-child(31) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Living Out Loud (LOL) - Karen Natho')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[31]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-LOL-Karen-Natho')]", "xpath:href"],
+        ["xpath=//li[31]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Living Out Loud (LOL) - Karen Natho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5548266-2d02-4cf8-b1d1-4d1ce6c63972",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Living Out Loud (LOL) - Karen Natho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a76cdae8-6eec-4c3c-a974-217a23131f73",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Living Out Loud (LOL) - Karen Natho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7aac2a4-3fa5-40fa-a9b2-273285865de5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Living Out Loud (LOL) - Karen Natho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "043fce87-ac3f-4e39-ae82-72b6d44a50cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3817c05-a16e-4b8e-9fdf-230515880d48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Échecs - Chess - Julien Demers",
+      "targets": [
+        ["linkText=Échecs - Chess - Julien Demers", "linkText"],
+        ["css=.room:nth-child(32) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Échecs - Chess - Julien Demers')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[32]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Chess-Julien-Demers')]", "xpath:href"],
+        ["xpath=//li[32]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Échecs - Chess - Julien Demers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d4f9cf8-4527-480f-9764-e2c69fb1c611",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Échecs - Chess - Julien Demers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbf955f5-17b2-4ea2-a25c-d1d62ce79af1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Échecs - Chess - Julien Demers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23d1c515-aa98-4b72-89b3-fa93f1670cbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e3d6c24-ae8b-483c-9757-81651ffff7ac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat - Tutoring Classroom - Camille",
+      "targets": [
+        ["linkText=Salle de tutorat - Tutoring Classroom - Camille", "linkText"],
+        ["css=.room:nth-child(34) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat - Tutoring Classroom - Camille')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[34]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Camille')]", "xpath:href"],
+        ["xpath=//li[34]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat - Tutoring Classroom - Camille')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49dfa3b4-b48d-4535-ae8d-58360a2e76ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Camille')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56da7512-40d7-47af-af88-bd750e5a7ac8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Camille')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab1b6cb-2054-49ad-99e6-8e952c025dea",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1341cf0-407d-4aed-a3ff-41619bd23a02",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat - Tutoring Classroom - Cristina",
+      "targets": [
+        ["linkText=Salle de tutorat - Tutoring Classroom - Cristina", "linkText"],
+        ["css=.room:nth-child(35) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat - Tutoring Classroom - Cristina')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[35]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Cristina')]", "xpath:href"],
+        ["xpath=//li[35]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat - Tutoring Classroom - Cristina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d18e31e3-7b2a-4e3b-9795-315ec950cb39",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Cristina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b04c071a-3e10-4f46-84bc-da4ad212b42a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Cristina')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c262d54e-9bd7-4f52-ac5e-bacc9fc8ad86",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "106cbd83-7ddd-4fcd-8a2d-9cd2d576a3df",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,369"
+    }, {
+      "id": "edd62ad5-9dee-4ce9-a4cb-276527953440",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,369"
+    }, {
+      "id": "fe86034e-c053-43ef-b8ce-0469bde689db",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "772,369"
+    }, {
+      "id": "15dfc87b-9cf3-49cf-ab02-eac6891598c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat/Tutoring Classroom - Ivan",
+      "targets": [
+        ["linkText=Salle de tutorat/Tutoring Classroom - Ivan", "linkText"],
+        ["css=.room:nth-child(36) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat/Tutoring Classroom - Ivan')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[36]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Ivan')]", "xpath:href"],
+        ["xpath=//li[36]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat/Tutoring Classroom - Ivan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87628fa5-a86e-4c12-9cd6-3e1bdcbe1f7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat/Tutoring Classroom - Ivan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c69c9adc-13f2-42bb-9f8a-0cdda4625222",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat/Tutoring Classroom - Ivan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36257530-83a3-42f5-b44e-751b5116d35c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6371fb6e-f96c-4057-8fee-cd843c065e94",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat - Tutoring Classroom - Izzy",
+      "targets": [
+        ["linkText=Salle de tutorat - Tutoring Classroom - Izzy", "linkText"],
+        ["css=.room:nth-child(37) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat - Tutoring Classroom - Izzy')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[37]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Izzy')]", "xpath:href"],
+        ["xpath=//li[37]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat - Tutoring Classroom - Izzy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84e782f8-738f-4137-a2e0-f43cb9fdd68f",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Izzy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25b729dd-a5db-4b25-a2e0-a9bc1a25d5ee",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Izzy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4ef6c87-1c82-4fef-a8b4-107bcac9505a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51704e4f-8756-471b-96d6-041bf735df14",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat - Tutoring Classroom - Juman",
+      "targets": [
+        ["linkText=Salle de tutorat - Tutoring Classroom - Juman", "linkText"],
+        ["css=.room:nth-child(38) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat - Tutoring Classroom - Juman')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[38]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Juman')]", "xpath:href"],
+        ["xpath=//li[38]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat - Tutoring Classroom - Juman')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80f3b384-bf39-43dc-a0a4-12df9b751cce",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Juman')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "307e2fce-85a2-40ec-bedd-e23223e9a0e7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Juman')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5a0755d-5bb5-46a9-a1da-7a7fefd12935",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fe166fc-de04-4858-9307-849a5fd43117",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat - Tutoring Classroom - Natasha",
+      "targets": [
+        ["linkText=Salle de tutorat - Tutoring Classroom - Natasha", "linkText"],
+        ["css=.room:nth-child(39) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat - Tutoring Classroom - Natasha')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[39]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Natasha')]", "xpath:href"],
+        ["xpath=//li[39]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat - Tutoring Classroom - Natasha')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93865e35-270e-4fa3-b43c-b2cdff1285e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Natasha')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf9337f8-6502-4727-9b78-7ceada443c54",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Natasha')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e9a437b-19ca-43c3-a970-6041431a1f66",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "966d7cd2-66e3-4e78-ab96-f00a510cdd8f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat - Tutoring Classroom - Philippe",
+      "targets": [
+        ["linkText=Salle de tutorat - Tutoring Classroom - Philippe", "linkText"],
+        ["css=.room:nth-child(40) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat - Tutoring Classroom - Philippe')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[40]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Philippe')]", "xpath:href"],
+        ["xpath=//li[40]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat - Tutoring Classroom - Philippe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a674d69-e535-45ec-8ee0-c135812983f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Philippe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec94ed33-595c-4c9d-9589-bfee6fb91d86",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Philippe')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ed69683-2d04-4946-8b0a-0193eb5baca7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e069915f-583d-4025-850b-bba810355815",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de tutorat - Tutoring Classroom - Solon",
+      "targets": [
+        ["linkText=Salle de tutorat - Tutoring Classroom - Solon", "linkText"],
+        ["css=.room:nth-child(41) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de tutorat - Tutoring Classroom - Solon')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[41]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tutoring-Solon')]", "xpath:href"],
+        ["xpath=//li[41]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de tutorat - Tutoring Classroom - Solon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c50551d-48c4-462c-819a-8f733794e1a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Solon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "575ff5dd-0db1-4fbc-9ec8-49eec3a9b96c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de tutorat - Tutoring Classroom - Solon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "614d9b19-65ac-492c-af54-5aec43480b79",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e70d645-fc3f-4d17-905d-5b4bb7fdb038",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "757,375"
+    }, {
+      "id": "172f969e-49fc-4385-8eb7-d6ee4e73890e",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "757,375"
+    }, {
+      "id": "8b376fe8-b109-4533-8ee5-4166c0ea23c1",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "757,375"
+    }, {
+      "id": "d276ece9-bef2-4fc6-8b40-9ae236afddd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45f664dc-daad-4dc9-a1ab-8ae573c89c4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.room:nth-child(43)",
+      "targets": [
+        ["css=.room:nth-child(43)", "css:finder"],
+        ["xpath=//li[@name='Salle de danse - Dance Studio - Principale - Main']", "xpath:attributes"],
+        ["xpath=//ul[@id='menu']/li[43]", "xpath:idRelative"],
+        ["xpath=//li[43]", "xpath:position"],
+        ["xpath=//li[contains(.,'Salle de danse - Dance Studio - Principale - Main')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70c84091-16d0-493a-a899-674da57ae18b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Salle de danse - Dance Studio - Principale - Main",
+      "targets": [
+        ["linkText=Salle de danse - Dance Studio - Principale - Main", "linkText"],
+        ["css=.room:nth-child(43) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Salle de danse - Dance Studio - Principale - Main')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[43]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Dance-Main-Studio')]", "xpath:href"],
+        ["xpath=//li[43]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Salle de danse - Dance Studio - Principale - Main')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ebb6158-dff4-4f2c-875e-4826cacaee62",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c0a3ab0-e94b-4cfa-9018-3b9e51adc5ba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Salle de danse - Dance Studio - Principale - Main')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "83960360-779c-443c-a724-6c7ed35961fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=logo",
+      "targets": [
+        ["id=logo", "id"],
+        ["css=#logo", "css:finder"],
+        ["xpath=//div[@id='logo']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76024c74-c8fd-43a6-a63f-dc0506316565",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6820195-c94f-44b9-908b-8bd7389c5e47",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Studio de danse - Dance Studio - Triple Threat",
+      "targets": [
+        ["linkText=Studio de danse - Dance Studio - Triple Threat", "linkText"],
+        ["css=.room:nth-child(44) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Studio de danse - Dance Studio - Triple Threat')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[44]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Dance-Studio-Triple-Threat')]", "xpath:href"],
+        ["xpath=//li[44]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Studio de danse - Dance Studio - Triple Threat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d84ece98-1fe4-426b-a857-b4279aa2eeb2",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4613d9d-f126-40e4-85b6-beeef3311045",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Studio de danse - Dance Studio - Triple Threat')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1c7b5a3-f797-4f5b-942d-9f4783aadc7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26f21090-614a-44f3-9697-19fd1ca8ea14",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "756,448"
+    }, {
+      "id": "cd81267e-0f5a-4233-9ebc-6213b9739a7c",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "756,448"
+    }, {
+      "id": "64ff16a1-1da9-460f-9ca1-dd6005f20af6",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "756,448"
+    }, {
+      "id": "6b20f61d-dde1-41ec-b545-180eeb58bcbb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voix - Voice - Colin Enright",
+      "targets": [
+        ["linkText=Voix - Voice - Colin Enright", "linkText"],
+        ["css=.room:nth-child(46) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Voix - Voice - Colin Enright')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[46]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Voice-Colin-Enright')]", "xpath:href"],
+        ["xpath=//li[46]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voix - Voice - Colin Enright')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "18b55048-7860-4212-bffa-fd048401c05e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Voix - Voice - Colin Enright')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d1f87d4-5bc9-452a-bd5a-cc44680638d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "007c257c-c18c-4cde-bb59-7f157fbc4229",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voix - Voice - Félix Dupont-Foisy",
+      "targets": [
+        ["linkText=Voix - Voice - Félix Dupont-Foisy", "linkText"],
+        ["css=.room:nth-child(47) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Voix - Voice - Félix Dupont-Foisy')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[47]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Voice-Felix-Dupont-Foisy')]", "xpath:href"],
+        ["xpath=//li[47]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voix - Voice - Félix Dupont-Foisy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb35a410-362f-494b-a6d8-1a218b2707af",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Voix - Voice - Félix Dupont-Foisy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33ea83ab-ef27-4198-8da1-9263717ee67d",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Voix - Voice - Félix Dupont-Foisy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35c82ea3-56d1-4013-8834-3dfdb097417f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Voix - Voice - Félix Dupont-Foisy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c4689f0-28c8-42de-b015-bb9acf7c15dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3718afb-7b5f-4548-ab73-db5e522eea3c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "774,496"
+    }, {
+      "id": "29211062-3641-4892-8eb2-570428e3ab77",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "774,496"
+    }, {
+      "id": "ed7aad36-5cb5-4dec-bac7-03f8708707de",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "774,496"
+    }, {
+      "id": "eb3a6e88-3294-4297-b9e8-f8c56f5e2652",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voix - Voice - Marie-Eve Chaput",
+      "targets": [
+        ["linkText=Voix - Voice - Marie-Eve Chaput", "linkText"],
+        ["css=.room:nth-child(48) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Voix - Voice - Marie-Eve Chaput')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[48]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Voice-Marie-Eve-Chaput')]", "xpath:href"],
+        ["xpath=//li[48]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Voix - Voice - Marie-Eve Chaput')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5faa498-685d-406b-b4e1-2205c32698ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Voix - Voice - Marie-Eve Chaput')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd59d02d-9963-4a7a-9b56-43234bf59ec5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Voix - Voice - Marie-Eve Chaput')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d70e255a-f00f-4b07-8b00-b919effa82a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8320b74-bd6a-4c55-9f84-a17d2ed3acc3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Aset Sabdullaeva",
+      "targets": [
+        ["linkText=Piano - Aset Sabdullaeva", "linkText"],
+        ["css=.room:nth-child(49) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Aset Sabdullaeva')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[49]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Aset-Sabdullaeva')]", "xpath:href"],
+        ["xpath=//li[49]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Aset Sabdullaeva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11a2c369-4a02-458e-8b54-37fdfacac3a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Aset Sabdullaeva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5fb23f-2976-4665-9e74-1078423166a4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Aset Sabdullaeva')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4d96066-1692-40ef-86bb-0c36fceabe8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22374a86-0be0-42f9-b4dd-9c7caac2b037",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Becky Reesor",
+      "targets": [
+        ["linkText=Piano - Becky Reesor", "linkText"],
+        ["css=.room:nth-child(50) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Becky Reesor')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[50]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Becky-Reesor')]", "xpath:href"],
+        ["xpath=//li[50]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Becky Reesor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdaed1bb-b527-428c-a077-9e7266ea7f27",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Becky Reesor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd393df-2eef-4dd2-bbe0-16d596f26e0e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Becky Reesor')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27a361f2-e28f-44c2-88b8-a0965ef49f1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f07fe1ef-d34e-456c-8aa0-c44e4e82a389",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Cristina Navarro",
+      "targets": [
+        ["linkText=Piano - Cristina Navarro", "linkText"],
+        ["css=.room:nth-child(51) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Cristina Navarro')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[51]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Cristina-Navarro')]", "xpath:href"],
+        ["xpath=//li[51]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Cristina Navarro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fab11ff-0810-4361-bd08-f4721cf7ff6c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Cristina Navarro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d5f2467-9c23-498a-848f-0edff1ca3431",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Cristina Navarro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a906c584-dfaf-48ed-96a6-a335324817d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa7de941-545e-41ac-b78a-1d994b4118f4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Phillip Cho",
+      "targets": [
+        ["linkText=Piano - Phillip Cho", "linkText"],
+        ["css=.room:nth-child(52) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Phillip Cho')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[52]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Phillip-Cho')]", "xpath:href"],
+        ["xpath=//li[52]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Phillip Cho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07a34189-6172-4b10-9221-4644dd9be129",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Phillip Cho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f31a2179-79d3-46bf-b9aa-1401059ed3f2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Phillip Cho')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae296d65-e14f-425d-af8e-625365781bfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d6d69b9-3f22-4648-b941-ed8b77b02bc8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Rose Nemeth",
+      "targets": [
+        ["linkText=Piano - Rose Nemeth", "linkText"],
+        ["css=.room:nth-child(53) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Rose Nemeth')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[53]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Rose-Nemeth')]", "xpath:href"],
+        ["xpath=//li[53]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Rose Nemeth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "150d24b8-0bec-4c55-8a6c-d300b51f3507",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Rose Nemeth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a1b1770-3644-4bdb-96de-7e8180637ee7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Rose Nemeth')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd473552-af86-4f82-aa48-03bc34dcf00a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cfcc61f-f5df-408c-998e-ecf55461cde3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Suzanne Ozorak",
+      "targets": [
+        ["linkText=Piano - Suzanne Ozorak", "linkText"],
+        ["css=.room:nth-child(54) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Suzanne Ozorak')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[54]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Suzanne-Ozorak')]", "xpath:href"],
+        ["xpath=//li[54]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Suzanne Ozorak')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68d779a3-323a-42a9-8dfe-d6dc72537a11",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Suzanne Ozorak')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9518e2ae-6b33-46ba-8962-0cf67142b675",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Suzanne Ozorak')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f810bf56-73d9-498f-bb75-8bc57e39709f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35491a0c-c72d-4e67-b5f4-fe40f428e4ba",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "767,514"
+    }, {
+      "id": "28796f0d-80c7-4d51-930e-4becd4f343ec",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "767,514"
+    }, {
+      "id": "b8ff2f84-0f57-4c34-a726-2dbd651bfb48",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "767,514"
+    }, {
+      "id": "2378e184-40ec-41d6-b281-ab8af4a710b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Tanya De Villiers",
+      "targets": [
+        ["linkText=Piano - Tanya De Villiers", "linkText"],
+        ["css=.room:nth-child(55) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Tanya De Villiers')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[55]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Tanya-De-Villiers')]", "xpath:href"],
+        ["xpath=//li[55]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Tanya De Villiers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aff0abc-d5b6-4d80-847b-cc1265c9090c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Tanya De Villiers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "67c0780f-fd69-4f51-a3ff-a48ef13e540b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Tanya De Villiers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74d46690-38e0-4730-9361-852989add46f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e58bdbde-b546-47f0-b064-234643f8008a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Piano - Viktor Lazarov",
+      "targets": [
+        ["linkText=Piano - Viktor Lazarov", "linkText"],
+        ["css=.room:nth-child(56) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Piano - Viktor Lazarov')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[56]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Piano-Viktor-Lazarov')]", "xpath:href"],
+        ["xpath=//li[56]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Piano - Viktor Lazarov')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9adb8c0-c760-45aa-bf4a-b625ebb531b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Viktor Lazarov')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62c53d01-da71-4bd1-9fa4-9e21a254a674",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Piano - Viktor Lazarov')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de9ff0b1-e568-42bf-8308-6711625a870b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6997f095-7ef6-4566-92a7-f7d251e35e31",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Violon - Violin - Anastasia Virlan",
+      "targets": [
+        ["linkText=Violon - Violin - Anastasia Virlan", "linkText"],
+        ["css=.room:nth-child(57) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Violon - Violin - Anastasia Virlan')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[57]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online_Violin-Anastasia-Virlan')]", "xpath:href"],
+        ["xpath=//li[57]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Violon - Violin - Anastasia Virlan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22bb0acb-ee85-4045-b56b-24f2d4e9fab1",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Anastasia Virlan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec6f1ed5-525d-4328-b614-c71ed0dc6de3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Anastasia Virlan')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6536759-9a29-431e-8477-70993fd3960c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d69f025f-a657-45d3-a8f3-26f97e5a6e58",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Violon - Violin - Anne Saint-Cyr",
+      "targets": [
+        ["linkText=Violon - Violin - Anne Saint-Cyr", "linkText"],
+        ["css=.room:nth-child(58) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Violon - Violin - Anne Saint-Cyr')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[58]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Violin-Anne-Saint-Cyr')]", "xpath:href"],
+        ["xpath=//li[58]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Violon - Violin - Anne Saint-Cyr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f6bf1bb-1cf2-40fb-8708-d094de53c0db",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Anne Saint-Cyr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bd7f41c-788b-49c6-ad29-11af58e999af",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Anne Saint-Cyr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35c17bd9-8e46-45c4-a01e-943ec537d7f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Anne Saint-Cyr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c094518-7a76-4575-8148-9a48dcd8e799",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Anne Saint-Cyr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42dbf8fd-c993-4050-9230-5359e3aee4d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42f7fc94-cc7d-420d-b68d-533f0611e598",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Violon - Violin - Heather Schnarr",
+      "targets": [
+        ["linkText=Violon - Violin - Heather Schnarr", "linkText"],
+        ["css=.room:nth-child(59) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Violon - Violin - Heather Schnarr')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[59]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Violin-Heather-Schnarr')]", "xpath:href"],
+        ["xpath=//li[59]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Violon - Violin - Heather Schnarr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31bcc17b-4aa9-457f-af1c-994b42e41c34",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Heather Schnarr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61626058-c9f8-4101-8e14-5a70650048fc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Heather Schnarr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e4e530b-17fa-440b-9c9d-aed807048ce1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6095f8da-b95b-4b38-88ac-b16328a46b42",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "764,550"
+    }, {
+      "id": "b60ae46d-936d-480a-9d32-32dd3e340757",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "764,550"
+    }, {
+      "id": "ff3f3119-f942-4267-8b6b-0d9f77b6b5ce",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "764,550"
+    }, {
+      "id": "1cb87011-3615-493e-8f1c-921b91e4401c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,537"
+    }, {
+      "id": "403816e0-07a5-4501-bab1-29c84c0221ba",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,537"
+    }, {
+      "id": "ecf29ecf-d278-4dd8-8f42-c95354825fec",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=menu",
+      "targets": [
+        ["id=menu", "id"],
+        ["css=#menu", "css:finder"],
+        ["xpath=//ul[@id='menu']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/ul", "xpath:idRelative"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": "766,537"
+    }, {
+      "id": "18cc3e21-2bd0-4430-822e-c68fd970c0e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Violon - Violin - Olga Semenova",
+      "targets": [
+        ["linkText=Violon - Violin - Olga Semenova", "linkText"],
+        ["css=.room:nth-child(60) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Violon - Violin - Olga Semenova')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[60]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Violin-Olga-Semenova')]", "xpath:href"],
+        ["xpath=//li[60]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Violon - Violin - Olga Semenova')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "979cfa90-606d-4622-bead-dfc20788acfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Olga Semenova')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54d4392f-0d31-4cd9-8344-97ad72f1a6d2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon - Violin - Olga Semenova')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9537677-6d38-4127-b597-83fda370c810",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f5c9f81-d050-42f0-b366-91ddeb55ded1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Violon Suzuki Violin - Ophélie Jobin",
+      "targets": [
+        ["linkText=Violon Suzuki Violin - Ophélie Jobin", "linkText"],
+        ["css=.room:nth-child(61) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Violon Suzuki Violin - Ophélie Jobin')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[61]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Suzuki-Violin-Ophelie-Jobin')]", "xpath:href"],
+        ["xpath=//li[61]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Violon Suzuki Violin - Ophélie Jobin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e14a243a-0d28-44a3-85e9-6c3456856c42",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon Suzuki Violin - Ophélie Jobin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00ef238a-0eb8-44ed-af09-a7b95462dd32",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Violon Suzuki Violin - Ophélie Jobin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "587f7e39-cf54-42b3-b8ef-8bc73866aafc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "656c788d-f06a-44cb-8716-ffc7225eb921",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Flùte - Flute - Danielle Baro",
+      "targets": [
+        ["linkText=Flùte - Flute - Danielle Baro", "linkText"],
+        ["css=.room:nth-child(62) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Flùte - Flute - Danielle Baro')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[62]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Flute-Danielle-Baro')]", "xpath:href"],
+        ["xpath=//li[62]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Flùte - Flute - Danielle Baro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00bf97b5-47e9-44ad-beb3-badbb441c4e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Flùte - Flute - Danielle Baro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91175312-c87e-41f3-911f-2dc66ae59395",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Flùte - Flute - Danielle Baro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "599a56e5-a64d-4bce-81ec-209c24936233",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e78ef0e4-bfab-4878-a416-e50b048b015c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Guitare & Ukulélé - Alexandre Bernier",
+      "targets": [
+        ["linkText=Guitare & Ukulélé - Alexandre Bernier", "linkText"],
+        ["css=.room:nth-child(63) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Guitare & Ukulélé - Alexandre Bernier')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[63]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Guitar-Ukulele-Alexandre-Bernier')]", "xpath:href"],
+        ["xpath=//li[63]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guitare & Ukulélé - Alexandre Bernier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c22d3706-31e7-41bf-96cd-15eaa982277e",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare & Ukulélé - Alexandre Bernier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d9a9f1e-c5d8-4781-8bc6-a03b31721631",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare & Ukulélé - Alexandre Bernier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1fe88a4-4248-4692-b628-ef6dbc2563ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare & Ukulélé - Alexandre Bernier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3aad04b6-5a24-442e-8ba3-1d755c4ee441",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare & Ukulélé - Alexandre Bernier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3ed9818-2b74-44ef-8b3f-3bdc9c01b690",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99a28142-8d52-4b9b-aef8-0601639e7a7c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Guitare - Ukulélé - Robert Rioux Calogero",
+      "targets": [
+        ["linkText=Guitare - Ukulélé - Robert Rioux Calogero", "linkText"],
+        ["css=.room:nth-child(64) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[64]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Guitar-Ukulele-Robert-Rioux-Calogero')]", "xpath:href"],
+        ["xpath=//li[64]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f15e23e5-c76e-401f-a5b2-4e82a2043af2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Guitare - Ukulélé - Robert Rioux Calogero",
+      "targets": [
+        ["linkText=Guitare - Ukulélé - Robert Rioux Calogero", "linkText"],
+        ["css=.room:nth-child(64) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[64]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Guitar-Ukulele-Robert-Rioux-Calogero')]", "xpath:href"],
+        ["xpath=//li[64]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6048d37e-5345-4763-80ac-ad788a3056f8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Guitare - Ukulélé - Robert Rioux Calogero",
+      "targets": [
+        ["linkText=Guitare - Ukulélé - Robert Rioux Calogero", "linkText"],
+        ["css=.router-link-exact-active", "css:finder"],
+        ["xpath=//a[contains(text(),'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[64]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Guitar-Ukulele-Robert-Rioux-Calogero')]", "xpath:href"],
+        ["xpath=//li[64]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b2435d3-2f12-4ad2-99e8-cc507e389b83",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "103830f3-4e41-49c8-bf0c-b45e838c74b2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Robert Rioux Calogero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43eb5905-376e-4e3a-a7ef-4245bc8b886c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1200c08a-c978-4e1b-9096-8e1ee32f15bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Guitare - Ukulélé - Pierre Clément",
+      "targets": [
+        ["linkText=Guitare - Ukulélé - Pierre Clément", "linkText"],
+        ["css=.room:nth-child(65) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Guitare - Ukulélé - Pierre Clément')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[65]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Guitar-Ukulele-Pierre-Clement')]", "xpath:href"],
+        ["xpath=//li[65]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guitare - Ukulélé - Pierre Clément')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3694515f-10fa-4d00-9ec9-30715dd23dfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Pierre Clément')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5607b43b-fd4e-43bb-ac4a-df9652ddad36",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "09d34da5-8e7a-47c2-b70b-680905b595e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//div[@id='lobby-screen']/div", "xpath:idRelative"],
+        ["xpath=//body/div/div/div/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8695e86-8af6-4bc8-b2bc-f836933182df",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "420db13e-a574-4d83-bcf3-a62d1370e84c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Pierre Clément')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "924c7aaa-dfb1-4ed3-a2c8-6d1f2e88867e",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Pierre Clément')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5f3f780-93ae-4192-ab2f-d8513d79c96d",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Pierre Clément')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc394eb-b647-4d08-aacf-a09ba6b65a29",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Pierre Clément')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e246479-775d-4760-adb7-35f82b25ade8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "673ff5d5-3c84-49d5-ad32-8f7fa75091ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Guitare - Ukulélé - Alison Notkin",
+      "targets": [
+        ["linkText=Guitare - Ukulélé - Alison Notkin", "linkText"],
+        ["css=.room:nth-child(66) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Guitare - Ukulélé - Alison Notkin')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[66]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Guitar-Ukulele-Alison-Notkin')]", "xpath:href"],
+        ["xpath=//li[66]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Guitare - Ukulélé - Alison Notkin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf44d9e8-cbea-4cf7-9a52-f25dd0ca18ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Alison Notkin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "228161da-34dc-4bc2-bd20-f0be9b3d2383",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Alison Notkin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3d5c583-f27b-4d32-8bca-5eef551d1509",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Alison Notkin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e956c8a-d14e-4cc3-a09f-ec88921f6ac5",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Alison Notkin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eefd94db-fb22-42b8-b5c9-3fbbc9fbbdec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Guitare - Ukulélé - Alison Notkin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3d2e418-965e-4eab-b442-a9cd7b9dbdb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d07f5b1-8495-4bd4-935a-85ee1018ecc4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Batterie - Drums - Pierre Goguen",
+      "targets": [
+        ["linkText=Batterie - Drums - Pierre Goguen", "linkText"],
+        ["css=.room:nth-child(67) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Batterie - Drums - Pierre Goguen')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[67]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Drums-Pierre-Goguen')]", "xpath:href"],
+        ["xpath=//li[67]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Batterie - Drums - Pierre Goguen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c042d734-7d9d-4e38-8f1b-be24550ca77b",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Batterie - Drums - Pierre Goguen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66e6be87-7e1c-4617-9100-e903643f5133",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Batterie - Drums - Pierre Goguen')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b5804b9-4148-4d8c-af91-4f67a25de8ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menuToggle > input",
+      "targets": [
+        ["css=#menuToggle > input", "css:finder"],
+        ["xpath=//input[@type='checkbox']", "xpath:attributes"],
+        ["xpath=//div[@id='menuToggle']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "878477a9-ad06-44fa-90bd-1547865ecb73",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Support technique - Tech Support",
+      "targets": [
+        ["linkText=Support technique - Tech Support", "linkText"],
+        ["css=.room:nth-child(68) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Support technique - Tech Support')]", "xpath:link"],
+        ["xpath=//ul[@id='menu']/li[68]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#/meet/Preville-Online-Tech-Support')]", "xpath:href"],
+        ["xpath=//li[68]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Support technique - Tech Support')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ced525e8-05d1-4907-917d-777994091646",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Support technique - Tech Support')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d8b5507-87fe-40ee-8f39-9a7d3335a1d7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='header']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Support technique - Tech Support')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e3819176-976a-48d6-acda-1379d7e2116b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["55ff70bd-5afe-4207-855e-f9d917813a03"]
+  }],
+  "urls": ["https://arts.centrepreville.org/"],
+  "plugins": []
+}
