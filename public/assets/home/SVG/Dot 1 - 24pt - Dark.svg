@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
   <g id="House">
     <circle cx="18" cy="18" r="16" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-    <path d="M19.3,28H16.94V11.2h-.05l-3.56,3-1.4-1.71,5.32-4.31H19.3Z" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
+    <path d="M20.3,28H17.94V11.2h-.05l-3.56,3-1.4-1.71,5.32-4.31H20.3Z" fill="#fff" stroke="#fff" stroke-miterlimit="10"/>
   </g>
 </svg>
