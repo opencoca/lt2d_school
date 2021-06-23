@@ -1,6 +1,6 @@
 #app_opener {
 	cursor: pointer;
-	height: 28px;
+	height: 28px !important;
 }
 
 #app_opener:focus {
