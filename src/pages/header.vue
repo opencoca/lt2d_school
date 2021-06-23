@@ -18,7 +18,7 @@
 			<h1>{{ roomTitle }}</h1>
 		</div>
 		<div class="fg fc">
-			<div>
+			<div v-if="switcher == true">
 				<a
 					><img
 						id="app_opener"
@@ -109,14 +109,17 @@ export default {
 		},
 		"breakoutRooms": {
 			type: Number,
-			default: 0
 		},
 		'room': Object,
 		'title': String,
+		'switcher': {
+			type: Boolean,
+			default: true
+		}
 	},
 	computed: {
 		breakRooms: function () {
-			return (this.breakoutRooms) ? this.breakoutRooms : this.room.classroom.breakout_rooms;
+			return (this.breakoutRooms != undefined) ? this.breakoutRooms : this.room.classroom.breakout_rooms;
 		},
 		roomTitle: function () {
 			return (this.title) ? this.title : this.room.name;

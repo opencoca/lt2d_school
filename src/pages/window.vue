@@ -15,7 +15,12 @@
 					value="meeting_fullscreen"
 				/>
 			</div>
-			<Header :room="thisRooms" />
+			<Header
+				:room="thisRooms"
+				:title="title"
+				:switcher="switcher"
+				:breakoutRooms="breakoutRooms"
+			/>
 			<div id="myModal" class="modal">
 				<!-- Modal content -->
 				<div class="modal-content">
@@ -52,7 +57,7 @@
 						</li>
 					</ul>
 				</div>
-				<slot/>
+				<slot />
 			</div>
 		</div>
 	</div>
@@ -70,6 +75,9 @@ export default {
 			type: Object
 		},
 		title: String,
+		breakoutRooms: Number,
+		// ...Header.options.props,
+		switcher: Boolean
 	}
 };
 </script>

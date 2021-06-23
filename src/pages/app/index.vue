@@ -1,5 +1,5 @@
 <template>
-	<Window :thisRooms="thisRooms" :title="thisRooms.name + 'App'">
+	<Window :thisRooms="thisRooms" :title="thisRooms.name + ' - App'" :switcher="false" :breakoutRooms="0">
 		<template
 			v-if="thisRooms.classroom.app_set[0].name == 'Shared Whiteboard'"
 		>
