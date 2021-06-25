@@ -1,0 +1,606 @@
+{
+  "id": "15918d49-44d3-400b-b478-dfd8df46e37e",
+  "version": "2.0",
+  "name": "Robotics_Room_Apps",
+  "url": "https://arts.centrepreville.org/#/meet/Preville-Online-Robotics/app",
+  "tests": [{
+    "id": "916d74f7-4c1f-4e48-8c77-c88064d27282",
+    "name": "Robotics_Room_Apps",
+    "commands": [{
+      "id": "88ce5c0b-29fd-450c-8340-7fab70b889c6",
+      "comment": "",
+      "command": "open",
+      "target": "https://arts.centrepreville.org/#/meet/Preville-Online-Robotics/app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d406533f-228f-433e-8d7d-a5d237348009",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "145ab4fd-c9ff-43db-94b9-2bd719f61093",
+      "comment": "",
+      "command": "type",
+      "target": "id=staticrypt-password",
+      "targets": [
+        ["id=staticrypt-password", "id"],
+        ["name=password", "name"],
+        ["css=#staticrypt-password", "css:finder"],
+        ["xpath=//input[@id='staticrypt-password']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "springonline2021"
+    }, {
+      "id": "4b5cfad6-fcb3-4c7d-a774-ea20d70aa53c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=staticrypt-password",
+      "targets": [
+        ["id=staticrypt-password", "id"],
+        ["name=password", "name"],
+        ["css=#staticrypt-password", "css:finder"],
+        ["xpath=//input[@id='staticrypt-password']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "84da5c12-df03-4233-a934-fb2122c830c8",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "10618f15-60ab-4809-8eeb-b2628303b297",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-8",
+      "targets": [
+        ["css=.col-md-8", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d765bc22-7bb3-4ea5-9909-70a8b9547f99",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=A blank Snap!",
+      "targets": [
+        ["linkText=A blank Snap!", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'A blank Snap!')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/blank/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'A blank Snap!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c280ac2d-9d88-49a2-b79b-48084582ae00",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2)",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[2]", "xpath:idRelative"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Moving the Sprite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "415de270-edb4-4ae1-8d4e-d573560e95ac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Moving the Sprite",
+      "targets": [
+        ["linkText=Moving the Sprite", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Moving the Sprite')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/move_sprite/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Moving the Sprite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5a17f0e-e5ea-49da-8c62-53d99a9a61fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3)",
+      "targets": [
+        ["css=li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[3]", "xpath:idRelative"],
+        ["xpath=//li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Driving the Sprite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cd82e4c-1bac-4f43-a538-135d647a5775",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Driving the Sprite",
+      "targets": [
+        ["linkText=Driving the Sprite", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Driving the Sprite')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/drive_sprite/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Driving the Sprite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dd187d9-c489-4f50-a9e1-4bd27ce06f78",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(4)",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[4]", "xpath:idRelative"],
+        ["xpath=//li[4]", "xpath:position"],
+        ["xpath=//li[contains(.,'Driving with signals and buttons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd5daad1-dfea-4dc0-bcce-47161ec4ba31",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Driving with signals and buttons",
+      "targets": [
+        ["linkText=Driving with signals and buttons", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Driving with signals and buttons')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/driving_with_signals_and_buttons/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Driving with signals and buttons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91b4ffd1-3148-4380-96c4-5899467fa41c",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4be061a-2968-4d2b-aee5-d370e9c3a672",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Coin",
+      "targets": [
+        ["linkText=Coin", "linkText"],
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Coin')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/coin_flip/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Coin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfa770ed-bed8-4657-87bb-971c3fa0e3c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ff17644-d97a-4f0f-9295-3aa2615e79a4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Signals and buttons",
+      "targets": [
+        ["linkText=Signals and buttons", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Signals and buttons')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/intro_signals/')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Signals and buttons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f450e72-605a-449d-bab9-009a709d820a",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f620111-b613-4d45-855b-18c7e20af2ef",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Shattered Launching with Get and Post",
+      "targets": [
+        ["linkText=Shattered Launching with Get and Post", "linkText"],
+        ["css=li:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shattered Launching with Get and Post')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/launch_api/')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shattered Launching with Get and Post')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f2f8c22-af10-4721-b2e8-85d88df0f420",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(8)",
+      "targets": [
+        ["css=li:nth-child(8)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[8]", "xpath:idRelative"],
+        ["xpath=//li[8]", "xpath:position"],
+        ["xpath=//li[contains(.,'Gets and Posts (using the Fetch API)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab4a50a3-5731-4e3a-afe0-f79052f1ca2b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Gets and Posts (using the Fetch API)",
+      "targets": [
+        ["linkText=Gets and Posts (using the Fetch API)", "linkText"],
+        ["css=li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Gets and Posts (using the Fetch API)')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/fetch/')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gets and Posts (using the Fetch API)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95a23430-a8fb-40a4-840a-2d0adbf97b8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(9)",
+      "targets": [
+        ["css=li:nth-child(9)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[9]", "xpath:idRelative"],
+        ["xpath=//li[9]", "xpath:position"],
+        ["xpath=//li[contains(.,'Shattered Beginning with Loops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0937a31-dff8-4f4e-af0d-cbdc6f4c39e5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Shattered Beginning with Loops",
+      "targets": [
+        ["linkText=Shattered Beginning with Loops", "linkText"],
+        ["css=li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shattered Beginning with Loops')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/beginning_with_loops/')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shattered Beginning with Loops')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "077c1569-6cc4-4721-9264-7f63ca5d1c7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(10)",
+      "targets": [
+        ["css=li:nth-child(10)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[10]", "xpath:idRelative"],
+        ["xpath=//li[10]", "xpath:position"],
+        ["xpath=//li[contains(.,'Shattered Shape Drawing Bot (using math and variables)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99169492-1974-48fa-99c6-69d8d2df2e31",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Shattered Shape Drawing Bot (using math and variables)",
+      "targets": [
+        ["linkText=Shattered Shape Drawing Bot (using math and variables)", "linkText"],
+        ["css=li:nth-child(10) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shattered Shape Drawing Bot (using math and variables)')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/draw_bot_01/')]", "xpath:href"],
+        ["xpath=//li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shattered Shape Drawing Bot (using math and variables)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37b5800b-fe59-4604-aa28-e2698ad90bbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(11)",
+      "targets": [
+        ["css=li:nth-child(11)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[11]", "xpath:idRelative"],
+        ["xpath=//li[11]", "xpath:position"],
+        ["xpath=//li[contains(.,'Shattered Drawing Stars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "779e939d-c64f-4042-8f3b-a47e64c04763",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Shattered Drawing Stars",
+      "targets": [
+        ["linkText=Shattered Drawing Stars", "linkText"],
+        ["css=li:nth-child(11) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shattered Drawing Stars')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[11]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/start_star_power/')]", "xpath:href"],
+        ["xpath=//li[11]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shattered Drawing Stars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50728108-61ed-42f8-a240-179f3b2cbd9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(12)",
+      "targets": [
+        ["css=li:nth-child(12)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[12]", "xpath:idRelative"],
+        ["xpath=//li[12]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ee4780d-f899-4da1-942a-bf85a0d49c65",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(12) > a",
+      "targets": [
+        ["css=li:nth-child(12) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shattered Graphing  - (HTTP ONLY eBrain blocks)')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[12]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/LS/')]", "xpath:href"],
+        ["xpath=//li[12]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ca9175c-2c73-4620-9ffa-107bb4d0e2d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60e691b4-1c06-4eb7-aa45-0ecfe544bdf9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Robot Control Blocks - (HTTP ONLY eBrain blocks)",
+      "targets": [
+        ["linkText=Robot Control Blocks - (HTTP ONLY eBrain blocks)", "linkText"],
+        ["css=li:nth-child(13) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Robot Control Blocks - (HTTP ONLY eBrain blocks)')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[13]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/robot_control_blocks/')]", "xpath:href"],
+        ["xpath=//li[13]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Robot Control Blocks - (HTTP ONLY eBrain blocks)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae7a7eed-23c3-4c20-aaf3-45728389351e",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(14)",
+      "targets": [
+        ["css=li:nth-child(14)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[14]", "xpath:idRelative"],
+        ["xpath=//li[14]", "xpath:position"],
+        ["xpath=//li[contains(.,'eBrain Blocks - (HTTP ONLY eBrain blocks)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e2f1292-4969-4b14-b7c8-c928781aa53a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=eBrain Blocks - (HTTP ONLY eBrain blocks)",
+      "targets": [
+        ["linkText=eBrain Blocks - (HTTP ONLY eBrain blocks)", "linkText"],
+        ["css=li:nth-child(14) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'eBrain Blocks - (HTTP ONLY eBrain blocks)')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[14]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/ebrain_blocks/')]", "xpath:href"],
+        ["xpath=//li[14]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'eBrain Blocks - (HTTP ONLY eBrain blocks)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95bf5983-9bf6-4fbb-a310-2f5ddf153a93",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4423143-3e54-4539-8954-ef49210d58ec",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Driving the Sprite and the Bot - (HTTP ONLY eBrain blocks)",
+      "targets": [
+        ["linkText=Driving the Sprite and the Bot - (HTTP ONLY eBrain blocks)", "linkText"],
+        ["css=li:nth-child(15) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Driving the Sprite and the Bot - (HTTP ONLY eBrain blocks)')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[15]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/drive_sprite_bot/')]", "xpath:href"],
+        ["xpath=//li[15]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Driving the Sprite and the Bot - (HTTP ONLY eBrain blocks)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec0ba2a-694a-46dd-b42c-7bace1dc4c2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(16)",
+      "targets": [
+        ["css=li:nth-child(16)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[16]", "xpath:idRelative"],
+        ["xpath=//li[16]", "xpath:position"],
+        ["xpath=//li[contains(.,'L-systems (with Text Printing)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16dbca97-4454-40ca-bc8d-e43d12bc82bd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=L-systems (with Text Printing)",
+      "targets": [
+        ["linkText=L-systems (with Text Printing)", "linkText"],
+        ["css=li:nth-child(16) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'L-systems (with Text Printing)')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[16]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/L-System/')]", "xpath:href"],
+        ["xpath=//li[16]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'L-systems (with Text Printing)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f94dc623-9aea-4af2-8a87-58ec9550fbc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(17)",
+      "targets": [
+        ["css=li:nth-child(17)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[17]", "xpath:idRelative"],
+        ["xpath=//li[17]", "xpath:position"],
+        ["xpath=//li[contains(.,'Painting with Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "554cc188-37ae-494f-b29d-c484c5f53881",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Painting with Code",
+      "targets": [
+        ["linkText=Painting with Code", "linkText"],
+        ["css=li:nth-child(17) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Painting with Code')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[17]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/painting/')]", "xpath:href"],
+        ["xpath=//li[17]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Painting with Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92035db3-7526-4ee5-82a8-48afe69176a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(18)",
+      "targets": [
+        ["css=li:nth-child(18)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[18]", "xpath:idRelative"],
+        ["xpath=//li[18]", "xpath:position"],
+        ["xpath=//li[contains(.,'Block Breaker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43915ab6-bb00-41da-84e6-f324a1a99e7a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(18)",
+      "targets": [
+        ["css=li:nth-child(18)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[18]", "xpath:idRelative"],
+        ["xpath=//li[18]", "xpath:position"],
+        ["xpath=//li[contains(.,'Block Breaker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "468bfac6-2a1a-4ce9-bc05-1fe35af9cca2",
+      "comment": "",
+      "command": "click",
+      "target": "css=ol",
+      "targets": [
+        ["css=ol", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol", "xpath:idRelative"],
+        ["xpath=//ol", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa79c3d3-fa71-4409-bfcb-0b3b9603086f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Walk 3d",
+      "targets": [
+        ["linkText=Walk 3d", "linkText"],
+        ["css=li:nth-child(19) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Walk 3d')]", "xpath:link"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[19]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/snaps/walk_3d/')]", "xpath:href"],
+        ["xpath=//li[19]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Walk 3d')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9e186fd-dcb9-4d76-a4d4-aa3eb94ca539",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vsc-initialized",
+      "targets": [
+        ["css=.vsc-initialized", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3bf1bda-d437-432c-8c55-d31895f1e68b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=li:nth-child(20)",
+      "targets": [
+        ["css=li:nth-child(20)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[20]", "xpath:idRelative"],
+        ["xpath=//li[20]", "xpath:position"],
+        ["xpath=//li[contains(.,'Driver')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1ed282e-7124-4c2a-9d1a-b5f8f52afaed",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(17)",
+      "targets": [
+        ["css=li:nth-child(17)", "css:finder"],
+        ["xpath=//div[@id='swup']/div/div/ol/li[17]", "xpath:idRelative"],
+        ["xpath=//li[17]", "xpath:position"],
+        ["xpath=//li[contains(.,'Painting with Code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "40ad4aba-af48-4f78-83a8-665c294857b0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["916d74f7-4c1f-4e48-8c77-c88064d27282"]
+  }],
+  "urls": ["https://arts.centrepreville.org/", "https://arts.centrepreville.org/#/meet/Preville-Online-Robotics", "https://arts.centrepreville.org/#/meet/Preville-Online-Robotics/app"],
+  "plugins": []
+}

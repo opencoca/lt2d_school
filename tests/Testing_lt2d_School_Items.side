@@ -1,0 +1,139 @@
+{
+  "id": "4391f6e4-cc35-44a7-959b-9ba87ce715e5",
+  "version": "2.0",
+  "name": "Testing_lt2d_School",
+  "url": "https://arts.centrepreville.org",
+  "tests": [{
+    "id": "cc2fcae0-538d-4f12-9159-cac832a35d1e",
+    "name": "Check_Items",
+    "commands": [{
+      "id": "e418531d-e06a-4773-b990-e28ed8436abc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75c734e2-546a-4eda-8554-aab22e82dd19",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39fd8832-2988-4938-abac-b3a8dc407b97",
+      "comment": "",
+      "command": "click",
+      "target": "id=staticrypt-password",
+      "targets": [
+        ["id=staticrypt-password", "id"],
+        ["name=password", "name"],
+        ["css=#staticrypt-password", "css:finder"],
+        ["xpath=//input[@id='staticrypt-password']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c613abf-3afc-4545-86ab-2f3f1bb66300",
+      "comment": "",
+      "command": "type",
+      "target": "id=staticrypt-password",
+      "targets": [
+        ["id=staticrypt-password", "id"],
+        ["name=password", "name"],
+        ["css=#staticrypt-password", "css:finder"],
+        ["xpath=//input[@id='staticrypt-password']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "springonline2021"
+    }, {
+      "id": "86bd327b-9c0d-495d-a866-f2c4ca3477b1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=staticrypt-password",
+      "targets": [
+        ["id=staticrypt-password", "id"],
+        ["name=password", "name"],
+        ["css=#staticrypt-password", "css:finder"],
+        ["xpath=//input[@id='staticrypt-password']", "xpath:attributes"],
+        ["xpath=//form[@id='staticrypt-form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "40839347-5e09-49ef-b948-2c703a09cc98",
+      "comment": "",
+      "command": "click",
+      "target": "id=header",
+      "targets": [
+        ["id=header", "id"],
+        ["css=#header", "css:finder"],
+        ["xpath=//div[@id='header']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3b04635-8251-45ca-8219-cac2ec4aed23",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=logoImg",
+      "targets": [
+        ["id=logoImg", "id"],
+        ["css=#logoImg", "css:finder"],
+        ["xpath=//img[@alt='Preville Logo']", "xpath:img"],
+        ["xpath=//img[@id='logoImg']", "xpath:attributes"],
+        ["xpath=//div[@id='logo']/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75b4fd63-82e6-4828-9352-a8d5f4dcee6d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#dot1 > img",
+      "targets": [
+        ["css=#dot1 > img", "css:finder"],
+        ["xpath=//a[@id='dot1']/img", "xpath:idRelative"],
+        ["xpath=//a[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "241c2532-a7e2-4863-977b-d39da3f66216",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.dot:nth-child(3) > span",
+      "targets": [
+        ["css=.dot:nth-child(3) > span", "css:finder"],
+        ["xpath=//div[@id='open']/a[3]/span", "xpath:idRelative"],
+        ["xpath=//a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92267b19-28e3-470f-aafd-ec9b633539c5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.support > span",
+      "targets": [
+        ["css=.support > span", "css:finder"],
+        ["xpath=//div[@id='open']/a[4]/span", "xpath:idRelative"],
+        ["xpath=//a[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fe9c0b03-f4a5-46ff-8a6f-cdaac7be87ce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cc2fcae0-538d-4f12-9159-cac832a35d1e"]
+  }],
+  "urls": ["https://arts.centrepreville.org/"],
+  "plugins": []
+}
