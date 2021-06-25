@@ -32,6 +32,7 @@
 						:class="{
 							current: $route.params.meet == item.classroom.meet
 						}"
+						onclick="closeMenu('room-menu')"
 					>
 						<router-link
 							:to="{
