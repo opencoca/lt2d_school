@@ -12,8 +12,7 @@
 			<iframe
 				allow="microphone; camera"
 				:src="
-					thisRooms.classroom.app_set[0].iframe +
-						thisRooms.name.split('/')[0]
+					[thisRooms.classroom.app_set[0].iframe, thisRooms.meet].join('-')
 				"
 				id="apps"
 				name="app_iframe"
