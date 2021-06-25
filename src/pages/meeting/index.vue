@@ -1,5 +1,5 @@
 <template>
-	<Window v-bind:thisRooms="thisRooms">
+	<Window v-bind:thisRooms="thisRooms" :switcher="true">
 		<iframe
 			style="width: 0%; height: calc(100% - 50px); border: none;"
 			src="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
