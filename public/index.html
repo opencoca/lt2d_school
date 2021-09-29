@@ -1,96 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-		<link rel="icon" href="/favicon.ico" />
-		<title>Latitude</title>
-	</head>
-	<body>
-		<noscript>
-			<strong
-				>We're sorry but LT2D doesn't work properly without JavaScript
-				enabled. Please enable it to continue.</strong
-			>
-		</noscript>
-		<div id="app"></div>
-		<!-- built files will be auto injected -->
-	</body>
 
-	<script type="text/javascript">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+	<link rel="icon" href="/favicon.ico" />
+
+	<title>Latitude</title>
+</head>
+
+<body>
+	<noscript>
+		<strong>We're sorry but LT2D doesn't work properly without JavaScript
+			enabled. Please enable it to continue.</strong>
+	</noscript>
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+</body>
+
+<script type="text/javascript">
 	var faq = false;
-	function breakout(t, link){
-			console.log("Clicked!")
-			var coll = document.getElementsByClassName("dot");
-			console.log(coll);
-			Array.from(coll).forEach(e => e.classList.remove("active"));
-			t.classList.add("active");
-			return false;
-		}
-		var count = 1;
-
-		function openWindowSide() {
-			var j;
-			var a;
-			try {
-				j = document.getElementById("jitsi");
-				a = document.getElementById("apps");
-				if (j === null || a === null){
-					throw "j or a == Null"
-				}
-			} catch (error) {
-				j = document.getElementById("list_jitsi");
-				a = document.getElementById("list_snap");
+	function closeMenu(id) {
+		var i = document.getElementById(id);
+		i.classList.remove("open")
+		syncState(id);
+	}
+	function toggleMenu(button) {
+		var i = document.getElementById(button.dataset.menu);
+		i.classList.toggle("open");
+		button.classList.toggle("open")
+		syncState(button.dataset.menu);
+	}
+	function breakout(t, link) {
+		console.log("Clicked!")
+		var coll = document.getElementsByClassName("dot");
+		console.log(coll);
+		Array.from(coll).forEach(e => e.classList.remove("active"));
+		t.classList.add("active");
+		return false;
+	}
+	var count = 1;
+	var val;
+	function get_iframes() {
+		var j;
+		var a;
+		try {
+			j = document.getElementById("jitsi");
+			a = document.getElementById("apps");
+			if (j === null || a === null) {
+				throw "j or a == Null"
 			}
-			
-			var i = document.getElementById("app_opener");
-			[count, i.src] = cycle();
-			if (count % 3 == 0) {
+		} catch (error) {
+			j = document.getElementById("list_jitsi");
+			a = document.getElementById("list_snap");
+		}
+		return [j, a];
+	}
+	function openWindowSide() {
+		var i = document.getElementById("app_opener");
+		var cls = ["app_fullscreen", "meeting_fullscreen", "half"];
+		i.classList.remove(...cls);
+		[count, val] = cycle();
+		i.classList.add(val);
+		resize(count);
+		//window.dispatchEvent(new Event("resize"));
+	}
+	function resize(count) {
+		var [j, a] = get_iframes();
+		switch (count % 3) {
+			case 0:
 				j.className = 'Open';
 				a.className = 'Close';
-			} else if (count % 3 == 1) {
+				break;
+			case 1:
 				j.className = 'Half';
 				a.className = 'Half';
-			} else if (count % 3 == 2) {
+				break;
+			case 2:
 				j.className = 'Close';
 				a.className = 'Open';
-			}
-			//window.dispatchEvent(new Event("resize"));
+				break;
+			default:
+				j.className = 'Half';
+				a.className = 'Half';
+				break;
 		}
-		function cycle(){
-			const Radios = document.getElementsByName("app_state");
-			for(i = 0; i < Radios.length; i++){
-				if (Radios[i].checked) {
-					var out = (i+1)%Radios.length;
-					Radios[out].checked = true;
-					return [out, Radios[out].value];
-				}
+		return count;
+	}
+	function cycle() {
+		const Radios = document.getElementsByName("app_state");
+		for (i = 0; i < Radios.length; i++) {
+			if (Radios[i].checked) {
+				var out = (i + 1) % Radios.length;
+				Radios[out].checked = true;
+				return [out, Radios[out].value];
 			}
 		}
-		function faq(){
-			var j;
-			var a;
-			try {
-				j = document.getElementById("jitsi");
-				a = document.getElementById("apps");
-				if (j === null || a === null){
-					throw "j or a == Null"
-				}
-			} catch (error) {
-				j = document.getElementById("list_jitsi");
-				a = document.getElementById("list_snap");
+	}
+	function faq() {
+		var j;
+		var a;
+		try {
+			j = document.getElementById("jitsi");
+			a = document.getElementById("apps");
+			if (j === null || a === null) {
+				throw "j or a == Null"
 			}
-			var f = document.getElementById('faq');
-			j.className = 'Close';
-			a.className = 'Close';
-			f.className = 'Half';
-			f = true;
+		} catch (error) {
+			j = document.getElementById("list_jitsi");
+			a = document.getElementById("list_snap");
 		}
+		var f = document.getElementById('faq');
+		j.className = 'Close';
+		a.className = 'Close';
+		f.className = 'Half';
+		f = true;
+	}
+
+	function syncState(menu) {
+		var state = document.getElementById(menu).classList.contains("open");
+		console.log(state);
+		Array.from(
+			document.getElementsByClassName('menu-toggle')
+		)
+			.filter(i => i.dataset.menu == menu)
+			.forEach(
+				(m) => {
+					if (state) {
+						console.log(m);
+						m.classList.add("open");
+					} else {
+						console.log(m);
+						m.classList.remove("open");
+					}
+				});
+		console.log("State Synced");
+	}
 
 	openWindowSide();
-		
-	</script>
+
+</script>
+<script src="//cdn.jsdelivr.net/npm/vue-svg-inline-plugin"></script>
+<script src="//cdn.jsdelivr.net/npm/vue-svg-inline-plugin/dist/vue-svg-inline-plugin-modern.min.js"></script>
 
 </html>

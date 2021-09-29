@@ -1,5 +1,5 @@
 {
-  "name": "image-based-selection-component",
+  "name": "latitude-school",
   "version": "0.1.0",
   "private": true,
   "description": "",
@@ -14,7 +14,8 @@
     "vue": "^2.6.14",
     "vue-page-title": "^1.2.4",
     "vue-router": "^3.5.2",
-    "vue-simple-alert": "^1.1.1"
+    "vue-simple-alert": "^1.1.1",
+    "vue-svg-inline-plugin": "^2.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^4.5.13",
@@ -24,7 +25,8 @@
     "eslint-plugin-vue": "^6.0.1",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
-    "vue-template-compiler": "^2.6.14"
+    "vue-template-compiler": "^2.6.14",
+    "vue-svg-inline-plugin": "^2.2.0"
   },
   "eslintConfig": {
     "root": true,

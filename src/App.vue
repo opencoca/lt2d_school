@@ -51,8 +51,8 @@ export default {
     fetch("https://api.centrepreville.org/classrooms/")
       .then(response => response.json())
       .then(data => {
-        this.rooms = data.results;
-        this.filtered_rooms = data.results;
+        this.rooms = data.results.filter(r => r.classroom != null);
+        this.filtered_rooms = this.rooms;
         console.log(this.rooms);
       });
   },
@@ -71,8 +71,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 45px;
+  /* margin-top: 45px; */
+  max-height: 100vh;
+  max-width: 100vw;
 }
+/* This is stupid and hopefully temporary */
+body {
+  height: 100vh;
+}
+
+#app, .mb-4, .mb-4 > * {
+  height: 100%;
+}
+
+
 
 .menu__item {
   display: flex;

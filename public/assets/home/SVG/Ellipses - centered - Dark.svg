@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <g id="Ellpises">
+    <circle id="Circle" cx="18" cy="18" r="16" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    <polyline id="Down" points="8.95 13.48 17.95 24.52 26.95 13.52" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <polyline id="Up" points="8.95 22.48 18 13.48 26.95 22.52" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
