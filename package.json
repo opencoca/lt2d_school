@@ -1,11 +1,11 @@
 {
-  "name": "image-based-selection-component",
+  "name": "lt2d-school",
   "version": "0.1.0",
   "private": true,
   "description": "",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "rm ./dist/js/* && rm ./dist/css/* && vue-cli-service build --no-clean",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
