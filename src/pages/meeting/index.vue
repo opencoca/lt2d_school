@@ -40,10 +40,19 @@
             </div>
           </div>
         </div>
-        <div style="display:none">
-          <input type="radio" name="app_state" value="assets/show-window.svg" checked="checked" />
+        <div style="display: none">
+          <input
+            type="radio"
+            name="app_state"
+            value="assets/show-window.svg"
+            checked="checked"
+          />
           <input type="radio" name="app_state" value="assets/fullscreen.svg" />
-          <input type="radio" name="app_state" value="assets/close-window.svg" />
+          <input
+            type="radio"
+            name="app_state"
+            value="assets/close-window.svg"
+          />
         </div>
         <div id="open" style="right: 1%; position: fixed">
           <a>
@@ -56,9 +65,11 @@
             />
           </a>
           <a
-            :href="thisRooms.classroom.platform.domain + 
-            thisRooms.meet 
-            + thisRooms.classroom.platform.paramiters"
+            :href="
+              thisRooms.classroom.platform.domain +
+              thisRooms.meet +
+              thisRooms.classroom.platform.paramiters
+            "
             target="meeting_iframe"
             class="dot"
             style="background-color: #ff5555"
@@ -83,7 +94,8 @@
           >
             <span>{{ n }}</span>
           </a>
-          <a class="dot support"
+          <a
+            class="dot support"
             target="_blank"
             onclick=""
             href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
@@ -93,44 +105,51 @@
         </div>
       </div>
       <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <p>Faites tourner votre portable. </p>
-        <img src="/assets/rotate-phone.svg">
-        <p>Please rotate your device.</p>
-      </div>
-
+        <!-- Modal content -->
+        <div class="modal-content">
+          <p>Faites tourner votre portable.</p>
+          <img src="/assets/rotate-phone.svg" />
+          <p>Please rotate your device.</p>
+        </div>
       </div>
       <div class="window">
         <iframe
-          style="width: 0%; height: calc(100% - 50px); border: none;"
+          style="width: 0%; height: calc(100% - 50px); border: none"
           src="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
           id="faq"
           name="faq_iframe"
         ></iframe>
-        <template v-if="thisRooms.classroom.app_set[0].name == 'Shared Whiteboard'">
-            <iframe
-              allow="microphone; camera"
-              :src="thisRooms.classroom.app_set[0].iframe + thisRooms.name.split('/')[0]"
-              id="apps"
-              name="app_iframe"
-              class="Close"
-            ></iframe>
+        <template
+          v-if="thisRooms.classroom.app_set[0].name == 'Shared Whiteboard'"
+        >
+          <iframe
+            allow="microphone; camera"
+            :src="
+              thisRooms.classroom.app_set[0].iframe +
+              thisRooms.name.split('/')[0]
+            "
+            id="apps"
+            name="app_iframe"
+            class="Close"
+          ></iframe>
         </template>
         <template v-else>
           <iframe
-              allow="microphone; camera"
-              :src="thisRooms.classroom.app_set[0].iframe"
-              id="apps"
-              name="app_iframe"
-              class="Close"
-            ></iframe>
+            allow="microphone; camera"
+            :src="thisRooms.classroom.app_set[0].iframe"
+            id="apps"
+            name="app_iframe"
+            class="Close"
+          ></iframe>
         </template>
         <iframe
-          allow="microphone; camera"
-          :src="thisRooms.classroom.platform.domain + thisRooms.meet + thisRooms.classroom.platform.paramiters"
           id="jitsi"
+          allow="microphone; camera; display-capture; fullscreen, execution-while-not-rendered, execution-while-out-of-viewport"
+          :src="
+            thisRooms.classroom.platform.domain +
+            thisRooms.meet +
+            thisRooms.classroom.platform.paramiters
+          "
           name="meeting_iframe"
           class="Open"
         >
@@ -141,357 +160,360 @@
   </div>
 </template>
 <script>
-  export default {
-    name: "meet",
-    title: "Préville - Preville",
-    created: function () {
-      //Populate empty meeting
-    },
-    data: function () {
-      return {
-        app: "",
-        config: {
-        },
-      };
-    },
-    computed: {
-      params: function() {
-        if (!this.$route.params.meet) {
-          return {
-            meet: "Foyer de Préville - Preville Lobby",
-            alt: "Foyer de Préville - Preville Lobby",
-            name: "Foyer de Préville - Preville Lobby",
-            title: "Hall",
-            frameposition: 0,
-            breakout_rooms:1
-            };
-          } else {
-            return this.$route.params;
-            }
-      },
-      app_set: function() {
-        if (!this.$route.params.app_set){
-          return [{
-            "name": "FAQ",
-            "logo": "https://centrepreville.org/wp-content/uploads/2020/12/Pre%CC%81villeLogoNEW-300x153.png",
-            "iframe": "https://centrepreville.org/camp-f-a-q-troubleshooting/"
-            }]
-        } else {
-          return this.$route.params.app_set
-        }
-      },
-      meetingRooms: function () {
-        return parseInt(this.params.breakout_rooms)
-      },
-      thisRooms: function() {
-        return this.$parent.rooms.find(room => room.meet == this.$route.params.meet)
+export default {
+  name: "meet",
+  title: "Préville - Preville",
+  created: function () {
+    //Populate empty meeting
+  },
+  data: function () {
+    return {
+      app: "",
+      config: {},
+    };
+  },
+  computed: {
+    params: function () {
+      if (!this.$route.params.meet) {
+        return {
+          meet: "Foyer de Préville - Preville Lobby",
+          alt: "Foyer de Préville - Preville Lobby",
+          name: "Foyer de Préville - Preville Lobby",
+          title: "Hall",
+          frameposition: 0,
+          breakout_rooms: 1,
+        };
+      } else {
+        return this.$route.params;
       }
-    }
-  };
+    },
+    app_set: function () {
+      if (!this.$route.params.app_set) {
+        return [
+          {
+            name: "FAQ",
+            logo:
+              "https://centrepreville.org/wp-content/uploads/2020/12/Pre%CC%81villeLogoNEW-300x153.png",
+            iframe: "https://centrepreville.org/camp-f-a-q-troubleshooting/",
+          },
+        ];
+      } else {
+        return this.$route.params.app_set;
+      }
+    },
+    meetingRooms: function () {
+      return parseInt(this.params.breakout_rooms);
+    },
+    thisRooms: function () {
+      return this.$parent.rooms.find(
+        (room) => room.meet == this.$route.params.meet
+      );
+    },
+  },
+};
 </script>
 <style scoped>
-  a {
-    color: #444499;
-    text-decoration: none;
-  }
+a {
+  color: #444499;
+  text-decoration: none;
+}
 
-  a:hover {
-    color: #333;
-  }
+a:hover {
+  color: #333;
+}
 
-  #header {
-    position: fixed;
-    top: 0;
-    left: 0px;
-    height: 50px;
-    width: 100%;
-    background: #212533;
-    padding: 0;
-    z-index: 10000;
-  }
+#header {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  background: #212533;
+  padding: 0;
+  z-index: 10000;
+}
 
-  #header img {
-    max-width: 80%;
-  }
+#header img {
+  max-width: 80%;
+}
 
-  #apps {
-    background-color: white;
-  }
+#apps {
+  background-color: white;
+}
 
-  #logo {
-    display: inline;
-    position: absolute;
-    left: 0px;
-  }
+#logo {
+  display: inline;
+  position: absolute;
+  left: 0px;
+}
 
+h1 {
+  margin-top: 5px;
+  padding-top: 5px;
+  color: #f1f1f1;
+  font-size: 1.6em;
+}
+
+@media (max-width: 991px) {
   h1 {
-    margin-top: 5px;
-    padding-top: 5px;
-    color: #f1f1f1;
-    font-size: 1.6em;
-  }
-
- @media (max-width: 991px) { 
-   h1{
-     padding-top:10px;
-     font-size: 1em;
- }
-}
-
-  .modal-container {
-    margin: 0 auto;
     padding-top: 10px;
-    position: relative;
-    width: 160px;
+    font-size: 1em;
   }
-
-  .modal-container button {
-    display: none;
-    margin: 0 auto;
-    color: #fff;
-    width: 160px;
-    height: 50px;
-    line-height: 50px;
-    background: #446cb3;
-    font-size: 22px;
-    border: 0;
-    border-radius: 3px;
-    box-shadow: 0 5px 5px -5px #333;
-    transition: background 0.3s ease-in;
-  }
-
-  .modal-container .modal-backdrop {
-    height: 0;
-    width: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity 0.2s ease-in;
-  }
-
-  .modal-container #modal-toggle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .modal-container #modal-toggle:hover ~ button {
-    background: #1e824c;
-  }
-
-  .modal-container #modal-toggle:checked {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    opacity: 0;
-  }
-
-  .modal-container #modal-toggle:checked ~ .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    pointer-events: none;
-    opacity: 1;
-  }
-
-  .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
-    background-color: #fff;
-    max-width: 400px;
-    width: 100%;
-    height: 280px;
-    padding: 10px 30px;
-    position: absolute;
-    left: calc(50% - 200px);
-    top: 12%;
-    border-radius: 4px;
-    z-index: 99999;
-    pointer-events: auto;
-    cursor: auto;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-  }
-  @media (max-width: 400px) {
-    .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
-      left: 0;
-    }
-  }
-
-  .modal-container
-    #modal-toggle:checked
-    ~ .modal-backdrop
-    .modal-content
-    .modal-close {
-    color: #666;
-    position: absolute;
-    right: 2px;
-    top: 0;
-    padding-top: 7px;
-    background: #fff;
-    font-size: 16px;
-    width: 25px;
-    height: 28px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-  }
-
-  .modal-container
-    #modal-toggle:checked
-    ~ .modal-backdrop
-    .modal-content
-    .modal-close.button {
-    top: initial;
-    bottom: 20px;
-    right: 20px;
-    background: #4caf50;
-    color: #fff;
-    width: 50px;
-    border-radius: 2px;
-    font-size: 14px;
-    font-weight: normal;
-  }
-
-  .modal-container
-    #modal-toggle:checked
-    ~ .modal-backdrop
-    .modal-content
-    .modal-close.button:hover {
-    color: #fff;
-    background: #1e824c;
-  }
-
-  .modal-container
-    #modal-toggle:checked
-    .modal-backdrop
-    .modal-content
-    .modal-close:hover {
-    color: #333;
-  }
-
-  .window {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background: rgba(32, 42, 54, 1);
-  }
-
-  #apps,
-  #jitsi {
-    height: calc(100vh - 45px);
-    border: none;
-    margin: none;
-    padding: none;
-    top: 50px;
-    left: 0px;
-  }
-
-  .Open {
-    width: 100vw;
-  }
-  .Half {
-    width: 50vw;
-  }
-  .Close {
-    width: 0vw;
-  }
-
-  #open {
-    /* position: fixed; */
-    top: 5px;
-    right: 1vw;
-    z-index: 99999;
-    display: flex;
-  }
-
-  .dot {
-    height: 28px;
-    min-width: 28px;
-    font-weight: 600;
-    /* background-color: #bbb; */
-    border-radius: 50%;
-    /* display: inline-block; */
-    margin-left: 25px;
-    border: 3px solid #f1f1f1;
-    text-align: center;
-    color: white;
-    background-color: transparent;
-  }
-
-
- @media (max-width: 991px) { 
-   .dot{
-     height: 27px;
-     min-width: 25px;
-     margin-left: 5px;
- }
 }
 
-  .dot.active {
-    background-color: lime !important;
-  }
-  .dot:hover {
-    background-color: #bbb !important;
-  }
-  .dot > * {
-    /* vertical-align: bottom; */
-    line-height: 28px;
-    font-size: larger;
-    font-weight: inherit;
-  }
-  .dot > img {
-    height: 18px;
-    /* vertical-align:baseline; */
-    margin-top: 3px;
-  }
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999999; /* Sit on top */
-    padding-top: 2vh; /* Location of the box */
-    padding-bottom: 2vh; /* Location of the box */
+.modal-container {
+  margin: 0 auto;
+  padding-top: 10px;
+  position: relative;
+  width: 160px;
+}
+
+.modal-container button {
+  display: none;
+  margin: 0 auto;
+  color: #fff;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  background: #446cb3;
+  font-size: 22px;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 5px 5px -5px #333;
+  transition: background 0.3s ease-in;
+}
+
+.modal-container .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in;
+}
+
+.modal-container #modal-toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.modal-container #modal-toggle:hover ~ button {
+  background: #1e824c;
+}
+
+.modal-container #modal-toggle:checked {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  opacity: 0;
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+  height: 280px;
+  padding: 10px 30px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: 12%;
+  border-radius: 4px;
+  z-index: 99999;
+  pointer-events: auto;
+  cursor: auto;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  .modal-container #modal-toggle:checked ~ .modal-backdrop .modal-content {
     left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+}
 
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    height: 88%;
-    font-size: 3rem;
+.modal-container
+  #modal-toggle:checked
+  ~ .modal-backdrop
+  .modal-content
+  .modal-close {
+  color: #666;
+  position: absolute;
+  right: 2px;
+  top: 0;
+  padding-top: 7px;
+  background: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 28px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal-container
+  #modal-toggle:checked
+  ~ .modal-backdrop
+  .modal-content
+  .modal-close.button {
+  top: initial;
+  bottom: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: #fff;
+  width: 50px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.modal-container
+  #modal-toggle:checked
+  ~ .modal-backdrop
+  .modal-content
+  .modal-close.button:hover {
+  color: #fff;
+  background: #1e824c;
+}
+
+.modal-container
+  #modal-toggle:checked
+  .modal-backdrop
+  .modal-content
+  .modal-close:hover {
+  color: #333;
+}
+
+.window {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: rgba(32, 42, 54, 1);
+}
+
+#apps,
+#jitsi {
+  height: calc(100vh - 45px);
+  border: none;
+  margin: none;
+  padding: none;
+  top: 50px;
+  left: 0px;
+}
+
+.Open {
+  width: 100vw;
+}
+.Half {
+  width: 50vw;
+}
+.Close {
+  width: 0vw;
+}
+
+#open {
+  /* position: fixed; */
+  top: 5px;
+  right: 1vw;
+  z-index: 99999;
+  display: flex;
+}
+
+.dot {
+  height: 28px;
+  min-width: 28px;
+  font-weight: 600;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  /* display: inline-block; */
+  margin-left: 25px;
+  border: 3px solid #f1f1f1;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+}
+
+@media (max-width: 991px) {
+  .dot {
+    height: 27px;
+    min-width: 25px;
+    margin-left: 5px;
   }
+}
 
-    .modal-content > img{
-     height: fit-content;
-     padding: 2em;
-    }
-  
+.dot.active {
+  background-color: lime !important;
+}
+.dot:hover {
+  background-color: #bbb !important;
+}
+.dot > * {
+  /* vertical-align: bottom; */
+  line-height: 28px;
+  font-size: larger;
+  font-weight: inherit;
+}
+.dot > img {
+  height: 18px;
+  /* vertical-align:baseline; */
+  margin-top: 3px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999; /* Sit on top */
+  padding-top: 2vh; /* Location of the box */
+  padding-bottom: 2vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 88%;
+  font-size: 3rem;
+}
+
+.modal-content > img {
+  height: fit-content;
+  padding: 2em;
+}
+
 .rotate {
-    transform: rotate(-90deg) translate(-100%, 0%);
+  transform: rotate(-90deg) translate(-100%, 0%);
+}
+@media screen and (orientation: portrait) {
+  .modal {
+    display: block;
   }
-  @media screen and (orientation:portrait) {
-    .modal {
-      display: block;
-    }
-  }
+}
 </style>
