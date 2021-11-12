@@ -8386,10 +8386,10 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-page-title@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/vue-page-title/-/vue-page-title-1.2.4.tgz#51cfe62a09412b6c4eff15ec38c84a86dcf87ccb"
-  integrity sha512-sWZlysIAkU3uz04wg/mRvsMNKeZhV2sc1SfG3/Dfh5lJezD/rPrQOPpAlfkX+FWfLyrL1JFixPZMYyjvIldNgA==
+vue-page-title@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/vue-page-title/-/vue-page-title-1.2.5.tgz#af93c5c9f9024a643726db791f05140bb382218d"
+  integrity sha512-gV58KnER4LIM2vLX/MBapWBkoLzGyIdXwSvKs4Pa/Y4tJ2SRNh/R7kkzzZw9ikDAaYHxRrV8FmfB7QwCE9Gv7g==
 
 vue-router@^3.5.2:
   version "3.5.2"
