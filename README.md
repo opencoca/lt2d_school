@@ -8,17 +8,10 @@ LT2D School provides students and teachers with virtual classrooms. It is an onl
 
 Features include: 
 
-
-• Interactive Classroom Environment: Students can communicate face-to-face or over the Internet using voice, text chat, and even video conferencing. Teachers monitor class discussions from anywhere in the world.
-
-
-• Online Learning: Students complete assignments on their own time; they do not have to wait for lectures or other classes to start. They can take quizzes at any point during the course of the day.
-
-
-• Collaborative Work: The class is always working together towards a common goal. Everyone has access to all the same resources, including lesson plans, videos, and other materials.
-
-
-Our platform is extensible and we are releasing frequent updates to improve the user experience.
+*   An interactive classroom experience, where students can connect with one another in real-time, whether it be through face-to-face interaction or over the internet via voice, text, and video conferencing. Allowing for teachers to keep an eye on class discussions from anywhere on the planet.
+*   Flexibility in learning, where students can complete their assignments at their own pace, free from the constraints of traditional class schedules. And the ability to take quizzes and assessments at any time.
+*   An emphasis on collaboration, where the class works together towards a common goal, with access to all the same resources, including lesson plans, videos, and other materials.
+*   A platform that is always improving, with frequent updates to enhance the user experience.
 
 ## Setup
 
@@ -34,6 +27,6 @@ yarn serve
 yarn build
 
 # License
-Copyright 2019–2021 12787326 Canada Inc.
+Copyright 2019–2023 12787326 Canada Inc.
 
 Licensed under the AGPLv3: https://opensource.org/licenses/agpl-3.0
