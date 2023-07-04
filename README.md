@@ -15,7 +15,6 @@ Features include:
 
 ## Setup
 
-yarn
 yarn install
 
 ## Dev server
