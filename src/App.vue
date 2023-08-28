@@ -12,12 +12,12 @@
 </template>
 
 <script>
-//import TextSelect from "./components/TextSelect.vue";
-import RoomMenu from "./components/RoomMenu.vue";
 
-//if(process.env.VUE_APP_ROOMS === undefined) {
-//  this.$alert("Room Admin API endpoint not set. Unable to list rooms")
-//}
+// Free Accounts use the JSON file
+import data from "./rooms.json";
+// Pro Accounts use the API see created() below
+
+import RoomMenu from "./components/RoomMenu.vue";
 
 export default {
   name: "App",
@@ -42,19 +42,21 @@ export default {
           src: "/assets/robot.gif"
         }
       ],
-      rooms: [],
-      filtered_rooms: []
+      rooms: data.results,
+      filtered_rooms: data.results
     }
   },
   created() {
     // Simple GET request using fetch
-    fetch("https://api.centrepreville.org/classrooms/")
+    // This is used for our pro accounts using the API
+    // This is not used for the free accounts using the JSON file
+    /*fetch("https://api.centrepreville.org/classrooms/")
       .then(response => response.json())
       .then(data => {
         this.rooms = data.results;
         this.filtered_rooms = data.results;
         console.log(this.rooms);
-      });
+      });*/
   },
   methods: {
     onSelectText: function(text) {

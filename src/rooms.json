@@ -1,0 +1,1203 @@
+{
+  "comment_0":"This is a list of all the classrooms and their associated apps and teachers",
+  "comment_1":"The classrooms are listed in order of their appearance on the website",
+  "comment_2":"API is at https://api.centrepreville.org/ and is a Django Rest Framework API",
+  "count": 32,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "name": "Foyer de Préville - Preville Lobby",
+      "route": "meet",
+      "meet": "Preville-Online-Lobby",
+      "classroom": {
+        "room": 15,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "FAQ",
+            "logo": "https://centrepreville.org/camp-f-a-q-troubleshooting/",
+            "iframe": "https://centrepreville.org/camp-f-a-q-troubleshooting/"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-01-08T18:33:17-05:00",
+        "breakout_rooms": 1,
+        "order": 5,
+        "name": "Foyer de Préville - Preville Lobby",
+        "meet": "Preville-Online-Lobby",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Salle de réunion - Meeting Room",
+      "route": "meet",
+      "meet": "Preville-Online-Meeting-Room",
+      "classroom": {
+        "room": 60,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-01-10T14:14:09-05:00",
+        "breakout_rooms": 2,
+        "order": 6,
+        "name": "Salle de réunion - Meeting Room",
+        "meet": "Preville-Online-Meeting-Room",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Bibliothèque - Library",
+      "route": "meet",
+      "meet": "Preville-Online-Library",
+      "classroom": {
+        "room": 8,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Library Book Collection",
+            "logo": "https://cdn.dribbble.com/users/1860775/screenshots/6550972/s_kitap_logo.png",
+            "iframe": "https://docs.google.com/presentation/d/e/2PACX-1vRf3AJFbydL53tC8aba6IAhsy0-rubD_HyTGP1joUcqn3qCh3nvdeB9Mu3OyB13kuj2ACuT0KkRIN6l/embed?start=false&loop=false&delayms=3000&slide=id.g8c3f08c330_3_1"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2020-11-17T15:13:42-05:00",
+        "breakout_rooms": 1,
+        "order": 7,
+        "name": "Bibliothèque - Library",
+        "meet": "Preville-Online-Library",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Salle de jeux - Games Room",
+      "route": "meet",
+      "meet": "Preville-Online-Games-Room",
+      "classroom": {
+        "room": 56,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Games",
+            "logo": "https://www.pinclipart.com/picdir/middle/333-3338907_game-png-icon-free-download-onlinewebfonts-com-play.png",
+            "iframe": "https://docs.google.com/presentation/d/e/2PACX-1vQK01AAfZEwla-UkevLjCXxmci3ewQXF3WvY0Xn3WOuyMNDLAsVtYUMzhiSBVufg6eT7H8sDbnxM8yu/embed?start=false&loop=false&delayms=5000"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T15:06:57-05:00",
+        "breakout_rooms": 3,
+        "order": 9,
+        "name": "Salle de jeux - Games Room",
+        "meet": "Preville-Online-Games-Room",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "AFGHAN LANGUAGE OUTREACH",
+      "route": "meet",
+      "meet": "afghan-language-outreach",
+      "classroom": {
+        "room": 82,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2023-03-06T20:55:13-05:00",
+        "breakout_rooms": 1,
+        "order": 12,
+        "name": "AFGHAN LANGUAGE OUTREACH",
+        "meet": "afghan-language-outreach",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Afghan-Language-Tutoring-Alaha",
+      "route": "meet",
+      "meet": "Preville-Online-Afghan-Alaha",
+      "classroom": {
+        "room": 86,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Afghan Outreach Tutoring LIbrary",
+            "logo": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000",
+            "iframe": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2023-03-06T21:02:47-05:00",
+        "breakout_rooms": 1,
+        "order": 13,
+        "name": "Afghan-Language-Tutoring-Alaha",
+        "meet": "Preville-Online-Afghan-Alaha",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Afghan-Language-Tutoring-Amrit",
+      "route": "meet",
+      "meet": "Preville-Online-Afghan-Amrit",
+      "classroom": {
+        "room": 85,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Afghan Outreach Tutoring LIbrary",
+            "logo": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000",
+            "iframe": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2023-03-06T21:02:04-05:00",
+        "breakout_rooms": 1,
+        "order": 14,
+        "name": "Afghan-Language-Tutoring-Amrit",
+        "meet": "Preville-Online-Afghan-Amrit",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Afghan-Language-Tutoring-Fatma",
+      "route": "meet",
+      "meet": "Preville-Online-Afghan-Fatma",
+      "classroom": {
+        "room": 83,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Afghan Outreach Tutoring LIbrary",
+            "logo": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000",
+            "iframe": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2023-03-06T20:55:54-05:00",
+        "breakout_rooms": 1,
+        "order": 15,
+        "name": "Afghan-Language-Tutoring-Fatma",
+        "meet": "Preville-Online-Afghan-Fatma",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Afghan-Language-Tutoring-Jane",
+      "route": "meet",
+      "meet": "Preville-Online-Afghan-Jane",
+      "classroom": {
+        "room": 84,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Afghan Outreach Tutoring LIbrary",
+            "logo": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000",
+            "iframe": "https://docs.google.com/presentation/d/e/2PACX-1vSX1mWhXw2O9bmVMvI4G5g4SpvQps6M1M4N97efJ4XIVcw9-xqXw3VOJs7G9GatcSrRar6c0fDfMB4I/embed?start=false&loop=false&delayms=3000"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2023-03-06T21:01:00-05:00",
+        "breakout_rooms": 1,
+        "order": 16,
+        "name": "Afghan-Language-Tutoring-Jane",
+        "meet": "Preville-Online-Afghan-Jane",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "PRÉVILLE EN LIGNE - PRÉVILLE ONLINE",
+      "route": "meet",
+      "meet": "preville-online",
+      "classroom": {
+        "room": 55,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T15:01:50-05:00",
+        "breakout_rooms": 1,
+        "order": 17,
+        "name": "PRÉVILLE EN LIGNE - PRÉVILLE ONLINE",
+        "meet": "preville-online",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Art - Stephany Hernandez",
+      "route": "meet",
+      "meet": "Preville-Online-Art-Stephany-Hernandez",
+      "classroom": {
+        "room": 32,
+        "teacher_set": [
+          {
+            "id": 27,
+            "first_name": "Stéphany",
+            "last_name": "Hernandez",
+            "order": 27,
+            "classes": [
+              32
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T07:12:26-05:00",
+        "breakout_rooms": 2,
+        "order": 30,
+        "name": "Art - Stephany Hernandez",
+        "meet": "Preville-Online-Art-Stephany-Hernandez",
+        "taught_by": "Stéphany"
+      }
+    },
+    {
+      "name": "Art - Sarah Fefer",
+      "route": "meet",
+      "meet": "Preville-Online-Art-Sarah-Fefer",
+      "classroom": {
+        "room": 31,
+        "teacher_set": [
+          {
+            "id": 26,
+            "first_name": "Sarah",
+            "last_name": "Fefer",
+            "order": 26,
+            "classes": [
+              31
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T06:52:42-05:00",
+        "breakout_rooms": 2,
+        "order": 31,
+        "name": "Art - Sarah Fefer",
+        "meet": "Preville-Online-Art-Sarah-Fefer",
+        "taught_by": "Sarah"
+      }
+    },
+    {
+      "name": "Art - Beverly Landry",
+      "route": "meet",
+      "meet": "Preville-Online-Art-Beverly-Landry",
+      "classroom": {
+        "room": 33,
+        "teacher_set": [
+          {
+            "id": 28,
+            "first_name": "Beverly",
+            "last_name": "Landry",
+            "order": 28,
+            "classes": [
+              33
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-01-09T07:23:31-05:00",
+        "breakout_rooms": 2,
+        "order": 32,
+        "name": "Art - Beverly Landry",
+        "meet": "Preville-Online-Art-Beverly-Landry",
+        "taught_by": "Beverly"
+      }
+    },
+    {
+      "name": "Robotique et Codage - Robotics - Robot in a Can",
+      "route": "meet",
+      "meet": "Preville-Online-Robotics",
+      "classroom": {
+        "room": 35,
+        "teacher_set": [
+          {
+            "id": 57,
+            "first_name": "Lindsey",
+            "last_name": "Renault",
+            "order": 57,
+            "classes": [
+              35
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Snap Projects",
+            "logo": "https://snap.robotinacan.com/courses/snaps/",
+            "iframe": "https://snap.robotinacan.com/courses/snaps/"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-01-09T07:26:26-05:00",
+        "breakout_rooms": 3,
+        "order": 34,
+        "name": "Robotique et Codage - Robotics - Robot in a Can",
+        "meet": "Preville-Online-Robotics",
+        "taught_by": "Lindsey"
+      }
+    },
+    {
+      "name": "TUTORAT - TUTORING",
+      "route": "meet",
+      "meet": "Preville-Online-Tutoring",
+      "classroom": {
+        "room": 73,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-03-24T09:52:48-05:00",
+        "breakout_rooms": 1,
+        "order": 43,
+        "name": "TUTORAT - TUTORING",
+        "meet": "Preville-Online-Tutoring",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Salle de tutorat - Tutoring Classroom - Juman",
+      "route": "meet",
+      "meet": "Preville-Online-Tutoring-Juman",
+      "classroom": {
+        "room": 64,
+        "teacher_set": [
+          {
+            "id": 50,
+            "first_name": "Juman",
+            "last_name": "Al-Mashta",
+            "order": 50,
+            "classes": [
+              64
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-02-02T14:34:25-05:00",
+        "breakout_rooms": 1,
+        "order": 50,
+        "name": "Salle de tutorat - Tutoring Classroom - Juman",
+        "meet": "Preville-Online-Tutoring-Juman",
+        "taught_by": "Juman"
+      }
+    },
+    {
+      "name": "Salle de tutorat - Tutoring Classroom - Philippe",
+      "route": "meet",
+      "meet": "Preville-Online-Tutoring-Philippe",
+      "classroom": {
+        "room": 65,
+        "teacher_set": [
+          {
+            "id": 47,
+            "first_name": "Phillipe",
+            "last_name": "Aigner-Therrien",
+            "order": 47,
+            "classes": [
+              65
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-01-29T20:15:13-05:00",
+        "breakout_rooms": 1,
+        "order": 52,
+        "name": "Salle de tutorat - Tutoring Classroom - Philippe",
+        "meet": "Preville-Online-Tutoring-Philippe",
+        "taught_by": "Phillipe"
+      }
+    },
+    {
+      "name": "CENTRE D'ART DE PRÉVILLE - PRIVATE LESSONS",
+      "route": "meet",
+      "meet": "preville-fine-arts-private-lessons",
+      "classroom": {
+        "room": 53,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T15:00:01-05:00",
+        "breakout_rooms": 1,
+        "order": 59,
+        "name": "CENTRE D'ART DE PRÉVILLE - PRIVATE LESSONS",
+        "meet": "preville-fine-arts-private-lessons",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Voix - Voice - Colin Enright",
+      "route": "meet",
+      "meet": "Preville-Online-Voice-Colin-Enright",
+      "classroom": {
+        "room": 37,
+        "teacher_set": [
+          {
+            "id": 30,
+            "first_name": "Colin",
+            "last_name": "Enright",
+            "order": 30,
+            "classes": [
+              37
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-01-09T07:33:47-05:00",
+        "breakout_rooms": 2,
+        "order": 60,
+        "name": "Voix - Voice - Colin Enright",
+        "meet": "Preville-Online-Voice-Colin-Enright",
+        "taught_by": "Colin"
+      }
+    },
+    {
+      "name": "Piano - Becky Reesor",
+      "route": "meet",
+      "meet": "Preville-Online-Piano-Becky-Reesor",
+      "classroom": {
+        "room": 74,
+        "teacher_set": [
+          {
+            "id": 32,
+            "first_name": "Becky",
+            "last_name": "Reesor",
+            "order": 32,
+            "classes": [
+              74
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-03-24T11:56:34-05:00",
+        "breakout_rooms": 1,
+        "order": 63,
+        "name": "Piano - Becky Reesor",
+        "meet": "Preville-Online-Piano-Becky-Reesor",
+        "taught_by": "Becky"
+      }
+    },
+    {
+      "name": "Piano - Jenny Perron",
+      "route": "meet",
+      "meet": "Preville-Online-Piano-Jenny-Perron",
+      "classroom": {
+        "room": 10,
+        "teacher_set": [
+          {
+            "id": 64,
+            "first_name": "Jenny",
+            "last_name": "Perron",
+            "order": 64,
+            "classes": [
+              10
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          },
+          {
+            "name": "recording room",
+            "logo": "https://audiomass.co/",
+            "iframe": "https://audiomass.co/"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-07T10:45:36-05:00",
+        "breakout_rooms": 2,
+        "order": 65,
+        "name": "Piano - Jenny Perron",
+        "meet": "Preville-Online-Piano-Jenny-Perron",
+        "taught_by": "Jenny"
+      }
+    },
+    {
+      "name": "Piano - Rose Nemeth",
+      "route": "meet",
+      "meet": "Preville-Online-Piano-Rose-Nemeth",
+      "classroom": {
+        "room": 13,
+        "teacher_set": [
+          {
+            "id": 10,
+            "first_name": "Rose",
+            "last_name": "Nemeth",
+            "order": 10,
+            "classes": [
+              13
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "recording room",
+            "logo": "https://audiomass.co/",
+            "iframe": "https://audiomass.co/"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-08T15:21:21-05:00",
+        "breakout_rooms": 2,
+        "order": 66,
+        "name": "Piano - Rose Nemeth",
+        "meet": "Preville-Online-Piano-Rose-Nemeth",
+        "taught_by": "Rose"
+      }
+    },
+    {
+      "name": "Piano - Suzanne Ozorak",
+      "route": "meet",
+      "meet": "Preville-Online-Piano-Suzanne-Ozorak",
+      "classroom": {
+        "room": 14,
+        "teacher_set": [
+          {
+            "id": 11,
+            "first_name": "Suzanne",
+            "last_name": "Ozorak",
+            "order": 11,
+            "classes": [
+              14
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          },
+          {
+            "name": "recording room",
+            "logo": "https://audiomass.co/",
+            "iframe": "https://audiomass.co/"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-08T15:22:18-05:00",
+        "breakout_rooms": 2,
+        "order": 67,
+        "name": "Piano - Suzanne Ozorak",
+        "meet": "Preville-Online-Piano-Suzanne-Ozorak",
+        "taught_by": "Suzanne"
+      }
+    },
+    {
+      "name": "Piano - Viktor Lazarov",
+      "route": "meet",
+      "meet": "Preville-Online-Piano-Viktor-Lazarov",
+      "classroom": {
+        "room": 12,
+        "teacher_set": [
+          {
+            "id": 9,
+            "first_name": "Viktor",
+            "last_name": "Lazarov",
+            "order": 9,
+            "classes": [
+              12
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          },
+          {
+            "name": "recording room",
+            "logo": "https://audiomass.co/",
+            "iframe": "https://audiomass.co/"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2021-01-08T15:18:39-05:00",
+        "breakout_rooms": 2,
+        "order": 69,
+        "name": "Piano - Viktor Lazarov",
+        "meet": "Preville-Online-Piano-Viktor-Lazarov",
+        "taught_by": "Viktor"
+      }
+    },
+    {
+      "name": "Violon - Violin - Anne Saint-Cyr",
+      "route": "meet",
+      "meet": "Preville-Online-Violin-Anne-Saint-Cyr",
+      "classroom": {
+        "room": 17,
+        "teacher_set": [
+          {
+            "id": 13,
+            "first_name": "Anne",
+            "last_name": "Saint-Cyr",
+            "order": 13,
+            "classes": [
+              17
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          },
+          {
+            "name": "recording room",
+            "logo": "https://audiomass.co/",
+            "iframe": "https://audiomass.co/"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-08T18:35:38-05:00",
+        "breakout_rooms": 2,
+        "order": 71,
+        "name": "Violon - Violin - Anne Saint-Cyr",
+        "meet": "Preville-Online-Violin-Anne-Saint-Cyr",
+        "taught_by": "Anne"
+      }
+    },
+    {
+      "name": "Flùte - Flute - Danielle Barro",
+      "route": "meet",
+      "meet": "Preville-Online-Flute-Danielle-Barro",
+      "classroom": {
+        "room": 22,
+        "teacher_set": [
+          {
+            "id": 18,
+            "first_name": "Danielle",
+            "last_name": "Baro",
+            "order": 18,
+            "classes": [
+              22
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          },
+          {
+            "name": "recording room",
+            "logo": "https://audiomass.co/",
+            "iframe": "https://audiomass.co/"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T06:38:26-05:00",
+        "breakout_rooms": 2,
+        "order": 76,
+        "name": "Flùte - Flute - Danielle Barro",
+        "meet": "Preville-Online-Flute-Danielle-Barro",
+        "taught_by": "Danielle"
+      }
+    },
+    {
+      "name": "Guitare - Ukulélé - Alison Notkin",
+      "route": "meet",
+      "meet": "Preville-Online-Ukulele-Alison-Notkin",
+      "classroom": {
+        "room": 40,
+        "teacher_set": [
+          {
+            "id": 33,
+            "first_name": "Alison",
+            "last_name": "Notkin",
+            "order": 33,
+            "classes": [
+              40
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T07:37:41-05:00",
+        "breakout_rooms": 2,
+        "order": 77,
+        "name": "Guitare - Ukulélé - Alison Notkin",
+        "meet": "Preville-Online-Ukulele-Alison-Notkin",
+        "taught_by": "Alison"
+      }
+    },
+    {
+      "name": "Guitare - Ukulélé - Samuel Lechasseur",
+      "route": "meet",
+      "meet": "Preville-Online-Guitar-Ukulele-Samuel-Lechasseur",
+      "classroom": {
+        "room": 24,
+        "teacher_set": [
+          {
+            "id": 65,
+            "first_name": "Samuel",
+            "last_name": "Lechasseur",
+            "order": 65,
+            "classes": [
+              24
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T06:41:05-05:00",
+        "breakout_rooms": 2,
+        "order": 80,
+        "name": "Guitare - Ukulélé - Samuel Lechasseur",
+        "meet": "Preville-Online-Guitar-Ukulele-Samuel-Lechasseur",
+        "taught_by": "Samuel"
+      }
+    },
+    {
+      "name": "Guitare - Ukulélé - Alexandre Bernier",
+      "route": "meet",
+      "meet": "Preville-Online-Guitar-Ukulele-Alexandre-Bernier",
+      "classroom": {
+        "room": 76,
+        "teacher_set": [
+          {
+            "id": 66,
+            "first_name": "Alexandre",
+            "last_name": "Bernier",
+            "order": 66,
+            "classes": [
+              76
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-10-02T11:03:16-05:00",
+        "breakout_rooms": 2,
+        "order": 81,
+        "name": "Guitare - Ukulélé - Alexandre Bernier",
+        "meet": "Preville-Online-Guitar-Ukulele-Alexandre-Bernier",
+        "taught_by": "Alexandre"
+      }
+    },
+    {
+      "name": "Batterie - Drums - Pierre Goguen",
+      "route": "meet",
+      "meet": "Preville-Online-Drums-Pierre-Goguen",
+      "classroom": {
+        "room": 26,
+        "teacher_set": [
+          {
+            "id": 21,
+            "first_name": "Pierre",
+            "last_name": "Goguen",
+            "order": 21,
+            "classes": [
+              26
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "recording room",
+            "logo": "https://audiomass.co/",
+            "iframe": "https://audiomass.co/"
+          }
+        ],
+        "platform": {
+          "id": 1,
+          "name": "Public Jitsi",
+          "domain": "https://meet.jit.si/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://meet.jit.si/",
+          "order": 1
+        },
+        "pub_date": "2021-01-09T06:43:50-05:00",
+        "breakout_rooms": 2,
+        "order": 82,
+        "name": "Batterie - Drums - Pierre Goguen",
+        "meet": "Preville-Online-Drums-Pierre-Goguen",
+        "taught_by": "Pierre"
+      }
+    },
+    {
+      "name": "Support technique - Tech Support",
+      "route": "meet",
+      "meet": "Preville-Online-Tech-Support",
+      "classroom": {
+        "room": 59,
+        "teacher_set": [
+          
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 2,
+          "name": "OpenCo Private Jitsi",
+          "domain": "https://jitsi-web.test.openco.ca/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://jitsi-web.test.openco.ca/",
+          "order": 2
+        },
+        "pub_date": "2021-01-10T14:12:43-05:00",
+        "breakout_rooms": 1,
+        "order": 83,
+        "name": "Support technique - Tech Support",
+        "meet": "Preville-Online-Tech-Support",
+        "taught_by": ""
+      }
+    },
+    {
+      "name": "Préville Writers' Room",
+      "route": "meet",
+      "meet": "Preville-Online-WritersRoom",
+      "classroom": {
+        "room": 87,
+        "teacher_set": [
+          {
+            "id": 70,
+            "first_name": "Maria",
+            "last_name": "Gacesa",
+            "order": 70,
+            "classes": [
+              87
+            ]
+          }
+        ],
+        "app_set": [
+          {
+            "name": "Shared Whiteboard",
+            "logo": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/dd/c6/96/ddc69628-d261-913b-220c-eaed6f140dd3/source/256x256bb.jpg",
+            "iframe": "https://wbo.ophir.dev/boards/LT2D-Shared-Whiteboard"
+          }
+        ],
+        "platform": {
+          "id": 3,
+          "name": "High Capacity HQ",
+          "domain": "https://8x8.vc/preville/",
+          "paramiters": "#jitsi_meet_external_api_id=0&amp;config.requireDisplayName=true&amp;config.startAudioMuted=6&amp;config.disableAudioLevels=true&amp;interfaceConfig.DISABLE_VIDEO_BACKGROUND=true&interfaceConfig.SHOW_CHROME_EXTENSION_BANNER=false&config.disableDeepLinking=true&setVideoQuality=720",
+          "logo": "https://8x8.vc/preville/",
+          "order": 3
+        },
+        "pub_date": "2023-07-13T07:50:54-05:00",
+        "breakout_rooms": 1,
+        "order": 84,
+        "name": "Préville Writers' Room",
+        "meet": "Preville-Online-WritersRoom",
+        "taught_by": "Maria"
+      }
+    }
+  ]
+}
