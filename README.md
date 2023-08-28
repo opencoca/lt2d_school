@@ -15,15 +15,23 @@ Features include:
 
 ## Setup
 
+```bash
 yarn install
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 
 ## Dev server
 
+```bash
 yarn serve
+```
 
 ## Build a release for distribution
 
+```bash
 yarn build
+```
 
 # License
 Copyright 2019–2023 12787326 Canada Inc.
