@@ -462,7 +462,7 @@
   .rotate {
     transform: rotate(-90deg) translate(-100%, 0%);
   }
-  @media screen and (orientation:portrait) {
+  @media screen and (orientation:portrait) and (hover: none) and (pointer: coarse) {
     .modal {
       display: block;
     }

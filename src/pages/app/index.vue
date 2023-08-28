@@ -65,29 +65,7 @@
           >
             <img src="assets/home.svg" />
           </a>
-          <!-- <a
-            v-for="n in thisRooms.classroom.breakout_rooms"
-            v-bind:key="n"
-            :href="
-              'https://meet.jit.si/' +
-              thisRooms.meet +
-              '-breakout-room-' +
-              n +
-              config.meetingSettings
-            "
-            class="dot"
-            target="meeting_iframe"
-            onclick="breakout(this)"
-          >
-            <span>{{ n }}</span>
-          </a>
-          <a class="dot support"
-            target="_blank"
-            onclick=""
-            href="https://www.centrepreville.org/camp-f-a-q-troubleshooting"
-          >
-            <span>?</span>
-          </a> -->
+
         </div>
       </div>
       <div id="myModal" class="modal">
@@ -473,7 +451,7 @@
   .rotate {
     transform: rotate(-90deg) translate(-100%, 0%);
   }
-  @media screen and (orientation:portrait) {
+  @media screen and (orientation:portrait) and (hover: none) and (pointer: coarse) {
     .modal {
       display: block;
     }
